@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Common Command Quick Check Tool| Online Docker command quick check tool| GoTool online toolset 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">Docker Common Command Quick Check Tool| Online Docker command quick check tool| GoTool online toolset</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">Online Docker common command quick check tool to quickly find and use Docker commands and improve development efficiency.。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h4>Docker Common Commands Cheat Sheet</h4>
+<h3>Image Management (Images)</h3>
+<pre><code class="language-shell"># Pull image from repository
+docker pull [IMAGE_NAME]:[TAG]
+
+# List local images
+docker images
+
+# Remove local image
+docker rmi [IMAGE_ID/NAME]
+
+# Filter and search images (Images Filter)
+# Filter by dangling images (dangling=true or false)
+docker images --filter &quot;dangling=true&quot;
+
+# Filter by image creation time (before, since)
+docker images --filter &quot;before=ubuntu:latest&quot;
+docker images --filter &quot;since=mysql:5.7&quot;
+
+# Filter by reference name
+docker images --filter &quot;reference=nginx:*&quot;
+
+# Build image (in the directory where Dockerfile is located)
+docker build -t [IMAGE_NAME]:[TAG] .
+
+# Force remove all unused images (dangling images)
+docker image prune -f
+</code></pre>
+<h3>Container Lifecycle (Containers)</h3>
+<pre><code class="language-shell"># Run container
+# -d run in background, -p port mapping host:container, --name specify name
+docker run -d -p 8080:80 --name my-container [IMAGE_NAME]
+
+# List running containers
+docker ps
+
+# List all containers (including stopped ones)
+docker ps -a
+
+# Stop container
+docker stop [CONTAINER_ID/NAME]
+
+# Start a stopped container
+docker start [CONTAINER_ID/NAME]
+
+# Restart container
+docker restart [CONTAINER_ID/NAME]
+
+# Remove a stopped container
+docker rm [CONTAINER_ID/NAME]
+
+# Force stop and remove a running container
+docker rm -f [CONTAINER_ID/NAME]
+
+# Clean up all stopped containers
+docker container prune -f
+</code></pre>
+<h3>Interaction &amp; Debugging</h3>
+<pre><code class="language-shell"># Enter the terminal of a running container
+docker exec -it [CONTAINER_ID/NAME] /bin/bash
+# OR (if bash is not supported)
+docker exec -it [CONTAINER_ID/NAME] /bin/sh
+
+# View container logs
+docker logs -f [CONTAINER_ID/NAME]
+
+# View the last 100 lines of logs
+docker logs --tail 100 -f [CONTAINER_ID/NAME]
+
+# View container detailed information (config, network, etc.)
+docker inspect [CONTAINER_ID/NAME]
+
+# List processes running inside the container
+docker top [CONTAINER_ID/NAME]
+
+# View container resource usage (CPU/Memory)
+docker stats [CONTAINER_ID/NAME]
+
+# Rename container
+docker rename [OLD_NAME] [NEW_NAME]
+
+# Stream events from the server in real-time
+docker events
+</code></pre>
+<h3>Advanced Image Operations</h3>
+<pre><code class="language-shell"># Show history of an image (layers)
+docker history [IMAGE_NAME]
+
+# Save image(s) to a tar archive
+docker save -o my-image.tar [IMAGE_NAME]
+
+# Load an image from a tar archive
+docker load -i my-image.tar
+
+# Create a new image from a container's changes (use with caution, Dockerfile preferred)
+docker commit [CONTAINER_ID] [NEW_IMAGE_NAME]
+</code></pre>
+<h3>System Cleanup</h3>
+<pre><code class="language-shell"># Show docker disk usage
+docker system df
+
+# One-key cleanup of all unused resources (images, containers, networks)
+# Note: This removes all stopped containers and unused images
+docker system prune -a --volumes
+</code></pre>
+<h3>File Transfer</h3>
+<pre><code class="language-shell"># Copy from host to container
+docker cp [LOCAL_PATH] [CONTAINER_ID]:[CONTAINER_PATH]
+
+# Copy from container to host
+docker cp [CONTAINER_ID]:[CONTAINER_PATH] [LOCAL_PATH]
+</code></pre>
+<h3>Network Management</h3>
+<pre><code class="language-shell"># List networks
+docker network ls
+
+# Create a network
+docker network create [NETWORK_NAME]
+
+# Inspect a network
+docker network inspect [NETWORK_NAME]
+</code></pre>
+<h3>Volume Management (Volumes)</h3>
+<pre><code class="language-shell"># List volumes
+docker volume ls
+
+# Create a volume
+docker volume create [VOLUME_NAME]
+
+# Remove all unused local volumes
+docker volume prune -f
+</code></pre>
+<h3>Docker Compose (Multi-container Orchestration)</h3>
+<pre><code class="language-shell"># Start all services in background
+docker-compose up -d
+
+# Stop and remove containers, networks, images, and volumes
+docker-compose down
+
+# View service logs
+docker-compose logs -f [SERVICE_NAME]
+
+# Build or rebuild services
+docker-compose build
+</code></pre>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/en/knowledge/dockerdoc" target="_blank" class="btn-go">进入 Docker Common Command Quick Check Tool| Online Docker command quick check tool| GoTool online toolset 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -325,6 +325,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://gotool.top/en/docs/knowledge-dockerdoc.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gotool.top/en/docs/knowledge-finddoc.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gotool.top/en/docs/other-handledate.html</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -673,6 +685,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://gotool.top/docs/knowledge-dockerdoc.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gotool.top/docs/knowledge-finddoc.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gotool.top/docs/other-handledate.html</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -1016,6 +1040,18 @@
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/knowledge-scpdoc.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gotool.top/zh-tw/docs/knowledge-dockerdoc.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gotool.top/zh-tw/docs/knowledge-finddoc.html</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

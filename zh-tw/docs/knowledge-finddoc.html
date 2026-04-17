@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find 常用命令速查工具|在線 find 命令速查工具|gotool在線工具集 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">find 常用命令速查工具|在線 find 命令速查工具|gotool在線工具集</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">在線 find 常用命令速查工具，快速查找和使用 find 命令，提高開發效率。。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h4>find 常用命令備忘</h4>
+<p><code>find</code> 命令用於在目錄層次結構中搜索文件和目錄。</p>
+<h3>基本搜索</h3>
+<pre><code class="language-shell"># 在當前目錄及子目錄中按名稱查找文件 (區分大小寫)
+find . -name &quot;test.txt&quot;
+
+# 按名稱查找文件 (忽略大小寫)
+find . -iname &quot;test.txt&quot;
+
+# 查找所有以 .log 結尾的文件
+find . -name &quot;*.log&quot;
+
+# 按正規表達式查找
+find . -regex &quot;.*\.js&quot;
+</code></pre>
+<h3>按類型查找</h3>
+<pre><code class="language-shell"># 查找目錄 (d: directory)
+find . -type d -name &quot;src&quot;
+
+# 查找普通文件 (f: file)
+find . -type f -name &quot;*.config&quot;
+
+# 查找符號連結 (l: link)
+find . -type l
+</code></pre>
+<h3>按大小查找</h3>
+<pre><code class="language-shell"># 查找大於 100MB 的文件
+find . -type f -size +100M
+
+# 查找小於 10k 的文件
+find . -type f -size -10k
+
+# 查找正好 1G 的文件
+find . -type f -size 1G
+
+# 查找空文件或空目錄
+find . -empty
+</code></pre>
+<h3>按修改時間查找</h3>
+<pre><code class="language-shell"># 查找在過去 24 小時內修改過的文件 (n*24小時)
+find . -mtime -1
+
+# 查找在 7 天前修改過的文件
+find . -mtime +7
+
+# 查找在過去 10 分鐘內修改過的文件 (minutes)
+find . -mmin -10
+
+# 查找在過去 1 小時內訪問過的文件 (atime)
+find . -atime -1
+
+# 查找在過去 1 小時內狀態改變的文件 (ctime, 如權限修改)
+find . -ctime -1
+</code></pre>
+<h3>按權限與所有者查找</h3>
+<pre><code class="language-shell"># 查找權限為 777 的文件
+find . -perm 777
+
+# 查找所属用戶為 root 的文件
+find . -user root
+
+# 查找所属組為 developers 的文件
+find . -group developers
+</code></pre>
+<h3>組合搜索 (邏輯運算)</h3>
+<pre><code class="language-shell"># AND (預設): 查找名為 code 且類型為目錄
+find . -name &quot;code&quot; -type d
+
+# OR: 查找以 .sh 或 .py 結尾的文件
+find . \( -name &quot;*.sh&quot; -o -name &quot;*.py&quot; \)
+
+# NOT: 查找不是以 .txt 結尾的文件
+find . ! -name &quot;*.txt&quot;
+</code></pre>
+<h3>找到後執行操作 (exec &amp; delete)</h3>
+<pre><code class="language-shell"># 查找並刪除所有 .tmp 文件 (慎用)
+find . -name &quot;*.tmp&quot; -delete
+
+# 查找並列出詳細資訊 (對每個找到的文件執行 ls -l)
+find . -name &quot;*.txt&quot; -exec ls -l {} \;
+
+# 查找並移動到指定目錄
+find . -name &quot;*.mp3&quot; -exec mv {} /tmp/music/ \;
+
+# 查找並更改權限
+find . -type d -exec chmod 755 {} \;
+
+# 查找包含特定內容的文件 (結合 grep)
+find . -type f -name &quot;*.txt&quot; -exec grep -l &quot;search_term&quot; {} +
+</code></pre>
+<h3>深度控制</h3>
+<pre><code class="language-shell"># 僅在當前目錄查找 (不進入子目錄)
+find . -maxdepth 1 -name &quot;*.js&quot;
+
+# 至少跳過兩級子目錄
+find . -mindepth 3 -name &quot;*.log&quot;
+</code></pre>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/zh-tw/knowledge/finddoc" target="_blank" class="btn-go">进入 find 常用命令速查工具|在線 find 命令速查工具|gotool在線工具集 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
