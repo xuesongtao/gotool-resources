@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker 常用命令速查工具 | 在线 Docker 命令速查工具 | GoTool在线工具集 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">Docker 常用命令速查工具 | 在线 Docker 命令速查工具 | GoTool在线工具集</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">在线 Docker 常用命令速查工具，快速查找和使用 Docker 命令，提高开发效率。。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>Docker 常用命令备忘</h3>
+<h5>镜像管理 (Images)</h5>
+<pre><code class="language-shell"># 从仓库拉取镜像
+docker pull [IMAGE_NAME]:[TAG]
+
+# 查看本地镜像列表
+docker images
+
+# 删除本地镜像
+docker rmi [IMAGE_ID/NAME]
+
+# 镜像过滤查找 (Images Filter)
+# 根据虚无镜像过滤 (dangling=true or false)
+docker images --filter &quot;dangling=true&quot;
+
+# 根据镜像创建时间过滤 (before, since)
+docker images --filter &quot;before=ubuntu:latest&quot;
+docker images --filter &quot;since=mysql:5.7&quot;
+
+# 根据参考名称过滤
+docker images --filter &quot;reference=nginx:*&quot;
+
+# 构建镜像 (在 Dockerfile 所在目录下)
+docker build -t [IMAGE_NAME]:[TAG] .
+
+# 强制删除所有未使用镜像 (虚无镜像)
+docker image prune -f
+</code></pre>
+<h5>容器生命周期 (Containers)</h5>
+<pre><code class="language-shell"># 运行容器
+# -d 后台运行, -p 端口映射 宿主:容器, --name 指定名称
+docker run -d -p 8080:80 --name my-container [IMAGE_NAME]
+
+# 查看正在运行的容器
+docker ps
+
+# 查看所有容器 (包括已停止的)
+docker ps -a
+
+# 停止容器
+docker stop [CONTAINER_ID/NAME]
+
+# 启动已停止的容器
+docker start [CONTAINER_ID/NAME]
+
+# 重启容器
+docker restart [CONTAINER_ID/NAME]
+
+# 删除已停止的容器
+docker rm [CONTAINER_ID/NAME]
+
+# 强制停止并删除正在运行的容器
+docker rm -f [CONTAINER_ID/NAME]
+
+# 清理所有已停止的容器
+docker container prune -f
+</code></pre>
+<h5>容器内交互与调试</h5>
+<pre><code class="language-shell"># 进入正在运行的容器终端
+docker exec -it [CONTAINER_ID/NAME] /bin/bash
+# 或者 (如果不支持 bash)
+docker exec -it [CONTAINER_ID/NAME] /bin/sh
+
+# 查看容器日志
+docker logs -f [CONTAINER_ID/NAME]
+
+# 查看最近 100 行日志
+docker logs --tail 100 -f [CONTAINER_ID/NAME]
+
+# 查看容器详细信息 (配置、网络等)
+docker inspect [CONTAINER_ID/NAME]
+
+# 查看容器内运行的进程
+docker top [CONTAINER_ID/NAME]
+
+# 查看容器资源占用 (CPU/内存)
+docker stats [CONTAINER_ID/NAME]
+
+# 修改容器名称
+docker rename [OLD_NAME] [NEW_NAME]
+
+# 实时查看容器内的事件流
+docker events
+</code></pre>
+<h5>镜像进阶操作</h5>
+<pre><code class="language-shell"># 查看镜像层级结构或历史
+docker history [IMAGE_NAME]
+
+# 保存镜像为 tar 归档文件
+docker save -o my-image.tar [IMAGE_NAME]
+
+# 从 tar 归档文件加载镜像
+docker load -i my-image.tar
+
+# 将容器保存为镜像 (慎用，建议使用 Dockerfile)
+docker commit [CONTAINER_ID] [NEW_IMAGE_NAME]
+</code></pre>
+<p>#####系统清理</p>
+<pre><code class="language-shell"># 查看 Docker 磁盘使用情况
+docker system df
+
+# 一键清理所有未使用的资源 (镜像、容器、网络)
+# 注意：这会删除所有停止的容器和未被使用的镜像
+docker system prune -a --volumes
+</code></pre>
+<h5>文件传输</h5>
+<pre><code class="language-shell"># 从宿主机拷贝到容器
+docker cp [LOCAL_PATH] [CONTAINER_ID]:[CONTAINER_PATH]
+
+# 从容器拷贝到宿主机
+docker cp [CONTAINER_ID]:[CONTAINER_PATH] [LOCAL_PATH]
+</code></pre>
+<h5>网络管理</h5>
+<pre><code class="language-shell"># 查看网络列表
+docker network ls
+
+# 创建网络
+docker network create [NETWORK_NAME]
+
+# 查看网络详细细节
+docker network inspect [NETWORK_NAME]
+</code></pre>
+<h5>数据卷管理 (Volumes)</h5>
+<pre><code class="language-shell"># 查看数据卷列表
+docker volume ls
+
+# 创建数据卷
+docker volume create [VOLUME_NAME]
+
+# 清理未使用的匿名卷
+docker volume prune -f
+</code></pre>
+<h5>Docker Compose (多容器编排)</h5>
+<pre><code class="language-shell"># 后台启动所有服务
+docker-compose up -d
+
+# 停止并移除所有容器、网络、镜像和卷
+docker-compose down
+
+# 查看服务日志
+docker-compose logs -f [SERVICE_NAME]
+
+# 构建或重新构建服务
+docker-compose build
+</code></pre>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/knowledge/dockerdoc" target="_blank" class="btn-go">进入 Docker 常用命令速查工具 | 在线 Docker 命令速查工具 | GoTool在线工具集 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

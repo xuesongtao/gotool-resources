@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online text similarity calculation tool| Support for Levenshtein/Jaccard - GoTool online toolset 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">Online text similarity calculation tool| Support for Levenshtein/Jaccard - GoTool online toolset</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">This tool provides an efficient and accurate text similarity calculation tool and supports algorithms such as Levenshtein and Jaccard. Users can use these algorithms to calculate similarities between texts and help with tasks such as text comparison, data cleaning, and information retrieval.。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>Algorithm Introduction</h3>
+<h4>Introduction to Jaccard Algorithm (for long text)</h4>
+<blockquote>
+<p>1.Jaccard similarity, also known as Jaccard index or Jaccard coefficient, is a statistic used to measure the similarity of two sets (** can be divided by ngram **). It is defined as the ratio between the intersection and the union of two sets. It is mainly used to calculate the similarity between sets, and is widely used in information retrieval/text analysis/image processing and other fields.<br>
+2. In particular, given two sets A and 𝐵, Jaccard similarity <code>𝐽 (𝐴, 𝐵</code>) is defined as:</p>
+</blockquote>
+<pre><code class="language-js">J(A,B)= ∣A ∩ B∣ / ∣A u B∣
+
+// ∣A∩B∣ denote the number of intersection elements of sets A and B.
+// ∣AuB∣ denotes the number of elements of the union of sets A and B.
+
+</code></pre>
+<ol start="3">
+<li>The Jaccard similarity ranges from 0 to 1:</li>
+</ol>
+<pre><code class="language-js">// when 𝐽(𝐴,𝐵) = 1, the two sets are exactly the same
+// when 𝐽(𝐴,𝐵) = 0, the two sets are completely different
+</code></pre>
+<!-- raw HTML omitted -->
+<h4>Introduction to Levenshtein algorithm (suitable for short text)</h4>
+<blockquote>
+<p>1.Levenshtein distance, also known as edit distance, is a metric used to measure the similarity between two strings. It is defined as the minimum number of editing operations required to convert one string to another. The allowed editing operations include inserting a character/deleting a character/replacing a character.<br>
+2. Treatment is as follows:</p>
+</blockquote>
+<pre><code class="language-js">// Suppose there are two strings:
+s1 = &quot;kitten&quot;
+s2 = &quot;sitting&quot;
+// Calculate their Levenshtein distance:
+
+// replace &quot;k&quot; with &quot;s&quot;: kitten -&gt;; sitten (1 operation)
+// replace &quot;e&quot; with &quot;i&quot;: sitten -&gt;; sittin (1 operation)
+// Insert &quot;g&quot; at the end: sittin -&gt;; sitting (1 operation)
+// Thus, the Levenshtein distance
+Levenshtein(&quot;kitten&quot;,&quot;sitting&quot;)=3
+
+// similarity (maxlen-Levenshtein)/maxLen
+maxLen=max(s1.length, s2.length)
+res=(maxLen-3)/maxLen
+</code></pre>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/en/text/similarity" target="_blank" class="btn-go">进入 Online text similarity calculation tool| Support for Levenshtein/Jaccard - GoTool online toolset 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

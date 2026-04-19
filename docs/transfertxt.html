@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线文本互传工具 | 跨平台实时传输 - GoTool在线工具集 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">在线文本互传工具 | 跨平台实时传输 - GoTool在线工具集</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">一款高效便捷的在线文本互传工具，支持快速、实时地传输各种文本内容。无论是代码、文档还是笔记，都能轻松共享，提升工作和沟通效率。适用于开发者、团队协作和日常文本交换，简洁易用，跨平台支持。。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>在线实时传输 (TransferTxt)</h3>
+<p>在线实时传输是一个基于 Web 的文本同步工具，支持多端实时互传文本内容。</p>
+<h5>核心特性</h5>
+<ul>
+<li><strong>实时同步</strong>：基于 <code>SSE (Server-Sent Events)</code> 和 <code>WebSocket</code> 技术实现，优先使用 <code>SSE</code> 以获得更好的连接稳定性, 同时3个设备同步。</li>
+<li><strong>零延迟</strong>：一旦一方修改，所有连接同一通道的终端将立即收到更新。</li>
+<li><strong>多端支持</strong>：支持 PC、手机等多种设备浏览器同时访问.</li>
+</ul>
+<h5>存储规则</h5>
+<ul>
+<li><strong>有效期</strong>：文本内容将在服务器中保留 <strong>10 分钟</strong>。</li>
+<li><strong>计算方式</strong>：有效时间以<strong>最后一次修改开始计算</strong>。每次更新文本内容，倒计时将重新开始。</li>
+<li><strong>自动清理</strong>：超过有效期未更新，内容将被系统自动清除，确保隐私安全。</li>
+</ul>
+<h5>使用场景</h5>
+<ul>
+<li><strong>跨设备粘贴</strong>：在电脑上复制一段长文本或链接，手机端直接打开即可获取。</li>
+<li><strong>临时备忘</strong>：快速记录一些临时信息，多点同步。</li>
+<li><strong>简单协作</strong>：与伙伴实时共享并编辑同一段文本。</li>
+<li><strong>服务器日志</strong>：通过 curl 用于发送服务器日志信息。</li>
+</ul>
+<h5>安全与隐私</h5>
+<ul>
+<li>传输过程加密，不进行持久化存储。</li>
+<li>内容到期自动销毁，不留痕迹。</li>
+</ul>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/text/transfertxt" target="_blank" class="btn-go">进入 在线文本互传工具 | 跨平台实时传输 - GoTool在线工具集 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

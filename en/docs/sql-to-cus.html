@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online SQL to Multi-Language ORM Model| Support Python/Java/Go/C#, etc. - GoTool Online Toolkit 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">Online SQL to Multi-Language ORM Model| Support Python/Java/Go/C#, etc. - GoTool Online Toolkit</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">SQL structure converts the mainstream programming language orm model with one click, supporting Python (SQLAlchemy), Java (Hibernate), TypeScript (Sequelize), JavaScript (Objection.js), C#(Entity Framework), Go (GORM), Rust (Diesel), Dart (Drift), Swift (Core Data), PHP (Laravel Eloquent), Kotlin (Exposed), C&#43;&#43;(SOCI), etc. Widely adapted and supported free combination, making database structure conversion more efficient!。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>Feature Introduction</h3>
+<blockquote>
+<ol>
+<li>Supports converting table creation SQL into custom models for multiple databases, including <strong>PostgreSQL</strong>, <strong>Oracle</strong>, and <strong>MySQL</strong>. <strong>Table creation statements</strong>, <strong>Table creation statements</strong>, <strong>Table creation statements</strong> (important things are repeated three times).</li>
+<li>When converting SQL, ensure whether to switch processing types. Currently, three processing modes are supported: <strong>normal</strong>, <strong>postgresql</strong>, and <strong>oracle</strong>. Default: <strong>normal</strong>.</li>
+<li>Supports filtering out unnecessary fields. Multiple fields can be separated by <strong>,</strong>.<br>
+<strong>Note</strong>: <strong>SQL should not contain comments</strong> (i.e., <code>-- xxx</code> or <code># xxx</code>). Since this tool uses <strong>;</strong> to split statements, <strong>normal</strong> mode can process multiple table creation statements at once. However, <strong>postgresql</strong> and <strong>oracle</strong> require comment parsing and only support a single table creation statement.</li>
+</ol>
+</blockquote>
+<!-- raw HTML omitted -->
+<h3>Template Guide</h3>
+<h5>Syntax Guide</h5>
+<ul>
+<li><code>if</code> Condition</li>
+</ul>
+<pre><code class="language-go">{{if condition}}
+  // Executes when the condition is met
+{{else if another_condition}}
+  // Executes when another condition is met
+{{else}}
+  // Executes when no condition is met
+{{end}}
+
+// Comparison operators
+eq      Returns true if arg1 == arg2
+ne      Returns true if arg1 != arg2
+lt      Returns true if arg1 &lt; arg2
+le      Returns true if arg1 &lt;= arg2
+gt      Returns true if arg1 &gt; arg2
+ge      Returns true if arg1 &gt;= arg2
+</code></pre>
+<ul>
+<li>Example:</li>
+</ul>
+<pre><code class="language-go">{{if .IsAdmin}}
+  &lt;p&gt;Welcome, Admin&lt;/p&gt;
+{{else}}
+  &lt;p&gt;Welcome, User&lt;/p&gt;
+{{end}}
+</code></pre>
+<ul>
+<li><code>for</code> Loop</li>
+</ul>
+<pre><code class="language-go">// Loop through a variable
+{{- range variable }}
+  // Process each element
+{{- end }}
+
+// Loop with index
+{{- range $index, $user := .Users }}
+  &lt;p&gt;{{$index}}: {{$user.Name}} ({{$user.Age}} years old)&lt;/p&gt;
+{{- end }}
+</code></pre>
+<ul>
+<li>
+<p>Note: The <strong><code>-</code></strong> in <code>{{- range }}</code> removes extra spaces or newlines.</p>
+</li>
+<li>
+<p>Example:</p>
+</li>
+</ul>
+<pre><code class="language-go">&lt;ul&gt;
+  {{- range .Users }}
+    &lt;li&gt;{{.Name}} - {{.Age}} years old&lt;/li&gt;
+  {{- end }}
+&lt;/ul&gt;
+</code></pre>
+<h4>Template Explanation</h4>
+<ul>
+<li>Field Descriptions:</li>
+</ul>
+<p>| Field Name                            | Description      | Type    |
+| ------------------------------------- | ---------------- | ------- |
+| TableName                             | Table name       | string  |
+| TableComment                          | Table comment    | string  |
+| Fields                                | Field details    | objects |
+|     No            | Field number     | int     |
+|     NotNull       | Not null         | bool    |
+|     AutoIncrement | Auto increment   | bool    |
+|     PrimaryKey    | Primary key      | bool    |
+|     Name          | Field name       | string  |
+|     ModelType     | Model field type | string  |
+|     DbType        | Database type    | string  |
+|     Comment       | Comment          | string  |
+|     Default       | Default value    | string  |</p>
+<ul>
+<li>Function Descriptions:</li>
+</ul>
+<p>| Function Name | Description                       | Example                 |
+| ------------- | --------------------------------- | ----------------------- |
+| addLine       | Append a newline                  |                         |
+| toFirstUpper  | Convert first letter to uppercase |                         |
+| toFirstLower  | Convert first letter to lowercase |                         |
+| sub           | Compute difference                |                         |
+| hump          | Convert DB field to camel case    | <code>hump test_a</code> → <code>TestA</code> |
+| len           | Get length                        |                         |</p>
+<h4>Example Template</h4>
+<ul>
+<li><code>SQL to Struct</code></li>
+</ul>
+<pre><code class="language-go">type {{ hump .TableName }} struct {
+{{- range .Fields }}
+    {{ hump .Name }} {{ .ModelType }} `json:&quot;{{ .Name }}&quot;`  {{ if .Comment }} // {{ .Comment }} {{ end }}
+{{- end }}
+}
+</code></pre>
+<h3>Example</h3>
+<h5>MySQL Table Creation SQL</h5>
+<pre><code class="language-sql">CREATE TABLE if not exists user (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(10) NOT NULL COMMENT 'Name',
+  gender tinyint NOT NULL DEFAULT 0 COMMENT 'Gender: 0-Unknown, 1-Male, 2-Female',
+  age int NOT NULL COMMENT 'Age',
+  created_date datetime DEFAULT CURRENT_TIMESTAMP,
+  updated_date datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
+</code></pre>
+<p>Processed Output:</p>
+<pre><code class="language-go">type User struct {
+    Id int `json:&quot;id&quot;`  
+    Name string `json:&quot;name&quot;`   // Name 
+    Gender int `json:&quot;gender&quot;`   // Gender: 0-Unknown, 1-Male, 2-Female 
+    Age int `json:&quot;age&quot;`   // Age 
+    CreatedDate string `json:&quot;created_date&quot;`  
+    UpdatedDate string `json:&quot;updated_date&quot;`  
+}
+</code></pre>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/en/handlesql/sql2cus" target="_blank" class="btn-go">进入 Online SQL to Multi-Language ORM Model| Support Python/Java/Go/C#, etc. - GoTool Online Toolkit 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

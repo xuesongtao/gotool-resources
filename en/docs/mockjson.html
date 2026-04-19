@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Mock JSON API| Quickly generate simulation data- GoTool online toolset 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">Online Mock JSON API| Quickly generate simulation data- GoTool online toolset</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">This tool provides an online Mock JSON tool, has high-performance JSON services, and supports customization of URL parameters. This tool allows users to quickly generate and simulate JSON data for easy API development and testing. Support dynamic adjustment of response data based on URL parameters to improve development efficiency and testing flexibility.。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>Function introduction</h3>
+<blockquote>
+<ol>
+<li>Use the entered json string as the return parameter</li>
+<li>Support url parameters</li>
+<li>The output of the generated url is mainly determined by the 'token' parameter. Do not modify the 'token'</li>
+</ol>
+</blockquote>
+<h3>Usage examples</h3>
+<blockquote>
+<ol>
+<li>No request parameters</li>
+</ol>
+</blockquote>
+<pre><code class="language-json">[
+	{
+		&quot;id&quot;: 1,
+		&quot;name&quot;: &quot;test&quot;,
+		&quot;age&quot;: 10,
+		&quot;cls_name&quot;: &quot;first day&quot;,
+		&quot;addr&quot;: &quot;Chengdu, Sichuan&quot;
+	},
+	{
+		&quot;id&quot;: 2,
+		&quot;name&quot;: &quot;test&quot;,
+		&quot;age&quot;: 10,
+		&quot;cls_name&quot;: &quot;second day&quot;,
+		&quot;addr&quot;: &quot;Chengdu, Sichuan&quot;
+	}
+]
+</code></pre>
+<p>after treatment</p>
+<p><code>http://localhost:9000/toolapi/mockjson?come_from=2&amp;token=d491e4e9771c051021fdcf568cc369c4</code></p>
+<blockquote>
+<ol start="2">
+<li>With parameters</li>
+</ol>
+</blockquote>
+<pre><code class="language-json">{
+	&quot;id&quot;: 1,
+	&quot;name&quot;: &quot;test&quot;,
+	&quot;age&quot;: 10,
+	&quot;cls_name&quot;: &quot;first day&quot;,
+	&quot;addr&quot;: &quot;Chengdu, Sichuan&quot;
+}
+</code></pre>
+<p>after treatment</p>
+<p><code>http://localhost:9000/toolapi/mockjson? come_from=2&amp;user_id=1&amp;token=c7e6d7031b9911793b0b5ae83f50a9a8</code></p>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/en/handlejson/mockjson" target="_blank" class="btn-go">进入 Online Mock JSON API| Quickly generate simulation data- GoTool online toolset 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线Crontab表达式生成器 | 定时任务调度 - GoTool在线工具集 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">在线Crontab表达式生成器 | 定时任务调度 - GoTool在线工具集</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">在线 Crontab 表达式生成工具，轻松创建定时任务调度规则。无需手动编写复杂代码，快速生成标准的 Crontab 表达式，助您高效管理任务自动化。适用于 Linux、Unix 和其他支持 Crontab 的系统。。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>Crontab 使用指南</h3>
+<p><code>crontab</code> 是 Unix 和类 Unix 系统中用于调度任务的工具。通过编写 cron 表达式，可以定期执行任务。</p>
+<h3>基本语法</h3>
+<pre><code class="language-bash">* * * * * command_to_execute
+- - - - -
+| | | | |
+| | | | └── 星期几 (0 - 7) (星期天 = 0 或 7)
+| | | └──── 月份 (1 - 12)
+| | └────── 日期 (1 - 31)
+| └──────── 小时 (0 - 23)
+└────────── 分钟 (0 - 59)
+</code></pre>
+<h4>1 时间字段说明:</h4>
+<ul>
+<li><code>*</code>: 匹配任意值。</li>
+<li><code>数字</code>: 指定具体的时间。</li>
+<li><code>,</code>:表示多个时间值，例如 1,3,5 表示第 1、3、5 分钟。</li>
+<li><code>-</code>: 表示范围，例如 1-5 表示从第 1 分钟到第 5 分钟。</li>
+<li><code>/</code>:表示步长，例如 */2 表示每隔 2 分钟执行一次。</li>
+</ul>
+<h4>示例</h4>
+<pre><code class="language-bash"># 每隔 5 分钟执行一次任务
+*/5 * * * * /path/to/command
+
+# 每周一上午 8 点执行任务
+0 8 * * 1 /path/to/command
+
+# 每月 1 号和 15 号下午 2 点执行任务
+0 14 1,15 * * /path/to/command
+
+# 每个工作日的上午 9 点到下午 5 点每小时执行一次任务
+0 9-17 * * 1-5 /path/to/command
+</code></pre>
+<h4>2. 特殊时间字符串</h4>
+<p>| 特殊字符串 | 等价表达式  | 说明                   |
+| ---------- | ----------- | ---------------------- |
+| <code>@reboot</code>  | N/A         | 在系统启动时执行       |
+| <code>@yearly</code>  | <code>0 0 1 1 *</code> | 每年执行一次（1月1日） |
+| <code>@monthly</code> | <code>0 0 1 * *</code> | 每月执行一次           |
+| <code>@weekly</code>  | <code>0 0 * * 0</code> | 每周执行一次           |
+| <code>@daily</code>   | <code>0 0 * * *</code> | 每天执行一次           |
+| <code>@hourly</code>  | <code>0 * * * *</code> | 每小时执行一次         |</p>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/other/gencrontab" target="_blank" class="btn-go">进入 在线Crontab表达式生成器 | 定时任务调度 - GoTool在线工具集 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在線sql轉多語言orm模型|支持python/java/go/c#等 - gotool在線工具集 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">在線sql轉多語言orm模型|支持python/java/go/c#等 - gotool在線工具集</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">sql 結構一鍵轉換主流程式語言orm模型，支持 python（sqlalchemy）、java（hibernate）、typescript（sequelize）、javascript（objection.js）、c#（entity framework）、go（gorm）、rust（diesel）、dart（drift）、swift（core data）、php（laravel eloquent）、kotlin（exposed）、c&#43;&#43;（soci） 等。適配廣泛，支持自由組合，讓資料庫結構轉換更高效!。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>功能介绍</h3>
+<blockquote>
+<p>1.支持多种数据库的建表 sql转自定义模型, 其中包含(pg、oracle、mysql)等数据库; <strong>建表语句</strong>, <strong>建表语句</strong>, <strong>建表语句</strong>(重要的说3遍)
+2.在转换 sql 的时候, 需要确认下是否需要切换处理类型, 暂时支持3种处理方式(<strong>normal</strong>, <strong>postgresql</strong>, <strong>oracle</strong>), 默认: <strong>normal</strong>.
+3.支持自定义过滤不需要的字段, 多个字段通过 <strong>,</strong> 隔开
+<strong>说明</strong>: <strong>不能在 sql 中包含注释内容</strong>(即: <code>-- xxx</code> 或 <code># xxx</code>); 由于此工具是通过 <strong>;</strong> 来分割语句处理. 所以 <strong>normal</strong> 状态下可以同时处理多个建表语句; <strong>postgresql</strong> 和 <strong>oracle</strong> 由于需要解析注释, 只支持单个建表语句.</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<h3>模板说明</h3>
+<h5>会用到的语法说明</h5>
+<ul>
+<li><code>if</code> 条件</li>
+</ul>
+<pre><code class="language-go">{{if 条件}}
+// 条件成立时执行
+{{else if 另一条件}}
+// 另一条件成立时执行
+{{else}}
+// 以上条件都不成立时执行
+{{end}}
+
+// 关系符
+eq      如果arg1 == arg2则返回真
+ne      如果arg1 != arg2则返回真
+lt      如果arg1 &lt; arg2则返回真
+le      如果arg1 &lt;= arg2则返回真
+gt      如果arg1 &gt; arg2则返回真
+ge      如果arg1 &gt;= arg2则返回真
+</code></pre>
+<ul>
+<li>示例:</li>
+</ul>
+<pre><code class="language-go">{{if .IsAdmin}}
+    &lt;p&gt;欢迎管理员&lt;/p&gt;
+{{else}}
+    &lt;p&gt;欢迎普通用户&lt;/p&gt;
+{{end}}
+</code></pre>
+<ul>
+<li><code>for</code> 遍历</li>
+</ul>
+<pre><code class="language-go">// 遍历
+{{- range 变量 }}
+// 遍历元素
+{{- end }}
+
+// 带索引的遍历
+{{- range $index, $user := .Users }}
+    &lt;p&gt;{{$index}}: {{$user.Name}} ({{$user.Age}}岁)&lt;/p&gt;
+{{- end }}
+</code></pre>
+<ul>
+<li>
+<p>说明: <code>{{- range }}</code> 中 <strong>-</strong> 是用于清空换行或空白符</p>
+</li>
+<li>
+<p>示例</p>
+</li>
+</ul>
+<pre><code class="language-go">&lt;ul&gt;
+{{- range .Users }}
+    &lt;li&gt;{{.Name}} - {{.Age}} 岁&lt;/li&gt;
+{{- end }}
+&lt;/ul&gt;
+</code></pre>
+<h4>模板介绍</h4>
+<ul>
+<li>字段介绍</li>
+</ul>
+<p>| 字段                                  | 说明           | 类型    |
+| ------------------------------------- | -------------- | ------- |
+| TableName                             | 表名           | string  |
+| TableComment                          | 表注释         | string  |
+| Fields                                | 字段名         | objects |
+|     No            | 序号           | int     |
+|     NotNull       | 不为空         | bool    |
+|     AutoIncrement | 自增           | bool    |
+|     PrimaryKey    | 主键           | bool    |
+|     Name          | 字段名         | string  |
+|     ModelType     | 模型字段类型   | string  |
+|     DbType        | 数据库字段类型 | string  |
+|     Comment       | 注释           | string  |
+|     Default       | 默认值         | string  |</p>
+<ul>
+<li>函数介绍</li>
+</ul>
+<p>| 函数名       | 说明               | 示例                         |
+| ------------ | ------------------ | ---------------------------- |
+| addLine      | 追加换行符         |                              |
+| toFirstUpper | 首字母大写         |                              |
+| toFirstUpper | 首字母大写         |                              |
+| toFirstLower | 首字母小写         |                              |
+| sub          | 求差               |                              |
+| hump         | 将db字段按驼峰处理 | <code>hump test_a</code> 处理后 <code>TestA</code> |
+| len          | 长度               |                              |</p>
+<h4>示例模板</h4>
+<ul>
+<li><code>sql转struct</code></li>
+</ul>
+<pre><code class="language-go">type {{ hump .TableName }} struct {
+{{- range  .Fields }}
+    {{ hump .Name }} {{ .ModelType }} `json:&quot;{{ .Name }}&quot;`  {{ if .Comment }} // {{ .Comment }} {{ end }}
+{{- end }}
+}
+</code></pre>
+<h3>示例</h3>
+<h5>mysql 建表语句</h5>
+<pre><code class="language-sql">CREATE TABLE if not exists user (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(10) NOT NULL COMMENT '姓名',
+    gender tinyint NOT NULL DEFAULT 0 COMMENT '性别 0-未知 1-男 2-女',
+    age int NOT NULL COMMENT '年龄',
+    created_date datetime DEFAULT CURRENT_TIMESTAMP,
+    updated_date datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
+</code></pre>
+<p>处理后</p>
+<pre><code class="language-go">type User struct {
+    Id int `json:&quot;id&quot;`
+    Name string `json:&quot;name&quot;`   // 姓名
+    Gender int `json:&quot;gender&quot;`   // 性别 0-未知 1-男 2-女
+    Age int `json:&quot;age&quot;`   // 年龄
+    CreatedDate string `json:&quot;created_date&quot;`
+    UpdatedDate string `json:&quot;updated_date&quot;`
+}
+</code></pre>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/zh-tw/handlesql/sql2cus" target="_blank" class="btn-go">进入 在線sql轉多語言orm模型|支持python/java/go/c#等 - gotool在線工具集 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

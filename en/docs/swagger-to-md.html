@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swagger to Markdown tool| Generating API documentation- GoTool Online Toolkit 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">Swagger to Markdown tool| Generating API documentation- GoTool Online Toolkit</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">Quickly convert Swagger documents to Markdown table-structured documents. Support multiple API formats, parse interface information, parameters, responses and field sequences, and generate specification tables, suitable for interface documents, design review and team collaboration.。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>🛠 Feature Overview</h3>
+<p>The Swagger to Markdown tool allows you to instantly convert Swagger/OpenAPI interface documentation into structured Markdown documents, making it easy to organize, archive, and share API specifications.</p>
+<h3>🚀 How to Use</h3>
+<ol>
+<li>Upload a Swagger/OpenAPI file (e.g., .json), or paste the API documentation content directly.</li>
+<li>Customize options such as whether to include titles and the starting number.</li>
+<li>Generate the Markdown document with one click, ready to copy or download.</li>
+</ol>
+<h3>⚙️ Parameter Description</h3>
+<ul>
+<li><strong>File Upload Mode</strong>: Upload a local Swagger file to automatically convert it to Markdown.</li>
+<li><strong>Text Mode</strong>: Paste Swagger content, supporting the following parameters:
+<ul>
+<li><code>need_title</code>: Whether to generate a title for each endpoint (default: false).</li>
+<li><code>start_no</code>: The starting number for endpoint numbering (default: 1).</li>
+</ul>
+</li>
+</ul>
+<h3>📋 Example</h3>
+<h4>Input (Swagger JSON Example)</h4>
+<pre><code class="language-json">{
+	&quot;swagger&quot;: &quot;2.0&quot;,
+	&quot;info&quot;: { &quot;title&quot;: &quot;API Example&quot;, &quot;version&quot;: &quot;1.0.0&quot; },
+	&quot;paths&quot;: {
+		&quot;/user&quot;: {
+			&quot;get&quot;: {
+				&quot;summary&quot;: &quot;Get user info&quot;,
+				&quot;responses&quot;: { &quot;200&quot;: { &quot;description&quot;: &quot;Success&quot; } }
+			}
+		}
+	}
+}
+</code></pre>
+<h4>Output (Markdown Example)</h4>
+<pre><code class="language-markdown"># API Example API Documentation 1.0.0
+
+## 1
+
+### 1.1 Get user info
+
+- **Path**: `/user`
+- **Method**: `GET`
+- **Description**:
+
+#### Request Example
+
+- `curl -X GET &quot;http://xxx.com/user&quot;`
+
+#### Response
+
+##### 200
+</code></pre>
+<h3>💡 Scenarios</h3>
+<ul>
+<li>Quickly generate API documentation for team collaboration and integration</li>
+<li>Support for archiving API docs, API review, and knowledge base accumulation</li>
+</ul>
+<h3>📝 Notes</h3>
+<ul>
+<li>Supports Swagger 2.0 and OpenAPI 3.0 standard formats</li>
+<li>Only converts document structure, does not validate API correctness</li>
+</ul>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/en/handlejson/swagger2md" target="_blank" class="btn-go">进入 Swagger to Markdown tool| Generating API documentation- GoTool Online Toolkit 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online regular expression testing tool| Match/Replace/Generate Code- GoTool Online Toolset 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">Online regular expression testing tool| Match/Replace/Generate Code- GoTool Online Toolset</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">This tool provides an online regular expression tool that supports text substitution, matching, Go code generation, and provides descriptions of common expressions.。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>🌟 documentation</h3>
+<h4>📌 basic character</h4>
+<p>| symbol | description                                                   | example     | matching content |
+| ------ | ------------------------------------------------------------- | ----------- | ---------------- |
+| <code>.</code>    | match any single character (except newline characters)        | <code>a.b</code>       | <code>aab</code>, <code>acb</code>     |
+| <code>\ d</code>  | match any numeric character<code>[0-9]</code>                          | <code>\ d\ d</code>    | <code>12</code>, <code>34</code>       |
+| <code>\ D</code>  | match any non-numeric character<code>[^ 0-9]</code>                    | <code>\ D\ D</code>    | <code>ab</code>, <code>xy</code>       |
+| <code>\ w</code>  | match letters, numbers or underscores<code>[a-zA-Z0-9 _]</code>        | <code>\ w\ w\ w</code> | <code>abc</code>, <code>123</code>     |
+| <code>\ W</code>  | match any non-alphanumeric or underscore characters           | <code>\ W\ W</code>    | <code>!</code>, <code>@ @</code>       |
+| <code>\ s</code>  | match white space characters (spaces, tabs, line feeds, etc.) | <code>\ s</code>       | spaces, tabs     |
+| <code>\ S</code>  | match any non-blank character                                 | <code>\ S\ S\ S</code> | <code>abc</code>, <code>123</code>     |</p>
+<h4>📏 quantity qualifier</h4>
+<p>| symbol        | description                                                        | example      | matching content        |
+| ------------- | ------------------------------------------------------------------ | ------------ | ----------------------- |
+| <code>*</code>           | match the preceding character for zero or more times <code>{0,}</code>        | <code>a* </code>        | empty string, <code>a</code>, <code>aa</code> |
+| <code>+</code>           | match the preceding characters one or more times                   | <code>a+ </code>        | <code>a</code>, <code>aa</code>, <code>aaa</code>        |
+| <code>?</code>           | match the preceding characters zero times or once, <code>{0recover1}</code>   | <code>a? </code>        | empty string, <code>a</code>       |
+| <code>{n}</code>         | match the preceding character exactly <code>n</code> times                    | <code>a {3} </code>     | <code>aaa</code>                   |
+| <code>{n,}</code>        | match the preceding characters at least <code>n</code> times                  | <code>a {2,} </code>    | <code>aa</code>, <code>aaa</code>             |
+| <code>{nrecast m}</code> | match the preceding characters at least <code>n</code> times, up to <code>m</code> times | <code>a {2pm 4} </code> | <code>aa</code>, <code>aaa</code>, <code>aaa</code>      |</p>
+<h4>🚩 boundary match</h4>
+<p>| symbol | description                          | example        | matching content           |
+| ------ | ------------------------------------ | -------------- | -------------------------- |
+| <code>^ </code>   | the beginning of the matching string | <code>^ Hello</code>      | <code>Hello</code> in <code>Hello</code>!<code>      | |</code>$ <code>  | match the end of the string          |</code>Worldmatch $<code>|</code>World! <code>in </code>Hello World!<code>| |</code>\ b<code> | match word boundary                  |</code>\ bword\ b<code>  |</code>word<code>in</code>word<code>          | |</code>\ B<code> | match non-word boundaries            |</code>\ Bword\ B<code>  |</code>word<code>in</code>passwords`      |</p>
+<h4>🎯 grouping and referencing</h4>
+<p>| symbol    | description                                                | example          | matching content |
+| --------- | ---------------------------------------------------------- | ---------------- | ---------------- |
+| <code>()</code>      | capture group and save the matching substrings as a group  | <code>(abc) +</code>        | <code>abc</code>, <code>abcabc</code>  |
+| <code>(?:...)</code> | non-capture group, only grouping but not saving substrings | <code>(?: abc) +</code>     | <code>abc</code>, <code>abcabc</code>  |
+| <code>\ n</code>     | reference capture group. <code>n</code> is the group number           | <code> (a) (b)\ 1\ 2</code> | <code>abab</code>           |</p>
+<h4>🔍 character set and character class</h4>
+<p>| symbol    | description                                | example   | matching content |
+| --------- | ------------------------------------------ | --------- | ---------------- |
+| <code>[abc]</code>   | matches any character in <code>a</code>, <code>b</code> or <code>c</code>   | <code>[abc]</code>   | <code>a</code>, <code>b</code>, <code>c</code>    |
+| <code>[^ abc]</code> | match any character except <code>a</code>, <code>b</code> or <code>c</code> | <code>[^ abc]</code> | <code>d</code>, <code>e</code>         |
+| <code>[aMusz]</code> | match any lowercase letter from <code>a</code> to <code>z</code> | <code>[aripz]</code> | <code>a</code>, <code>b</code>, <code>c</code>    |
+| <code>[Amurz]</code> | match any uppercase letter from <code>A</code> to <code>Z</code> | <code>[Amurz]</code> | <code>A</code>, <code>B</code>, <code>C</code>    |
+| <code>[0-9]</code>   | match any numeric character                | <code>[0-9]</code>   | <code>1</code>, <code>2</code>, <code>3</code>    |</p>
+<h4>example of 📚 common mode</h4>
+<p>| description                   | regular expression                                                   | sample data               | matching result                      |
+| ----------------------------- | -------------------------------------------------------------------- | ------------------------- | ------------------------------------ |
+| 📞 matches phone number        | <code>\ (\ d {3}\)\ d {3} -\ d {4}</code>                                       | <code>(123) 456-7890</code>          | match                                |
+| 📧 verifies email address      | <code>^ [A-Za-z0-9.9% address -] + @ [A-Za-z0-9.9 -] +\. [A-Za-z] {2,} $</code> | <code>example@ example.com</code>    | match                                |
+| 📅 match date format           | <code>^\ d {4} -\ d {2} -\ d {2} $</code>                                       | <code>2024-08-17</code>              | match                                |
+| 🌐 matches IP address          | <code>^ ((25 [0-5]                                                        | 2 [0-4] [0-9]             | [01]? [0-9] [0-9]?)\.) {3} (25 [0-5] | 2 [0-4] [0-9] | [01]? [0-9] [0-9]?) $</code> | <code>192.168.1.1</code> | match |
+| 🔗 match URL                   | <code>^ https?:\ /\ / [^\ sUniverse. Match #] .[ ^\ s] * $</code>               | <code>https://www.example.com</code> | match                                |
+| 🏷️ matches HTML tags           | <code>&lt; (\ /? [^ &gt;] +) &gt;</code>                                                 | <code>&lt; div &gt;</code>, <code>&lt; / div &gt;</code>    | match                                |
+| 📮 matches Postal Code         | <code>^\ d {5} (-\ d {4})? $</code>                                             | <code>12345</code>, <code>12345-6789</code>     | match                                |
+| CSS color code extracted by 🎨 | <code># ([a-fA-F0-9] {6}                                                  | [a-fA-F0-9] {3})</code>         | <code># ffffff</code>,<code> # fff</code>                  | match         |</p>
+<h4>⚠️ escape character</h4>
+<p>| symbol | description                                                              | example | matching content |
+| ------ | ------------------------------------------------------------------------ | ------- | ---------------- |
+| <code>\</code>    | escape character, which is used to match characters with special meaning | <code>\ .</code>   | match period <code>.</code> |</p>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/en/text/handlere" target="_blank" class="btn-go">进入 Online regular expression testing tool| Match/Replace/Generate Code- GoTool Online Toolset 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

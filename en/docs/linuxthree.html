@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Three Musketeers Quick Survey| grep/awk/sed tutorials- GoTool Online Toolset 使用教程与案例 - GoTool.top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; color: #1e293b; padding: 2rem 0; font-family: system-ui, -apple-system, sans-serif; }
+        .doc-card { max-width: 850px; margin: auto; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; }
+        .hero-title { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: white; padding: 4rem 2rem; }
+        .content { padding: 3rem; }
+        .pain-point { border-left: 4px solid #f87171; background: #fff5f5; padding: 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem; }
+        .cta-box { text-align: center; margin-top: 3rem; padding: 2.5rem; background: #f1f5f9; border-radius: 20px; }
+        .btn-go { 
+            background: #6366f1; 
+            color: white; 
+            padding: 1.25rem 2rem; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.25rem; 
+            transition: all 0.3s; 
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 100%;
+        }
+        .btn-go:hover { 
+            background: #4f46e5; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); 
+        }
+        .back-link { margin-top: 2rem; display: block; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: #1e293b; }
+        .feature-item { margin-bottom: 1.5rem; }
+         
+        .markdown-content { line-height: 1.8; color: #475569; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 { color: #1e293b; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="doc-card">
+            <div class="hero-title text-center">
+                <h1 class="display-5 fw-bold mb-3">Linux Three Musketeers Quick Survey| grep/awk/sed tutorials- GoTool Online Toolset</h1>
+                <p class="lead opacity-75">高效后端开发工具系列 - 指南与案例</p>
+            </div>
+            <div class="content">
+                <div class="pain-point">
+                    <h4 class="text-danger fw-bold mb-2">😫 核心痛点</h4>
+                    <p class="mb-0">Comprehensively analyze the three Linux musketeers grep, sed and awk to help users master efficient command-line operations. Covering functions such as text search, format processing and data parsing, providing detailed tutorials and usage examples, it is a must-have guide for developers, system administrators and Linux enthusiasts.。在实际开发中，这些琐碎的转换或配置工作往往消耗大量精力且容易引入错误。GoTool 为此提供了快速、准确且免费的在线解决方案。</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4">💡 功能亮点 & 使用方案</h3>
+        
+            <div class="markdown-content">
+                <h3>Linux Three Musketeers (grep, awk, sed)</h3>
+<h4>grep</h4>
+<ul>
+<li><code>grep</code> is a powerful command-line tool used to search for specified strings or regular expressions in files or text.</li>
+<li><strong>Basic Syntax</strong></li>
+</ul>
+<pre><code class="language-shell">grep [options] &quot;search pattern&quot; file
+</code></pre>
+<blockquote>
+<p><strong>Search pattern</strong>: Can be a plain string or a regular expression.<br>
+<strong>File</strong>: Specifies the file(s) to search, which can be one or more files or input from a pipeline.</p>
+</blockquote>
+<h5>Common Options:</h5>
+<p>| Option  | Description                                |
+|---------|--------------------------------------------|
+| <code>-i</code>    | Ignore case while matching.               |
+| <code>-v</code>    | Invert match, show non-matching lines.    |
+| <code>-c</code>    | Only output the count of matching lines.  |
+| <code>-n</code>    | Show matching line numbers.               |
+| <code>-l</code>    | Only list filenames with matches.         |
+| <code>-o</code>    | Show only matching parts, not the whole line. |
+| <code>-r</code>    | Recursively search in directories.        |
+| <code>-w</code>    | Match whole words only.                   |
+| <code>-e</code>    | Specify a regular expression.             |</p>
+<h5>Examples:</h5>
+<ul>
+<li>Display all lines containing &quot;hello&quot; in <code>file.txt</code>:</li>
+</ul>
+<pre><code class="language-shell">grep &quot;hello&quot; file.txt
+</code></pre>
+<ul>
+<li>Search for &quot;hello&quot; in all files under <code>/path/to/directory</code>:</li>
+</ul>
+<pre><code class="language-shell">grep -r &quot;hello&quot; /path/to/directory
+</code></pre>
+<ul>
+<li>Match &quot;error&quot; or &quot;ERROR&quot; regardless of case:</li>
+</ul>
+<pre><code class="language-shell">grep -i &quot;error&quot; log.txt
+</code></pre>
+<ul>
+<li>Show matching lines along with line numbers:</li>
+</ul>
+<pre><code class="language-shell">grep -n &quot;pattern&quot; file.txt
+</code></pre>
+<ul>
+<li>List all files containing &quot;keyword&quot; in the current directory:</li>
+</ul>
+<pre><code class="language-shell">grep -l &quot;keyword&quot; *.txt
+</code></pre>
+<ul>
+<li>Show lines containing &quot;important&quot; along with 2 lines before and after:</li>
+</ul>
+<pre><code class="language-shell">grep -C 2 &quot;important&quot; document.txt
+</code></pre>
+<hr>
+<h4>awk</h4>
+<ul>
+<li><code>awk</code> is a powerful text processing tool used for formatting, filtering, and analyzing data in files or text streams. It supports pattern-based matching and operations, making it useful for log analysis, data extraction, and simple scripting.</li>
+<li><strong>Basic Syntax</strong></li>
+</ul>
+<pre><code class="language-bash">awk 'pattern { action }' file
+</code></pre>
+<blockquote>
+<p><strong>Pattern</strong>: The condition to match input data (optional).<br>
+<strong>Action</strong>: The operation to perform on matched data (optional).<br>
+If <strong>pattern</strong> is omitted, it matches all lines.<br>
+If <strong>action</strong> is omitted, it prints the matched lines by default.</p>
+</blockquote>
+<h5>Common Options:</h5>
+<p>| Option   | Description                                      |
+|----------|--------------------------------------------------|
+| <code>-F</code>     | Set input field separator (default: space/tab). |
+| <code>-v</code>     | Define and pass a variable to <code>awk</code>.            |
+| <code>BEGIN</code>  | Executes before processing data (e.g., initialization). |
+| <code>END</code>    | Executes after processing all data.             |
+| Condition | e.g., <code>$1 &gt; 100</code> matches lines where the first field is greater than 100. |</p>
+<h5>Built-in Variables:</h5>
+<p>| Variable | Description                                  |
+|----------|----------------------------------------------|
+| <code>$0</code>     | The entire current line.                     |
+| <code>$1...</code>  | The first, second, etc., fields of the line. |
+| <code>NR</code>     | Current line number (Number of Records).     |
+| <code>NF</code>     | Number of fields in the current line.        |
+| <code>FS</code>     | Input field separator (Field Separator).     |
+| <code>OFS</code>    | Output field separator (Output Field Separator). |</p>
+<h5>Examples:</h5>
+<ul>
+<li>Print each line of a file:</li>
+</ul>
+<pre><code class="language-shell">awk '{ print $0 }' file.txt
+</code></pre>
+<ul>
+<li>Print the first and third fields of each line:</li>
+</ul>
+<pre><code class="language-shell">awk '{ print $1, $3 }' file.txt
+</code></pre>
+<ul>
+<li>Print the second field using a comma as the delimiter:</li>
+</ul>
+<pre><code class="language-shell">awk -F &quot;,&quot; '{ print $2 }' data.csv
+</code></pre>
+<ul>
+<li>Print lines where the first field is greater than 50:</li>
+</ul>
+<pre><code class="language-shell">awk '$1 &gt; 50 { print $0 }' file.txt
+</code></pre>
+<ul>
+<li>Print lines containing &quot;error&quot;:</li>
+</ul>
+<pre><code class="language-shell">awk '/error/ { print $0 }' log.txt
+</code></pre>
+<ul>
+<li>Print each line along with the number of fields it has:</li>
+</ul>
+<pre><code class="language-shell">awk '{ print $0, &quot;Fields:&quot;, NF }' file.txt
+</code></pre>
+<ul>
+<li>Print the total number of lines after processing:</li>
+</ul>
+<pre><code class="language-shell">awk 'END { print &quot;Total lines:&quot;, NR }' file.txt
+</code></pre>
+<ul>
+<li>Print &quot;Processing started&quot; before reading, the first field for each line, and &quot;Processing finished&quot; after:</li>
+</ul>
+<pre><code class="language-shell">awk 'BEGIN { print &quot;Processing started&quot; } { print $1 } END { print &quot;Processing finished&quot; }' file.txt
+</code></pre>
+<ul>
+<li>Print lines where the first field is greater than 100 using a variable:</li>
+</ul>
+<pre><code class="language-shell">awk -v threshold=100 '$1 &gt; threshold { print $0 }' file.txt
+</code></pre>
+<ul>
+<li>Calculate the sum of the first field in the file:</li>
+</ul>
+<pre><code class="language-shell">awk '{ sum += $1 } END { print &quot;Total:&quot;, sum }' file.txt
+</code></pre>
+<hr>
+<h4>sed</h4>
+<ul>
+<li><code>sed</code> (Stream Editor) is a powerful tool for performing batch text processing, including search and replace, deletion, and insertion. It works with files or standard input text streams.</li>
+<li><strong>Basic Syntax</strong></li>
+</ul>
+<pre><code class="language-bash">sed [options] 'script command' file
+</code></pre>
+<blockquote>
+<p><strong>Script command</strong>: Specifies the rule for text processing, such as replacement or deletion.<br>
+<strong>File</strong>: The file to process, or text can be passed through a pipeline.</p>
+</blockquote>
+<h5>Common Options:</h5>
+<p>| Option  | Description                                    |
+|---------|----------------------------------------------|
+| <code>-n</code>    | Suppress automatic output; only print specified lines. |
+| <code>-e</code>    | Allow multiple script commands.              |
+| <code>-i</code>    | Edit the file in place (modify it directly). |
+| <code>-f</code>    | Load script commands from a file.           |</p>
+<h5>Common Commands:</h5>
+<p>| Command     | Description                                  |
+|------------|----------------------------------------------|
+| <code>s/old/new/</code> | Replace <code>old</code> with <code>new</code>.                 |
+| <code>d</code>        | Delete the matching lines.                 |
+| <code>p</code>        | Print matching lines (use with <code>-n</code>).      |
+| <code>a\text</code>   | Append text after the current line.        |
+| <code>i\text</code>   | Insert text before the current line.       |
+| <code>c\text</code>   | Replace matching lines with new text.      |
+| <code>q</code>        | Quit early, stopping further processing.   |</p>
+<h5>Examples:</h5>
+<ul>
+<li>Replace the first occurrence of <code>old</code> with <code>new</code> in <code>file.txt</code>:</li>
+</ul>
+<pre><code class="language-shell">sed 's/old/new/' file.txt
+</code></pre>
+<ul>
+<li>Delete the second line of <code>file.txt</code>:</li>
+</ul>
+<pre><code class="language-shell">sed '2d' file.txt
+</code></pre>
+<ul>
+<li>Append <code>&quot;This is a new line&quot;</code> after the third line:</li>
+</ul>
+<pre><code class="language-shell">sed '3a\This is a new line' file.txt
+</code></pre>
+<ul>
+<li>Insert <code>&quot;This is an inserted line&quot;</code> before the third line:</li>
+</ul>
+<pre><code class="language-shell">sed '3i\This is an inserted line' file.txt
+</code></pre>
+<ul>
+<li>Replace the content of the second line with <code>&quot;This is the new content&quot;</code>:</li>
+</ul>
+<pre><code class="language-shell">sed '2c\This is the new content' file.txt
+</code></pre>
+<ul>
+<li>Print only lines containing <code>&quot;pattern&quot;</code>:</li>
+</ul>
+<pre><code class="language-shell">sed -n '/pattern/p' file.txt
+</code></pre>
+<ul>
+<li>Delete the first line and replace <code>&quot;foo&quot;</code> with <code>&quot;bar&quot;</code>:</li>
+</ul>
+<pre><code class="language-shell">sed '1d; s/foo/bar/' file.txt
+</code></pre>
+<ul>
+<li>Modify <code>file.txt</code> directly, replacing all occurrences of <code>old</code> with <code>new</code>:</li>
+</ul>
+<pre><code class="language-shell">sed -i 's/old/new/g' file.txt
+</code></pre>
+<ul>
+<li>Delete lines 2 through 4:</li>
+</ul>
+<pre><code class="language-shell">sed '2,4d' file.txt
+</code></pre>
+<ul>
+<li>Apply commands from <code>script.sed</code> to <code>file.txt</code>:</li>
+</ul>
+<pre><code class="language-shell">sed -f script.sed file.txt
+</code></pre>
+<p>These three tools—<strong>grep</strong>, <strong>awk</strong>, and <strong>sed</strong>—are essential for powerful text processing in Linux.</p>
+
+            </div>
+        
+                </div>
+                
+                <div class="cta-box">
+                    <p class="mb-4 fw-bold">如果您正面临上述效率瓶颈，请立即尝试</p>
+                    <a href="https://gotool.top/en/knowledge/linuxthree" target="_blank" class="btn-go">进入 Linux Three Musketeers Quick Survey| grep/awk/sed tutorials- GoTool Online Toolset 工具页面 →</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="../index.html" class="back-link">← 返回工具主导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
