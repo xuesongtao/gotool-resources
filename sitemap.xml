@@ -2,1620 +2,1620 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gotool.top/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/fmtsql.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtsql.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/fmtsql.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/fmtsql.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtsql.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-csv.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-csv.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-csv.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-csv.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-csv.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-ts.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-ts.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ts.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-gorm.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-gorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-gorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-gorm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-gorm.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-xorm.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-xorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-xorm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xorm.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-dml.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-dml.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-dml.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-dml.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-dml.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-ent.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ent.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-ent.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-ent.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ent.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-xml.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xml.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-xml.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-xml.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xml.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-sqlalchemy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-sqlalchemy.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-sqlalchemy.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-sqlalchemy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-sqlalchemy.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-cus.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-cus.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-cus.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-cus.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-cus.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-md.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-md.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-md.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sql-to-esmapping.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-esmapping.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-esmapping.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-esmapping.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-esmapping.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/fmtjson.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/fmtjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/fmtjson.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtjson.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/json-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/mockjson.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/mockjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/mockjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/mockjson.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/mockjson.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/json-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/xml-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/xml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/xml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/xml-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/xml-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/yaml-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/yaml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/yaml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/yaml-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/yaml-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/es-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/json-to-tsinterface.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-tsinterface.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-tsinterface.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-tsinterface.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-tsinterface.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/struct-to-ts.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/struct-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/struct-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/struct-to-ts.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/struct-to-ts.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/json-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/swagger-to-md.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/swagger-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/swagger-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/swagger-to-md.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/swagger-to-md.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/es-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/es-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/json-to-es.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-es.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-es.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/md5.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/md5.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/md5.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/md5.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/md5.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/base64.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/url.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/url.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/url.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/url.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/url.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/gensafepwd.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gensafepwd.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gensafepwd.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gensafepwd.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gensafepwd.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/imgresize.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgresize.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/imgresize.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/imgresize.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgresize.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/imgcompress.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgcompress.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/imgcompress.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/imgcompress.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgcompress.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/img-to-base64.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/img-to-base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/img-to-base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/img-to-base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/img-to-base64.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/base64-to-img.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64-to-img.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/base64-to-img.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/base64-to-img.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64-to-img.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/handlere.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handlere.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/handlere.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/handlere.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handlere.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/similarity.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/similarity.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/similarity.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/similarity.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/similarity.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/sumtext.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sumtext.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sumtext.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sumtext.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sumtext.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/genuuid.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genuuid.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/genuuid.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/genuuid.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genuuid.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/transfertxt.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transfertxt.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/transfertxt.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/transfertxt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transfertxt.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/genqrcode.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genqrcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/genqrcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/genqrcode.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genqrcode.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/transferfile.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transferfile.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/transferfile.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/transferfile.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transferfile.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/gencrontab.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencrontab.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gencrontab.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gencrontab.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencrontab.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/gencurl.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencurl.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gencurl.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gencurl.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencurl.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/curl-to-go.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/curl-to-go.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/curl-to-go.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/curl-to-go.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/curl-to-go.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/keyboardcode.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/keyboardcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/keyboardcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/keyboardcode.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/keyboardcode.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/gitcmd.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gitcmd.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gitcmd.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gitcmd.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gitcmd.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/linuxthree.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/linuxthree.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/linuxthree.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/linuxthree.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/linuxthree.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/setnginx.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/setnginx.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/setnginx.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/setnginx.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/setnginx.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/scpdoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/scpdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/scpdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/scpdoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/scpdoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/dockerdoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/dockerdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/dockerdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/dockerdoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/dockerdoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/finddoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/finddoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/finddoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/finddoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/finddoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/handledate.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handledate.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/handledate.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/handledate.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handledate.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/searchip.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/searchip.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/searchip.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/searchip.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/searchip.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/basenumconvert.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/basenumconvert.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/basenumconvert.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/basenumconvert.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/basenumconvert.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/en/docs/hulmei.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/hulmei.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/hulmei.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/hulmei.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/hulmei.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/fmtsql.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtsql.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/fmtsql.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/fmtsql.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtsql.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-csv.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-csv.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-csv.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-csv.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-csv.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-ts.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-ts.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ts.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-gorm.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-gorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-gorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-gorm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-gorm.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-xorm.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-xorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-xorm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xorm.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-dml.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-dml.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-dml.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-dml.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-dml.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-ent.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ent.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-ent.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-ent.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ent.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-xml.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xml.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-xml.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-xml.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xml.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-sqlalchemy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-sqlalchemy.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-sqlalchemy.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-sqlalchemy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-sqlalchemy.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-cus.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-cus.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-cus.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-cus.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-cus.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-md.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-md.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-md.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sql-to-esmapping.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-esmapping.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-esmapping.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-esmapping.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-esmapping.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/fmtjson.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/fmtjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/fmtjson.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtjson.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/json-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/mockjson.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/mockjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/mockjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/mockjson.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/mockjson.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/json-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/xml-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/xml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/xml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/xml-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/xml-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/yaml-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/yaml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/yaml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/yaml-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/yaml-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/es-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/json-to-tsinterface.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-tsinterface.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-tsinterface.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-tsinterface.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-tsinterface.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/struct-to-ts.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/struct-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/struct-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/struct-to-ts.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/struct-to-ts.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/json-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/swagger-to-md.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/swagger-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/swagger-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/swagger-to-md.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/swagger-to-md.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/es-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/es-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/json-to-es.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-es.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-es.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/md5.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/md5.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/md5.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/md5.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/md5.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/base64.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/url.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/url.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/url.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/url.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/url.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/gensafepwd.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gensafepwd.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gensafepwd.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gensafepwd.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gensafepwd.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/imgresize.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgresize.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/imgresize.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/imgresize.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgresize.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/imgcompress.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgcompress.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/imgcompress.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/imgcompress.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgcompress.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/img-to-base64.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/img-to-base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/img-to-base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/img-to-base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/img-to-base64.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/base64-to-img.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64-to-img.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/base64-to-img.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/base64-to-img.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64-to-img.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/handlere.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handlere.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/handlere.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/handlere.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handlere.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/similarity.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/similarity.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/similarity.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/similarity.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/similarity.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/sumtext.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sumtext.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sumtext.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sumtext.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sumtext.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/genuuid.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genuuid.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/genuuid.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/genuuid.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genuuid.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/transfertxt.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transfertxt.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/transfertxt.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/transfertxt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transfertxt.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/genqrcode.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genqrcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/genqrcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/genqrcode.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genqrcode.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/transferfile.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transferfile.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/transferfile.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/transferfile.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transferfile.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/gencrontab.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencrontab.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gencrontab.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gencrontab.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencrontab.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/gencurl.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencurl.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gencurl.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gencurl.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencurl.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/curl-to-go.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/curl-to-go.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/curl-to-go.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/curl-to-go.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/curl-to-go.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/keyboardcode.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/keyboardcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/keyboardcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/keyboardcode.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/keyboardcode.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/gitcmd.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gitcmd.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gitcmd.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gitcmd.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gitcmd.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/linuxthree.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/linuxthree.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/linuxthree.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/linuxthree.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/linuxthree.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/setnginx.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/setnginx.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/setnginx.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/setnginx.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/setnginx.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/scpdoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/scpdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/scpdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/scpdoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/scpdoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/dockerdoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/dockerdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/dockerdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/dockerdoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/dockerdoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/finddoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/finddoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/finddoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/finddoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/finddoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/handledate.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handledate.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/handledate.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/handledate.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handledate.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/searchip.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/searchip.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/searchip.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/searchip.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/searchip.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/basenumconvert.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/basenumconvert.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/basenumconvert.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/basenumconvert.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/basenumconvert.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/docs/hulmei.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/hulmei.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/hulmei.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/hulmei.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/hulmei.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/fmtsql.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtsql.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/fmtsql.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/fmtsql.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtsql.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-csv.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-csv.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-csv.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-csv.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-csv.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-ts.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-ts.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ts.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-gorm.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-gorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-gorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-gorm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-gorm.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-xorm.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-xorm.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-xorm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xorm.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-dml.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-dml.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-dml.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-dml.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-dml.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-ent.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ent.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-ent.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-ent.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-ent.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-xml.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xml.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-xml.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-xml.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-xml.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-sqlalchemy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-sqlalchemy.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-sqlalchemy.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-sqlalchemy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-sqlalchemy.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-cus.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-cus.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-cus.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-cus.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-cus.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-md.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-md.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-md.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sql-to-esmapping.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-esmapping.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sql-to-esmapping.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sql-to-esmapping.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sql-to-esmapping.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/fmtjson.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/fmtjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/fmtjson.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/fmtjson.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/json-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/mockjson.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/mockjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/mockjson.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/mockjson.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/mockjson.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/json-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/xml-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/xml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/xml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/xml-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/xml-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/yaml-to-json.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/yaml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/yaml-to-json.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/yaml-to-json.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/yaml-to-json.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/es-to-struct.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-struct.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-struct.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-struct.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/json-to-tsinterface.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-tsinterface.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-tsinterface.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-tsinterface.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-tsinterface.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/struct-to-ts.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/struct-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/struct-to-ts.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/struct-to-ts.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/struct-to-ts.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/json-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/swagger-to-md.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/swagger-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/swagger-to-md.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/swagger-to-md.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/swagger-to-md.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/es-to-java.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-java.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-java.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-java.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/es-to-proto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/es-to-proto.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/es-to-proto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/es-to-proto.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/json-to-es.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/json-to-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/json-to-es.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/json-to-es.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/md5.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/md5.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/md5.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/md5.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/md5.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/base64.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/url.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/url.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/url.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/url.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/url.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/gensafepwd.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gensafepwd.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gensafepwd.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gensafepwd.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gensafepwd.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/imgresize.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgresize.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/imgresize.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/imgresize.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgresize.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/imgcompress.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgcompress.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/imgcompress.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/imgcompress.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/imgcompress.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/img-to-base64.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/img-to-base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/img-to-base64.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/img-to-base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/img-to-base64.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/base64-to-img.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64-to-img.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/base64-to-img.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/base64-to-img.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/base64-to-img.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/handlere.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handlere.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/handlere.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/handlere.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handlere.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/similarity.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/similarity.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/similarity.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/similarity.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/similarity.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/sumtext.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sumtext.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/sumtext.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/sumtext.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/sumtext.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/genuuid.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genuuid.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/genuuid.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/genuuid.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genuuid.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/transfertxt.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transfertxt.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/transfertxt.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/transfertxt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transfertxt.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/genqrcode.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genqrcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/genqrcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/genqrcode.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/genqrcode.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/transferfile.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transferfile.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/transferfile.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/transferfile.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/transferfile.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/gencrontab.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencrontab.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gencrontab.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gencrontab.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencrontab.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/gencurl.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencurl.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gencurl.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gencurl.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gencurl.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/curl-to-go.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/curl-to-go.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/curl-to-go.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/curl-to-go.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/curl-to-go.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/keyboardcode.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/keyboardcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/keyboardcode.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/keyboardcode.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/keyboardcode.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/gitcmd.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gitcmd.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/gitcmd.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/gitcmd.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/gitcmd.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/linuxthree.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/linuxthree.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/linuxthree.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/linuxthree.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/linuxthree.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/setnginx.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/setnginx.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/setnginx.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/setnginx.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/setnginx.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/scpdoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/scpdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/scpdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/scpdoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/scpdoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/dockerdoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/dockerdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/dockerdoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/dockerdoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/dockerdoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/finddoc.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/finddoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/finddoc.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/finddoc.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/finddoc.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/handledate.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handledate.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/handledate.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/handledate.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/handledate.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/searchip.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/searchip.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/searchip.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/searchip.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/searchip.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/basenumconvert.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/basenumconvert.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/basenumconvert.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/basenumconvert.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/basenumconvert.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gotool.top/zh-tw/docs/hulmei.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/hulmei.html" />
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://gotool.top/docs/hulmei.html" />
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://gotool.top/zh-tw/docs/hulmei.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gotool.top/en/docs/hulmei.html" />
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
