@@ -1,3 +1,13 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /tmp/
+
+# Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
 Sitemap: https://gotool.top/sitemap.xml
