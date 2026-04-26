@@ -98,20 +98,49 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>🛠 功能简介</h3>
+                <h3 id="-">🛠 功能简介</h3>
 <p>该工具可将 Go 语言中的 <code>struct</code> 结构体转换为 TypeScript 类型定义（interface 或 type），支持解析常见基础类型、数组、map、嵌套结构体、<code>json</code> 标签等。</p>
-<h3>✅ 支持的 Go 类型</h3>
-<p>| Go 类型               | TypeScript 类型 |
-| --------------------- | --------------- |
-| <code>string</code>              | <code>string</code>        |
-| <code>int</code> / <code>int64</code>       | <code>number</code>        |
-| <code>float32</code> / <code>float64</code> | <code>number</code>        |
-| <code>bool</code>                | <code>boolean</code>       |
-| <code>[]T</code>                 | <code>T[]</code>           |
-| <code>T</code>                   | <code>T</code>             |
-| <code>other</code>               | <code>string</code>        |</p>
-<h3>📝 使用示例</h3>
-<h4>输入 Go 结构体：</h4>
+<h3 id="--go-">✅ 支持的 Go 类型</h3>
+<table>
+<thead>
+<tr>
+<th>Go 类型</th>
+<th>TypeScript 类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>string</code></td>
+<td><code>string</code></td>
+</tr>
+<tr>
+<td><code>int</code> / <code>int64</code></td>
+<td><code>number</code></td>
+</tr>
+<tr>
+<td><code>float32</code> / <code>float64</code></td>
+<td><code>number</code></td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td><code>boolean</code></td>
+</tr>
+<tr>
+<td><code>[]T</code></td>
+<td><code>T[]</code></td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>other</code></td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="--1">📝 使用示例</h3>
+<h4 id="-go-">输入 Go 结构体：</h4>
 <pre><code class="language-go">type User struct {
   ID        int       `json:&quot;id&quot;`
   Name      string    `json:&quot;name&quot;`
@@ -120,7 +149,7 @@
   Tags      []string  `json:&quot;tags&quot;`
 }
 </code></pre>
-<h4>输出 TypeScript 类型：</h4>
+<h4 id="-typescript-">输出 TypeScript 类型：</h4>
 <pre><code class="language-ts">interface User {
   id: number;
   name: string;

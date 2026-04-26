@@ -98,24 +98,45 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>VSCode Plugin</h3>
+                <h3 id="vscode-plugin">VSCode Plugin</h3>
 <ul>
 <li>将 GoTool 的常用的功能集成到 VSCode 编辑器中</li>
 </ul>
-<h5>使用说明</h5>
+<h5 id="heading">使用说明</h5>
 <ol>
 <li>在编辑器中选中需要转换的文本（SQL 或 JSON）。</li>
 <li>点击右键，选择 <strong>GoTool: SQL Convert Tools</strong> 或 <strong>GoTool: JSON Convert Tools</strong> 等。</li>
 <li>在子菜单中选择目标格式。</li>
 <li>转换结果将在预览窗口展示，确认无误后可点击按钮一键替换原选中文本。</li>
 </ol>
-<h5>插件网络配置</h5>
+<h5 id="heading-1">插件网络配置</h5>
 <p>在 VSCode 中打开设置（快捷键 <code>Cmd + ,</code> 或 <code>Ctrl + ,</code>），搜索 <code>gotool</code> 即可找到以下专属配置项：</p>
-<p>| 配置项          | 说明                         | 必须配置                     |
-| :-------------- | :--------------------------- | :--------------------------- |
-| <code>gotool.webUrl</code> | GoTool 主站服务地址          | <code>https://gotool.top</code>         |
-| <code>gotool.apiUrl</code> | 后端 API 服务地址            | <code>https://gotool.top/toolapi</code> |
-| <code>gotool.token</code>  | 用户授权 Token，用于验证会员 | （无）                       |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">配置项</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">必须配置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>gotool.webUrl</code></td>
+<td style="text-align:left">GoTool 主站服务地址</td>
+<td style="text-align:left"><code>https://gotool.top</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>gotool.apiUrl</code></td>
+<td style="text-align:left">后端 API 服务地址</td>
+<td style="text-align:left"><code>https://gotool.top/toolapi</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>gotool.token</code></td>
+<td style="text-align:left">用户授权 Token，用于验证会员</td>
+<td style="text-align:left">（无）</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p><strong>如何获取 Token？</strong>
 会主动跳转到【个人中心】后点击 <strong>【授权 VSCode】</strong> 按钮即可获取 Token 并在此处配置。</p>

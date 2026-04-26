@@ -98,7 +98,7 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>功能介绍</h3>
+                <h3 id="heading">功能介绍</h3>
 <blockquote>
 <p>1.支持多种数据库的建表 sql转struct, 其中包含(pg、oracle、mysql)等数据库; <strong>建表语句</strong>, <strong>建表语句</strong>, <strong>建表语句</strong>(重要的说3遍)<br>
 2.在转换 sql 的时候, 需要确认下是否需要切换处理类型, 暂时支持3种处理方式(<strong>normal</strong>, <strong>postgresql</strong>, <strong>oracle</strong>), 默认: <strong>normal</strong>.<br>
@@ -106,8 +106,8 @@
 <strong>说明</strong>: <strong>不能在 sql 中包含注释内容</strong>(即: <code>-- xxx</code> 或 <code># xxx</code>); 由于此工具是通过 <strong>;</strong> 来分割语句处理. 所以 <strong>normal</strong> 状态下可以同时处理多个建表语句; <strong>postgresql</strong> 和 <strong>oracle</strong> 由于需要解析注释, 只支持单个建表语句.</p>
 </blockquote>
 <!-- raw HTML omitted -->
-<h3>示例</h3>
-<h5>mysql 建表语句</h5>
+<h3 id="heading-1">示例</h3>
+<h5 id="mysql-">mysql 建表语句</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(10) NOT NULL COMMENT '姓名',
@@ -128,7 +128,7 @@
     UpdatedDate string `json:&quot;updated_date,omitempty&quot;`
 }
 </code></pre>
-<h5>pgsql 建表语句</h5>
+<h5 id="pgsql-">pgsql 建表语句</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
 	id character varying(32) NOT NULL DEFAULT sys_guid(),
 	name character varying(10) NOT NULL,
@@ -156,7 +156,7 @@ COMMENT ON COLUMN user.updated_date IS '更新时间';
     UpdatedDate string `json:&quot;updated_date,omitempty&quot;`
 }
 </code></pre>
-<h5>oracle 建表语句</h5>
+<h5 id="oracle-">oracle 建表语句</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
 	id character varying(32) NOT NULL DEFAULT sys_guid(),
 	name character varying(10) NOT NULL,

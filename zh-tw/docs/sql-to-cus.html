@@ -98,7 +98,7 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>功能介绍</h3>
+                <h3 id="heading">功能介绍</h3>
 <blockquote>
 <p>1.支持多种数据库的建表 sql转自定义模型, 其中包含(pg、oracle、mysql)等数据库; <strong>建表语句</strong>, <strong>建表语句</strong>, <strong>建表语句</strong>(重要的说3遍)
 2.在转换 sql 的时候, 需要确认下是否需要切换处理类型, 暂时支持3种处理方式(<strong>normal</strong>, <strong>postgresql</strong>, <strong>oracle</strong>), 默认: <strong>normal</strong>.
@@ -106,8 +106,8 @@
 <strong>说明</strong>: <strong>不能在 sql 中包含注释内容</strong>(即: <code>-- xxx</code> 或 <code># xxx</code>); 由于此工具是通过 <strong>;</strong> 来分割语句处理. 所以 <strong>normal</strong> 状态下可以同时处理多个建表语句; <strong>postgresql</strong> 和 <strong>oracle</strong> 由于需要解析注释, 只支持单个建表语句.</p>
 </blockquote>
 <!-- raw HTML omitted -->
-<h3>模板说明</h3>
-<h5>会用到的语法说明</h5>
+<h3 id="heading-1">模板说明</h3>
+<h5 id="heading-2">会用到的语法说明</h5>
 <ul>
 <li><code>if</code> 条件</li>
 </ul>
@@ -163,37 +163,131 @@ ge      如果arg1 &gt;= arg2则返回真
 {{- end }}
 &lt;/ul&gt;
 </code></pre>
-<h4>模板介绍</h4>
+<h4 id="heading-3">模板介绍</h4>
 <ul>
 <li>字段介绍</li>
 </ul>
-<p>| 字段                                  | 说明           | 类型    |
-| ------------------------------------- | -------------- | ------- |
-| TableName                             | 表名           | string  |
-| TableComment                          | 表注释         | string  |
-| Fields                                | 字段名         | objects |
-|     No            | 序号           | int     |
-|     NotNull       | 不为空         | bool    |
-|     AutoIncrement | 自增           | bool    |
-|     PrimaryKey    | 主键           | bool    |
-|     Name          | 字段名         | string  |
-|     ModelType     | 模型字段类型   | string  |
-|     DbType        | 数据库字段类型 | string  |
-|     Comment       | 注释           | string  |
-|     Default       | 默认值         | string  |</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TableName</td>
+<td>表名</td>
+<td>string</td>
+</tr>
+<tr>
+<td>TableComment</td>
+<td>表注释</td>
+<td>string</td>
+</tr>
+<tr>
+<td>Fields</td>
+<td>字段名</td>
+<td>objects</td>
+</tr>
+<tr>
+<td>    No</td>
+<td>序号</td>
+<td>int</td>
+</tr>
+<tr>
+<td>    NotNull</td>
+<td>不为空</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>    AutoIncrement</td>
+<td>自增</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>    PrimaryKey</td>
+<td>主键</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>    Name</td>
+<td>字段名</td>
+<td>string</td>
+</tr>
+<tr>
+<td>    ModelType</td>
+<td>模型字段类型</td>
+<td>string</td>
+</tr>
+<tr>
+<td>    DbType</td>
+<td>数据库字段类型</td>
+<td>string</td>
+</tr>
+<tr>
+<td>    Comment</td>
+<td>注释</td>
+<td>string</td>
+</tr>
+<tr>
+<td>    Default</td>
+<td>默认值</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>函数介绍</li>
 </ul>
-<p>| 函数名       | 说明               | 示例                         |
-| ------------ | ------------------ | ---------------------------- |
-| addLine      | 追加换行符         |                              |
-| toFirstUpper | 首字母大写         |                              |
-| toFirstUpper | 首字母大写         |                              |
-| toFirstLower | 首字母小写         |                              |
-| sub          | 求差               |                              |
-| hump         | 将db字段按驼峰处理 | <code>hump test_a</code> 处理后 <code>TestA</code> |
-| len          | 长度               |                              |</p>
-<h4>示例模板</h4>
+<table>
+<thead>
+<tr>
+<th>函数名</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>addLine</td>
+<td>追加换行符</td>
+<td></td>
+</tr>
+<tr>
+<td>toFirstUpper</td>
+<td>首字母大写</td>
+<td></td>
+</tr>
+<tr>
+<td>toFirstUpper</td>
+<td>首字母大写</td>
+<td></td>
+</tr>
+<tr>
+<td>toFirstLower</td>
+<td>首字母小写</td>
+<td></td>
+</tr>
+<tr>
+<td>sub</td>
+<td>求差</td>
+<td></td>
+</tr>
+<tr>
+<td>hump</td>
+<td>将db字段按驼峰处理</td>
+<td><code>hump test_a</code> 处理后 <code>TestA</code></td>
+</tr>
+<tr>
+<td>len</td>
+<td>长度</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="heading-4">示例模板</h4>
 <ul>
 <li><code>sql转struct</code></li>
 </ul>
@@ -203,8 +297,8 @@ ge      如果arg1 &gt;= arg2则返回真
 {{- end }}
 }
 </code></pre>
-<h3>示例</h3>
-<h5>mysql 建表语句</h5>
+<h3 id="heading-5">示例</h3>
+<h5 id="mysql-">mysql 建表语句</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(10) NOT NULL COMMENT '姓名',

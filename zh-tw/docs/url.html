@@ -98,21 +98,21 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>功能介紹</h3>
+                <h3 id="heading">功能介紹</h3>
 <p>1.使用 JavaScript 的 <strong><code>encodeURI</code></strong> 和 <strong><code>encodeURIComponent</code></strong> 進行編碼。
 2.使用 JavaScript 的 <strong><code>decodeURIComponent</code></strong> 進行解碼。</p>
-<h3>方法介紹</h3>
-<h4><code>encodeURI</code></h4>
+<h3 id="heading-1">方法介紹</h3>
+<h4 id="encodeuri"><code>encodeURI</code></h4>
 <ul>
 <li><strong>用途</strong>: 用於編碼整個 URI。例如：<code>&quot;http://example.com/這是測試?name=張三&quot;</code>。</li>
 <li><strong>編碼規則</strong>: 只會編碼在 URI 中具有特殊意義的字元，如空格（編碼為 <code>%20</code>）、<code>#</code>（編碼為 <code>%23</code>）等。不會編碼以下字元：<code>A-Z</code>、<code>a-z</code>、<code>0-9</code>、<code>-</code>、<code>_</code>、<code>.</code>、<code>!</code>、<code>~</code>、<code>*</code>、<code>'</code>、<code>(</code>、<code>)</code>、<code>;</code>、<code>/</code>、<code>?</code>、<code>:</code>、<code>@</code>、<code>&amp;</code>、<code>=</code>、<code>+</code>、<code>$</code>、<code>,</code>，因為這些字元在 URI 中具有特定意義。</li>
 </ul>
-<h4><code>encodeURIComponent</code></h4>
+<h4 id="encodeuricomponent"><code>encodeURIComponent</code></h4>
 <ul>
 <li><strong>用途</strong>: 用於編碼 URI 的一部分（例如查詢參數的值），而不是整個 URI。例如：<code>&quot;name=張三&amp;age=25&quot;</code>。</li>
 <li><strong>編碼規則</strong>: <code>encodeURIComponent</code> 會編碼所有非字母數位字元，包括 <code>;</code>、<code>/</code>、<code>?</code>、<code>:</code>、<code>@</code>、<code>&amp;</code>、<code>=</code>、<code>+</code>、<code>$</code>、<code>,</code> 等，因為這些字元在 URI 元件中沒有特殊意義，所以都被編碼。</li>
 </ul>
-<h4><code>decodeURIComponent</code></h4>
+<h4 id="decodeuricomponent"><code>decodeURIComponent</code></h4>
 <ul>
 <li><strong>用途</strong>: 用於解碼單個 URI 元件（如查詢參數的值），將 <code>encodeURIComponent</code> 編碼的字元還原為原始字元。</li>
 <li><strong>解碼規則</strong>: <code>decodeURIComponent</code> 會解碼所有由 <code>encodeURIComponent</code> 編碼的字元，將 <code>%</code> 開頭的編碼轉換回對應的字元。例如，<code>%20</code> 會被解碼為空格，<code>%3D</code> 會被解碼為 <code>=</code>。</li>

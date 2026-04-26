@@ -98,7 +98,7 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>feature introduction</h3>
+                <h3 id="feature-introduction">feature introduction</h3>
 <blockquote>
 <ol>
 <li>Table creation sql to json supporting multiple databases, including (pg, oracle, mysql) and other databases;<strong>table-building statements</strong>,<strong>table-building statements</strong>,<strong>table-building statements</strong>(important statements are said 3 times)</li>
@@ -107,8 +107,8 @@
 </ol>
 </blockquote>
 <!-- raw HTML omitted -->
-<h3>example</h3>
-<h4>mysql table statement</h4>
+<h3 id="example">example</h3>
+<h4 id="mysql-table-statement">mysql table statement</h4>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(10) NOT NULL COMMENT 'name ',
@@ -129,7 +129,7 @@
     &quot;updated_date&quot;: &quot;&quot;
 }
 </code></pre>
-<h4>pgsql table statement</h4>
+<h4 id="pgsql-table-statement">pgsql table statement</h4>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id character varying (32) NOT NULL DEFAULT sys_guid ()
     name character varying (10) NOT NULL
@@ -157,7 +157,7 @@ COMMENT ON COLUMN user.updated_date IS 'update time'
     &quot;updated_date&quot;: &quot;&quot;
 }
 </code></pre>
-<h4>oracle table statement</h4>
+<h4 id="oracle-table-statement">oracle table statement</h4>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id character varying (32) NOT NULL DEFAULT sys_guid ()
     name character varying (10) NOT NULL

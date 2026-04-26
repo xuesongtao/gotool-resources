@@ -98,28 +98,28 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>在线实时传输 (TransferTxt)</h3>
+                <h3 id="-transfertxt">在线实时传输 (TransferTxt)</h3>
 <p>在线实时传输是一个基于 Web 的文本同步工具，支持多端实时互传文本内容。</p>
-<h5>核心特性</h5>
+<h5 id="heading">核心特性</h5>
 <ul>
 <li><strong>实时同步</strong>：基于 <code>SSE (Server-Sent Events)</code> 和 <code>WebSocket</code> 技术实现，优先使用 <code>SSE</code> 以获得更好的连接稳定性, 同时3个设备同步。</li>
 <li><strong>零延迟</strong>：一旦一方修改，所有连接同一通道的终端将立即收到更新。</li>
 <li><strong>多端支持</strong>：支持 PC、手机等多种设备浏览器同时访问.</li>
 </ul>
-<h5>存储规则</h5>
+<h5 id="heading-1">存储规则</h5>
 <ul>
 <li><strong>有效期</strong>：文本内容将在服务器中保留 <strong>10 分钟</strong>。</li>
 <li><strong>计算方式</strong>：有效时间以<strong>最后一次修改开始计算</strong>。每次更新文本内容，倒计时将重新开始。</li>
 <li><strong>自动清理</strong>：超过有效期未更新，内容将被系统自动清除，确保隐私安全。</li>
 </ul>
-<h5>使用场景</h5>
+<h5 id="heading-2">使用场景</h5>
 <ul>
 <li><strong>跨设备粘贴</strong>：在电脑上复制一段长文本或链接，手机端直接打开即可获取。</li>
 <li><strong>临时备忘</strong>：快速记录一些临时信息，多点同步。</li>
 <li><strong>简单协作</strong>：与伙伴实时共享并编辑同一段文本。</li>
 <li><strong>服务器日志</strong>：通过 curl 用于发送服务器日志信息。</li>
 </ul>
-<h5>安全与隐私</h5>
+<h5 id="heading-3">安全与隐私</h5>
 <ul>
 <li>传输过程加密，不进行持久化存储。</li>
 <li>内容到期自动销毁，不留痕迹。</li>

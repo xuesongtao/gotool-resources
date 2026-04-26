@@ -98,69 +98,129 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3><code>scp</code> Command Quick Reference</h3>
-<h4>Basic Syntax</h4>
+                <h3 id="scp-command-quick-reference"><code>scp</code> Command Quick Reference</h3>
+<h4 id="basic-syntax">Basic Syntax</h4>
 <pre><code class="language-bash">scp [options] [source_path] [destination_path]
 </code></pre>
 <hr>
-<h4>Common Usage Examples</h4>
-<h5>1. Upload local file to remote server</h5>
+<h4 id="common-usage-examples">Common Usage Examples</h4>
+<h5 id="1-upload-local-file-to-remote-server">1. Upload local file to remote server</h5>
 <pre><code class="language-bash">scp ./file.txt user@192.168.1.10:/home/user/
 </code></pre>
-<h5>2. Download file from remote server to local</h5>
+<h5 id="2-download-file-from-remote-server-to-local">2. Download file from remote server to local</h5>
 <pre><code class="language-bash">scp user@192.168.1.10:/home/user/file.txt ./file.txt
 </code></pre>
-<h5>3. Upload directory to remote server</h5>
+<h5 id="3-upload-directory-to-remote-server">3. Upload directory to remote server</h5>
 <pre><code class="language-bash">scp -r ./mydir user@192.168.1.10:/home/user/
 </code></pre>
-<h5>4. Download directory from remote server to local</h5>
+<h5 id="4-download-directory-from-remote-server-to-local">4. Download directory from remote server to local</h5>
 <pre><code class="language-bash">scp -r user@192.168.1.10:/home/user/mydir ./mydir
 </code></pre>
-<h5>5. Use specific port (e.g., 2222)</h5>
+<h5 id="5-use-specific-port-eg-2222">5. Use specific port (e.g., 2222)</h5>
 <pre><code class="language-bash">scp -P 2222 ./file.txt user@192.168.1.10:/home/user/
 </code></pre>
-<h5>6. Use specific private key file</h5>
+<h5 id="6-use-specific-private-key-file">6. Use specific private key file</h5>
 <pre><code class="language-bash">scp -i ~/.ssh/id_rsa ./file.txt user@192.168.1.10:/home/user/
 </code></pre>
 <hr>
-<h4>Common Options</h4>
-<p>| Option | Description                                   |
-| ------ | --------------------------------------------- |
-| <code>-r</code>   | Recursively copy entire directories           |
-| <code>-P</code>   | Specify remote host port (note: uppercase P)  |
-| <code>-i</code>   | Specify SSH private key file                  |
-| <code>-C</code>   | Enable compression to improve transfer speed  |
-| <code>-p</code>   | Preserve file modification times, permissions |
-| <code>-q</code>   | Quiet mode, suppress progress information     |</p>
+<h4 id="common-options">Common Options</h4>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-r</code></td>
+<td>Recursively copy entire directories</td>
+</tr>
+<tr>
+<td><code>-P</code></td>
+<td>Specify remote host port (note: uppercase P)</td>
+</tr>
+<tr>
+<td><code>-i</code></td>
+<td>Specify SSH private key file</td>
+</tr>
+<tr>
+<td><code>-C</code></td>
+<td>Enable compression to improve transfer speed</td>
+</tr>
+<tr>
+<td><code>-p</code></td>
+<td>Preserve file modification times, permissions</td>
+</tr>
+<tr>
+<td><code>-q</code></td>
+<td>Quiet mode, suppress progress information</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h4>Path Format</h4>
-<p>| Type        | Example                               |
-| ----------- | ------------------------------------- |
-| Local path  | <code>./file.txt</code> or <code>/home/user/file.txt</code> |
-| Remote path | <code>user@host:/path/to/file.txt</code>         |</p>
+<h4 id="path-format">Path Format</h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Local path</td>
+<td><code>./file.txt</code> or <code>/home/user/file.txt</code></td>
+</tr>
+<tr>
+<td>Remote path</td>
+<td><code>user@host:/path/to/file.txt</code></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h4>Common Error Troubleshooting</h4>
-<p>| Error                          | Possible Cause                                                                             |
-| ------------------------------ | ------------------------------------------------------------------------------------------ |
-| <code>Permission denied</code>            | Invalid SSH key, or no write permission to remote directory                                |
-| <code>No such file or directory</code>    | Incorrect source or destination path                                                       |
-| <code>Connection refused</code>           | Target port unreachable or SSH service not running                                         |
-| <code>Host key verification failed</code> | First time connecting to remote host, host fingerprint not accepted. Try <code>ssh</code> login first |</p>
+<h4 id="common-error-troubleshooting">Common Error Troubleshooting</h4>
+<table>
+<thead>
+<tr>
+<th>Error</th>
+<th>Possible Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Permission denied</code></td>
+<td>Invalid SSH key, or no write permission to remote directory</td>
+</tr>
+<tr>
+<td><code>No such file or directory</code></td>
+<td>Incorrect source or destination path</td>
+</tr>
+<tr>
+<td><code>Connection refused</code></td>
+<td>Target port unreachable or SSH service not running</td>
+</tr>
+<tr>
+<td><code>Host key verification failed</code></td>
+<td>First time connecting to remote host, host fingerprint not accepted. Try <code>ssh</code> login first</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h4>Additional Tips</h4>
-<h5>Copy file between two remote servers</h5>
+<h4 id="additional-tips">Additional Tips</h4>
+<h5 id="copy-file-between-two-remote-servers">Copy file between two remote servers</h5>
 <pre><code class="language-bash">scp user1@host1:/path/file.txt user2@host2:/path/
 </code></pre>
 <blockquote>
 <p>Current machine must have access to both host1 and host2</p>
 </blockquote>
-<h5>Batch upload files (script example)</h5>
+<h5 id="batch-upload-files-script-example">Batch upload files (script example)</h5>
 <pre><code class="language-bash">for f in *.log; do
   scp &quot;$f&quot; user@host:/var/logs/
 done
 </code></pre>
 <hr>
-<h4>Common Command Templates</h4>
+<h4 id="common-command-templates">Common Command Templates</h4>
 <pre><code class="language-bash">scp ./local.txt user@host:/remote/path/
 scp user@host:/remote/file.txt ./local/
 scp -r ./dir user@host:/remote/

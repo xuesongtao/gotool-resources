@@ -98,7 +98,7 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h4>将本地项目推送到远程仓库</h4>
+                <h4 id="heading">将本地项目推送到远程仓库</h4>
 <pre><code class="language-shell">git init 
 
 git add .
@@ -111,7 +111,7 @@ git pull --rebase origin xxx
 
 git push -u origin xxx
 </code></pre>
-<h4>编写了 .gitignore 后立即生效</h4>
+<h4 id="-gitignore-">编写了 .gitignore 后立即生效</h4>
 <pre><code class="language-shell"># 清除缓存  
 git rm -r --cached .  
 
@@ -121,7 +121,7 @@ git add .
 # 提交和注释 
 git commit -m &quot;update .gitignore&quot; 
 </code></pre>
-<h4>打 tag</h4>
+<h4 id="-tag">打 tag</h4>
 <pre><code class="language-shell"># 打 tag
 git tag -a v1.0.0 -m &quot;feat:xxx&quot;
 
@@ -134,7 +134,7 @@ git push origin v1.0.0
 # 如果要一次推送所有本地新增的标签上去
 git push origin --tags 
 </code></pre>
-<h4>删除操作</h4>
+<h4 id="heading-1">删除操作</h4>
 <pre><code class="language-shell"># 删除本地 tag
 git tag -d tagName 
 

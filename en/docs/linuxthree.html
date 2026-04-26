@@ -98,8 +98,8 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>Linux Three Musketeers (grep, awk, sed)</h3>
-<h4>grep</h4>
+                <h3 id="linux-three-musketeers-grep-awk-sed">Linux Three Musketeers (grep, awk, sed)</h3>
+<h4 id="grep">grep</h4>
 <ul>
 <li><code>grep</code> is a powerful command-line tool used to search for specified strings or regular expressions in files or text.</li>
 <li><strong>Basic Syntax</strong></li>
@@ -110,19 +110,54 @@
 <p><strong>Search pattern</strong>: Can be a plain string or a regular expression.<br>
 <strong>File</strong>: Specifies the file(s) to search, which can be one or more files or input from a pipeline.</p>
 </blockquote>
-<h5>Common Options:</h5>
-<p>| Option  | Description                                |
-|---------|--------------------------------------------|
-| <code>-i</code>    | Ignore case while matching.               |
-| <code>-v</code>    | Invert match, show non-matching lines.    |
-| <code>-c</code>    | Only output the count of matching lines.  |
-| <code>-n</code>    | Show matching line numbers.               |
-| <code>-l</code>    | Only list filenames with matches.         |
-| <code>-o</code>    | Show only matching parts, not the whole line. |
-| <code>-r</code>    | Recursively search in directories.        |
-| <code>-w</code>    | Match whole words only.                   |
-| <code>-e</code>    | Specify a regular expression.             |</p>
-<h5>Examples:</h5>
+<h5 id="common-options">Common Options:</h5>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-i</code></td>
+<td>Ignore case while matching.</td>
+</tr>
+<tr>
+<td><code>-v</code></td>
+<td>Invert match, show non-matching lines.</td>
+</tr>
+<tr>
+<td><code>-c</code></td>
+<td>Only output the count of matching lines.</td>
+</tr>
+<tr>
+<td><code>-n</code></td>
+<td>Show matching line numbers.</td>
+</tr>
+<tr>
+<td><code>-l</code></td>
+<td>Only list filenames with matches.</td>
+</tr>
+<tr>
+<td><code>-o</code></td>
+<td>Show only matching parts, not the whole line.</td>
+</tr>
+<tr>
+<td><code>-r</code></td>
+<td>Recursively search in directories.</td>
+</tr>
+<tr>
+<td><code>-w</code></td>
+<td>Match whole words only.</td>
+</tr>
+<tr>
+<td><code>-e</code></td>
+<td>Specify a regular expression.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="examples">Examples:</h5>
 <ul>
 <li>Display all lines containing &quot;hello&quot; in <code>file.txt</code>:</li>
 </ul>
@@ -154,7 +189,7 @@
 <pre><code class="language-shell">grep -C 2 &quot;important&quot; document.txt
 </code></pre>
 <hr>
-<h4>awk</h4>
+<h4 id="awk">awk</h4>
 <ul>
 <li><code>awk</code> is a powerful text processing tool used for formatting, filtering, and analyzing data in files or text streams. It supports pattern-based matching and operations, making it useful for log analysis, data extraction, and simple scripting.</li>
 <li><strong>Basic Syntax</strong></li>
@@ -167,24 +202,73 @@
 If <strong>pattern</strong> is omitted, it matches all lines.<br>
 If <strong>action</strong> is omitted, it prints the matched lines by default.</p>
 </blockquote>
-<h5>Common Options:</h5>
-<p>| Option   | Description                                      |
-|----------|--------------------------------------------------|
-| <code>-F</code>     | Set input field separator (default: space/tab). |
-| <code>-v</code>     | Define and pass a variable to <code>awk</code>.            |
-| <code>BEGIN</code>  | Executes before processing data (e.g., initialization). |
-| <code>END</code>    | Executes after processing all data.             |
-| Condition | e.g., <code>$1 &gt; 100</code> matches lines where the first field is greater than 100. |</p>
-<h5>Built-in Variables:</h5>
-<p>| Variable | Description                                  |
-|----------|----------------------------------------------|
-| <code>$0</code>     | The entire current line.                     |
-| <code>$1...</code>  | The first, second, etc., fields of the line. |
-| <code>NR</code>     | Current line number (Number of Records).     |
-| <code>NF</code>     | Number of fields in the current line.        |
-| <code>FS</code>     | Input field separator (Field Separator).     |
-| <code>OFS</code>    | Output field separator (Output Field Separator). |</p>
-<h5>Examples:</h5>
+<h5 id="common-options-1">Common Options:</h5>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-F</code></td>
+<td>Set input field separator (default: space/tab).</td>
+</tr>
+<tr>
+<td><code>-v</code></td>
+<td>Define and pass a variable to <code>awk</code>.</td>
+</tr>
+<tr>
+<td><code>BEGIN</code></td>
+<td>Executes before processing data (e.g., initialization).</td>
+</tr>
+<tr>
+<td><code>END</code></td>
+<td>Executes after processing all data.</td>
+</tr>
+<tr>
+<td>Condition</td>
+<td>e.g., <code>$1 &gt; 100</code> matches lines where the first field is greater than 100.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="built-in-variables">Built-in Variables:</h5>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$0</code></td>
+<td>The entire current line.</td>
+</tr>
+<tr>
+<td><code>$1...</code></td>
+<td>The first, second, etc., fields of the line.</td>
+</tr>
+<tr>
+<td><code>NR</code></td>
+<td>Current line number (Number of Records).</td>
+</tr>
+<tr>
+<td><code>NF</code></td>
+<td>Number of fields in the current line.</td>
+</tr>
+<tr>
+<td><code>FS</code></td>
+<td>Input field separator (Field Separator).</td>
+</tr>
+<tr>
+<td><code>OFS</code></td>
+<td>Output field separator (Output Field Separator).</td>
+</tr>
+</tbody>
+</table>
+<h5 id="examples-1">Examples:</h5>
 <ul>
 <li>Print each line of a file:</li>
 </ul>
@@ -236,7 +320,7 @@ If <strong>action</strong> is omitted, it prints the matched lines by default.</
 <pre><code class="language-shell">awk '{ sum += $1 } END { print &quot;Total:&quot;, sum }' file.txt
 </code></pre>
 <hr>
-<h4>sed</h4>
+<h4 id="sed">sed</h4>
 <ul>
 <li><code>sed</code> (Stream Editor) is a powerful tool for performing batch text processing, including search and replace, deletion, and insertion. It works with files or standard input text streams.</li>
 <li><strong>Basic Syntax</strong></li>
@@ -247,24 +331,73 @@ If <strong>action</strong> is omitted, it prints the matched lines by default.</
 <p><strong>Script command</strong>: Specifies the rule for text processing, such as replacement or deletion.<br>
 <strong>File</strong>: The file to process, or text can be passed through a pipeline.</p>
 </blockquote>
-<h5>Common Options:</h5>
-<p>| Option  | Description                                    |
-|---------|----------------------------------------------|
-| <code>-n</code>    | Suppress automatic output; only print specified lines. |
-| <code>-e</code>    | Allow multiple script commands.              |
-| <code>-i</code>    | Edit the file in place (modify it directly). |
-| <code>-f</code>    | Load script commands from a file.           |</p>
-<h5>Common Commands:</h5>
-<p>| Command     | Description                                  |
-|------------|----------------------------------------------|
-| <code>s/old/new/</code> | Replace <code>old</code> with <code>new</code>.                 |
-| <code>d</code>        | Delete the matching lines.                 |
-| <code>p</code>        | Print matching lines (use with <code>-n</code>).      |
-| <code>a\text</code>   | Append text after the current line.        |
-| <code>i\text</code>   | Insert text before the current line.       |
-| <code>c\text</code>   | Replace matching lines with new text.      |
-| <code>q</code>        | Quit early, stopping further processing.   |</p>
-<h5>Examples:</h5>
+<h5 id="common-options-2">Common Options:</h5>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-n</code></td>
+<td>Suppress automatic output; only print specified lines.</td>
+</tr>
+<tr>
+<td><code>-e</code></td>
+<td>Allow multiple script commands.</td>
+</tr>
+<tr>
+<td><code>-i</code></td>
+<td>Edit the file in place (modify it directly).</td>
+</tr>
+<tr>
+<td><code>-f</code></td>
+<td>Load script commands from a file.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="common-commands">Common Commands:</h5>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>s/old/new/</code></td>
+<td>Replace <code>old</code> with <code>new</code>.</td>
+</tr>
+<tr>
+<td><code>d</code></td>
+<td>Delete the matching lines.</td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td>Print matching lines (use with <code>-n</code>).</td>
+</tr>
+<tr>
+<td><code>a\text</code></td>
+<td>Append text after the current line.</td>
+</tr>
+<tr>
+<td><code>i\text</code></td>
+<td>Insert text before the current line.</td>
+</tr>
+<tr>
+<td><code>c\text</code></td>
+<td>Replace matching lines with new text.</td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td>Quit early, stopping further processing.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="examples-2">Examples:</h5>
 <ul>
 <li>Replace the first occurrence of <code>old</code> with <code>new</code> in <code>file.txt</code>:</li>
 </ul>

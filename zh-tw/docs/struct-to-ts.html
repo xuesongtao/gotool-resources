@@ -98,20 +98,49 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>🛠 功能簡介</h3>
+                <h3 id="-">🛠 功能簡介</h3>
 <p>此工具可將 Go 語言的 <code>struct</code> 結構自動轉換為 TypeScript 的類型（interface 或 type），支援解析基本型別、陣列、map、巢狀結構體及 <code>json</code> 標籤。</p>
-<h3>✅ 支援的 Go 類型</h3>
-<p>| Go 類型               | TypeScript 類型 |
-| --------------------- | --------------- |
-| <code>string</code>              | <code>string</code>        |
-| <code>int</code> / <code>int64</code>       | <code>number</code>        |
-| <code>float32</code> / <code>float64</code> | <code>number</code>        |
-| <code>bool</code>                | <code>boolean</code>       |
-| <code>[]T</code>                 | <code>T[]</code>           |
-| <code>T</code>                   | <code>T</code>             |
-| <code>other</code>               | <code>string</code>        |</p>
-<h3>📝 使用範例</h3>
-<h4>輸入 Go 結構體：</h4>
+<h3 id="--go-">✅ 支援的 Go 類型</h3>
+<table>
+<thead>
+<tr>
+<th>Go 類型</th>
+<th>TypeScript 類型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>string</code></td>
+<td><code>string</code></td>
+</tr>
+<tr>
+<td><code>int</code> / <code>int64</code></td>
+<td><code>number</code></td>
+</tr>
+<tr>
+<td><code>float32</code> / <code>float64</code></td>
+<td><code>number</code></td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td><code>boolean</code></td>
+</tr>
+<tr>
+<td><code>[]T</code></td>
+<td><code>T[]</code></td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>other</code></td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="--1">📝 使用範例</h3>
+<h4 id="-go-">輸入 Go 結構體：</h4>
 <pre><code class="language-go">type User struct {
   ID        int       `json:&quot;id&quot;`
   Name      string    `json:&quot;name&quot;`
@@ -120,7 +149,7 @@
   Tags      []string  `json:&quot;tags&quot;`
 }
 </code></pre>
-<h4>輸出 TypeScript 類型：</h4>
+<h4 id="-typescript-">輸出 TypeScript 類型：</h4>
 <pre><code class="language-ts">interface User {
   id: number;
   name: string;

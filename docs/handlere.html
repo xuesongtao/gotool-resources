@@ -98,62 +98,302 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>🌟 说明文档</h3>
-<h5>📌 基本字符</h5>
-<p>| 符号  | 描述                                      | 示例                                         | 匹配内容                          |
-|-------|-----------------------------------------|----------------------------------------------|----------------------------------|
-| <code>.</code>   | 匹配任意单个字符（除换行符）              | <code>a.b</code>                                        | <code>aab</code>, <code>acb</code>                     |
-| <code>\d</code>  | 匹配任意一个数字字符 <code>[0-9]</code>             | <code>\d\d</code>                                       | <code>12</code>, <code>34</code>                       |
-| <code>\D</code>  | 匹配任意一个非数字字符 <code>[^0-9]</code>          | <code>\D\D</code>                                       | <code>ab</code>, <code>xy</code>                       |
-| <code>\w</code>  | 匹配字母、数字或下划线 <code>[a-zA-Z0-9_]</code>    | <code>\w\w\w</code>                                     | <code>abc</code>, <code>123</code>                     |
-| <code>\W</code>  | 匹配任意非字母、数字或下划线字符         | <code>\W\W</code>                                       | <code>!!</code>, <code>@@</code>                       |
-| <code>\s</code>  | 匹配空白字符（空格、制表符、换行符等）    | <code>\s</code>                                         | 空格, 制表符                     |
-| <code>\S</code>  | 匹配任意非空白字符                       | <code>\S\S\S</code>                                     | <code>abc</code>, <code>123</code>                     |</p>
-<h5>📏 数量限定符</h5>
-<p>| 符号    | 描述                                     | 示例                | 匹配内容                        |
-|---------|----------------------------------------|---------------------|---------------------------------|
-| <code>*</code>     | 匹配前面的字符零次或多次 <code>{0,}</code>         | <code>a*</code>                | 空字符串, <code>a</code>, <code>aa</code>             |
-| <code>+</code>     | 匹配前面的字符一次或多次 <code>{1,}</code>         | <code>a+</code>                | <code>a</code>, <code>aa</code>, <code>aaa</code>               |
-| <code>?</code>     | 匹配前面的字符零次或一次 <code>{0,1}</code>        | <code>a?</code>                | 空字符串, <code>a</code>                   |
-| <code>{n}</code>   | 匹配前面的字符恰好 <code>n</code> 次               | <code>a{3}</code>              | <code>aaa</code>                           |
-| <code>{n,}</code>  | 匹配前面的字符至少 <code>n</code> 次               | <code>a{2,}</code>             | <code>aa</code>, <code>aaa</code>                    |
-| <code>{n,m}</code> | 匹配前面的字符至少 <code>n</code> 次，至多 <code>m</code> 次  | <code>a{2,4}</code>            | <code>aa</code>, <code>aaa</code>, <code>aaaa</code>            |</p>
-<h5>🚩 边界匹配符</h5>
-<p>| 符号  | 描述                        | 示例                  | 匹配内容                           |
-|-------|-----------------------------|-----------------------|-----------------------------------|
-| <code>^</code>   | 匹配字符串的开头             | <code>^Hello</code>              | <code>Hello World!</code> 中的 <code>Hello</code>       |
-| <code>$</code>   | 匹配字符串的结尾             | <code>World!$</code>             | <code>Hello World!</code> 中的 <code>World!</code>      |
-| <code>\b</code>  | 匹配单词边界                 | <code>\bword\b</code>            | <code>a word is here</code> 中的 <code>word</code>      |
-| <code>\B</code>  | 匹配非单词边界               | <code>\Bword\B</code>            | <code>passwords</code> 中的 <code>word</code>           |</p>
-<h5>🎯 分组与引用</h5>
-<p>| 符号       | 描述                              | 示例                | 匹配内容                           |
-|------------|---------------------------------|---------------------|-----------------------------------|
-| <code>()</code>       | 捕获组，将匹配的子字符串保存为一组 | <code>(abc)+</code>            | <code>abc</code>, <code>abcabc</code>                  |
-| <code>(?:...)</code>  | 非捕获组，只分组不保存子字符串    | <code>(?:abc)+</code>          | <code>abc</code>, <code>abcabc</code>                  |
-| <code>\n</code>       | 引用捕获组，<code>n</code> 为组号            | <code>(a)(b)\1\2</code>        | <code>abab</code>                            |</p>
-<h5>🔍 字符集与字符类</h5>
-<p>| 符号       | 描述                                           | 示例                | 匹配内容                     |
-|------------|------------------------------------------------|---------------------|------------------------------|
-| <code>[abc]</code>    | 匹配 <code>a</code>、<code>b</code> 或 <code>c</code> 中的任意一个字符           | <code>[abc]</code>             | <code>a</code>, <code>b</code>, <code>c</code>                |
-| <code>[^abc]</code>   | 匹配除 <code>a</code>、<code>b</code> 或 <code>c</code> 之外的任意字符           | <code>[^abc]</code>            | <code>d</code>, <code>e</code>                     |
-| <code>[a-z]</code>    | 匹配从 <code>a</code> 到 <code>z</code> 的任意小写字母               | <code>[a-z]</code>             | <code>a</code>, <code>b</code>, <code>c</code>                |
-| <code>[A-Z]</code>    | 匹配从 <code>A</code> 到 <code>Z</code> 的任意大写字母               | <code>[A-Z]</code>             | <code>A</code>, <code>B</code>, <code>C</code>                |
-| <code>[0-9]</code>    | 匹配任意数字字符                               | <code>[0-9]</code>             | <code>1</code>, <code>2</code>, <code>3</code>                |</p>
-<h5>📚 常用模式示例</h5>
-<p>| 描述              | 正则表达式                              | 示例数据                            | 匹配结果                            |
-|-------------------|-----------------------------------------|-------------------------------------|------------------------------------|
-| 📞 匹配电话号码    | <code>\(\d{3}\) \d{3}-\d{4}</code>                 | <code>(123) 456-7890</code>                    | 匹配                              |
-| 📧 验证电子邮件地址 | <code>^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$</code> | <code>example@example.com</code>              | 匹配                              |
-| 📅 匹配日期格式    | <code>^\d{4}-\d{2}-\d{2}$</code>                   | <code>2024-08-17</code>                        | 匹配                              |
-| 🌐 匹配IP地址      | <code>^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$</code> | <code>192.168.1.1</code> | 匹配 |
-| 🔗 匹配URL        | <code>^https?:\/\/[^\s/$.?#].[^\s]*$</code>         | <code>https://www.example.com</code>           | 匹配                              |
-| 🏷️ 匹配HTML标签    | <code>&lt;(\/?[^&gt;]+)&gt;</code>                          | <code>&lt;div&gt;</code>、<code>&lt;/div&gt;</code>                   | 匹配                              |
-| 📮 匹配邮政编码    | <code>^\d{5}(-\d{4})?$</code>                      | <code>12345</code>、<code>12345-6789</code>               | 匹配                              |
-| 🎨 提取CSS颜色代码 | <code>#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})</code>      | <code>#ffffff</code>、<code>#fff</code>                   | 匹配                              |</p>
-<h5>⚠️ 转义字符</h5>
-<p>| 符号  | 描述                                                   | 示例                | 匹配内容                       |
-|-------|--------------------------------------------------------|---------------------|--------------------------------|
-| <code>\</code>   | 转义字符，用于匹配具有特殊含义的字符本身                | <code>\.</code>                | 匹配句号 <code>.</code>                   |</p>
+                <h3 id="-">🌟 说明文档</h3>
+<h5 id="--1">📌 基本字符</h5>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>描述</th>
+<th>示例</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.</code></td>
+<td>匹配任意单个字符（除换行符）</td>
+<td><code>a.b</code></td>
+<td><code>aab</code>, <code>acb</code></td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>匹配任意一个数字字符 <code>[0-9]</code></td>
+<td><code>\d\d</code></td>
+<td><code>12</code>, <code>34</code></td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>匹配任意一个非数字字符 <code>[^0-9]</code></td>
+<td><code>\D\D</code></td>
+<td><code>ab</code>, <code>xy</code></td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>匹配字母、数字或下划线 <code>[a-zA-Z0-9_]</code></td>
+<td><code>\w\w\w</code></td>
+<td><code>abc</code>, <code>123</code></td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>匹配任意非字母、数字或下划线字符</td>
+<td><code>\W\W</code></td>
+<td><code>!!</code>, <code>@@</code></td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>匹配空白字符（空格、制表符、换行符等）</td>
+<td><code>\s</code></td>
+<td>空格, 制表符</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>匹配任意非空白字符</td>
+<td><code>\S\S\S</code></td>
+<td><code>abc</code>, <code>123</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="--2">📏 数量限定符</h5>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>描述</th>
+<th>示例</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*</code></td>
+<td>匹配前面的字符零次或多次 <code>{0,}</code></td>
+<td><code>a*</code></td>
+<td>空字符串, <code>a</code>, <code>aa</code></td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>匹配前面的字符一次或多次 <code>{1,}</code></td>
+<td><code>a+</code></td>
+<td><code>a</code>, <code>aa</code>, <code>aaa</code></td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>匹配前面的字符零次或一次 <code>{0,1}</code></td>
+<td><code>a?</code></td>
+<td>空字符串, <code>a</code></td>
+</tr>
+<tr>
+<td><code>{n}</code></td>
+<td>匹配前面的字符恰好 <code>n</code> 次</td>
+<td><code>a{3}</code></td>
+<td><code>aaa</code></td>
+</tr>
+<tr>
+<td><code>{n,}</code></td>
+<td>匹配前面的字符至少 <code>n</code> 次</td>
+<td><code>a{2,}</code></td>
+<td><code>aa</code>, <code>aaa</code></td>
+</tr>
+<tr>
+<td><code>{n,m}</code></td>
+<td>匹配前面的字符至少 <code>n</code> 次，至多 <code>m</code> 次</td>
+<td><code>a{2,4}</code></td>
+<td><code>aa</code>, <code>aaa</code>, <code>aaaa</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="--3">🚩 边界匹配符</h5>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>描述</th>
+<th>示例</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^</code></td>
+<td>匹配字符串的开头</td>
+<td><code>^Hello</code></td>
+<td><code>Hello World!</code> 中的 <code>Hello</code></td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>匹配字符串的结尾</td>
+<td><code>World!$</code></td>
+<td><code>Hello World!</code> 中的 <code>World!</code></td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>匹配单词边界</td>
+<td><code>\bword\b</code></td>
+<td><code>a word is here</code> 中的 <code>word</code></td>
+</tr>
+<tr>
+<td><code>\B</code></td>
+<td>匹配非单词边界</td>
+<td><code>\Bword\B</code></td>
+<td><code>passwords</code> 中的 <code>word</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="--4">🎯 分组与引用</h5>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>描述</th>
+<th>示例</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>()</code></td>
+<td>捕获组，将匹配的子字符串保存为一组</td>
+<td><code>(abc)+</code></td>
+<td><code>abc</code>, <code>abcabc</code></td>
+</tr>
+<tr>
+<td><code>(?:...)</code></td>
+<td>非捕获组，只分组不保存子字符串</td>
+<td><code>(?:abc)+</code></td>
+<td><code>abc</code>, <code>abcabc</code></td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>引用捕获组，<code>n</code> 为组号</td>
+<td><code>(a)(b)\1\2</code></td>
+<td><code>abab</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="--5">🔍 字符集与字符类</h5>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>描述</th>
+<th>示例</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[abc]</code></td>
+<td>匹配 <code>a</code>、<code>b</code> 或 <code>c</code> 中的任意一个字符</td>
+<td><code>[abc]</code></td>
+<td><code>a</code>, <code>b</code>, <code>c</code></td>
+</tr>
+<tr>
+<td><code>[^abc]</code></td>
+<td>匹配除 <code>a</code>、<code>b</code> 或 <code>c</code> 之外的任意字符</td>
+<td><code>[^abc]</code></td>
+<td><code>d</code>, <code>e</code></td>
+</tr>
+<tr>
+<td><code>[a-z]</code></td>
+<td>匹配从 <code>a</code> 到 <code>z</code> 的任意小写字母</td>
+<td><code>[a-z]</code></td>
+<td><code>a</code>, <code>b</code>, <code>c</code></td>
+</tr>
+<tr>
+<td><code>[A-Z]</code></td>
+<td>匹配从 <code>A</code> 到 <code>Z</code> 的任意大写字母</td>
+<td><code>[A-Z]</code></td>
+<td><code>A</code>, <code>B</code>, <code>C</code></td>
+</tr>
+<tr>
+<td><code>[0-9]</code></td>
+<td>匹配任意数字字符</td>
+<td><code>[0-9]</code></td>
+<td><code>1</code>, <code>2</code>, <code>3</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="--6">📚 常用模式示例</h5>
+<table>
+<thead>
+<tr>
+<th>描述</th>
+<th>正则表达式</th>
+<th>示例数据</th>
+<th>匹配结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📞 匹配电话号码</td>
+<td><code>\(\d{3}\) \d{3}-\d{4}</code></td>
+<td><code>(123) 456-7890</code></td>
+<td>匹配</td>
+</tr>
+<tr>
+<td>📧 验证电子邮件地址</td>
+<td><code>^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$</code></td>
+<td><code>example@example.com</code></td>
+<td>匹配</td>
+</tr>
+<tr>
+<td>📅 匹配日期格式</td>
+<td><code>^\d{4}-\d{2}-\d{2}$</code></td>
+<td><code>2024-08-17</code></td>
+<td>匹配</td>
+</tr>
+<tr>
+<td>🌐 匹配IP地址</td>
+<td>`^((25[0-5]</td>
+<td>2[0-4][0-9]</td>
+<td>[01]?[0-9][0-9]?).){3}(25[0-5]</td>
+</tr>
+<tr>
+<td>🔗 匹配URL</td>
+<td><code>^https?:\/\/[^\s/$.?#].[^\s]*$</code></td>
+<td><code>https://www.example.com</code></td>
+<td>匹配</td>
+</tr>
+<tr>
+<td>🏷️ 匹配HTML标签</td>
+<td><code>&lt;(\/?[^&gt;]+)&gt;</code></td>
+<td><code>&lt;div&gt;</code>、<code>&lt;/div&gt;</code></td>
+<td>匹配</td>
+</tr>
+<tr>
+<td>📮 匹配邮政编码</td>
+<td><code>^\d{5}(-\d{4})?$</code></td>
+<td><code>12345</code>、<code>12345-6789</code></td>
+<td>匹配</td>
+</tr>
+<tr>
+<td>🎨 提取CSS颜色代码</td>
+<td>`#([a-fA-F0-9]{6}</td>
+<td>[a-fA-F0-9]{3})`</td>
+<td><code>#ffffff</code>、<code>#fff</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="--7">⚠️ 转义字符</h5>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>描述</th>
+<th>示例</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\</code></td>
+<td>转义字符，用于匹配具有特殊含义的字符本身</td>
+<td><code>\.</code></td>
+<td>匹配句号 <code>.</code></td>
+</tr>
+</tbody>
+</table>
 
             </div>
         

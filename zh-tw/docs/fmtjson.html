@@ -98,14 +98,14 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>功能介紹</h3>
+                <h3 id="heading">功能介紹</h3>
 <blockquote>
 <p>1.對待格式化的 <code>json</code> 串進行格式化/壓縮, 同時支持轉義; 去注釋會根據通過正則將 <code>#|//|--</code> 替換處理<br>
 2.支持對字串包含的 <code>json</code> 串進行轉義<br>
 3.對格式錯誤的會提示在什麼位有錯誤</p>
 </blockquote>
-<h3>示例</h3>
-<h4>1.正確格式的</h4>
+<h3 id="heading-1">示例</h3>
+<h4 id="1">1.正確格式的</h4>
 <pre><code class="language-json">{&quot;name&quot;:&quot;test&quot;,&quot;age&quot;:10,&quot;addr&quot;:&quot;四川成都&quot;,&quot;cls_info&quot;:[{name&quot;:&quot;籃球班&quot;,&quot;teacher&quot;:&quot;張老師&quot;},{&quot;name&quot;:&quot;美術班&quot;,&quot;teacher&quot;:&quot;李老師&quot;}]}
 </code></pre>
 <p>處理後</p>
@@ -126,7 +126,7 @@
 }
 </code></pre>
 <!-- raw HTML omitted -->
-<h4>2.錯誤的格式</h4>
+<h4 id="2">2.錯誤的格式</h4>
 <pre><code class="language-json">{&quot;name&quot;:&quot;test&quot;,&quot;age&quot;:10,&quot;addr&quot;:&quot;四川成都&quot;&quot;cls_info&quot;:[{&quot;name&quot;:&quot;籃球班&quot;,&quot;teacher&quot;:&quot;張老師&quot;},{&quot;name&quot;:&quot;美術班&quot;,&quot;teacher&quot;:&quot;李老師&quot;}]}
 </code></pre>
 <p>處理後</p>
@@ -138,7 +138,7 @@ XXX附近有錯誤, 確認是否符號缺少或多餘
 </code></pre>
 <p><strong>說明</strong>: 錯誤出現在 <strong>XXX</strong> 附近, 建議進行蒐索查看</p>
 <!-- raw HTML omitted -->
-<h4>3.包含json串</h4>
+<h4 id="3json">3.包含json串</h4>
 <pre><code class="language-json">name=test&amp;age=12&amp;other={&quot;name&quot;:&quot;test&quot;,&quot;age&quot;:10,&quot;addr&quot;:&quot;四川成都&quot;,&quot;cls_info&quot;:[{&quot;name&quot;:&quot;籃球班&quot;,&quot;teacher&quot;:&quot;張老師&quot;},{&quot;name&quot;:&quot;美術班&quot;,&quot;teacher&quot;:&quot;李老師&quot;}]}
 </code></pre>
 <p>處理後</p>

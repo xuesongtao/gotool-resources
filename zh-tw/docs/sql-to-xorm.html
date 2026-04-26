@@ -98,7 +98,7 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>功能介紹</h3>
+                <h3 id="heading">功能介紹</h3>
 <blockquote>
 <p>1.支持多種資料庫的建表 sql轉xorm, 其中包含(pg、oracle、mysql)等資料庫; <strong>建表語句</strong>, <strong>建表語句</strong>, <strong>建表語句</strong>(重要的說3遍)<br>
 2.在轉換 sql 的時候, 需要確認下是否需要切換處理類型, 暫時支持3種處理方式(<strong>normal</strong>, <strong>postgresql</strong>, <strong>oracle</strong>), 默認: <strong>normal</strong>.<br>
@@ -106,8 +106,8 @@
 <strong>說明</strong>: <strong>不能在 sql 中包含注釋內容</strong>(即: <code>-- xxx</code> 或 <code># xxx</code>); 由於此工具是通過 <strong>;</strong> 來分割語句處理.所以 <strong>normal</strong> 狀態下可以同時處理多個建表語句; <strong>postgresql</strong> 和 <strong>oracle</strong> 由於需要解析注釋, 只支持單個建表語句.</p>
 </blockquote>
 <!-- raw HTML omitted -->
-<h3>示例</h3>
-<h5>mysql 建表語句</h5>
+<h3 id="heading-1">示例</h3>
+<h5 id="mysql-">mysql 建表語句</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(10) NOT NULL COMMENT '姓名',
@@ -139,7 +139,7 @@ func (u *User) TableName() string {
     return &quot;user&quot;
 }
 </code></pre>
-<h5>pgsql 建表語句</h5>
+<h5 id="pgsql-">pgsql 建表語句</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id character varying(32) NOT NULL DEFAULT sys_guid(),
     name character varying(10) NOT NULL,
@@ -178,7 +178,7 @@ func (u *User) TableName() string {
     return &quot;user&quot;
 }
 </code></pre>
-<h5>oracle 建表語句</h5>
+<h5 id="oracle-">oracle 建表語句</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id character varying(32) NOT NULL DEFAULT sys_guid(),
     name character varying(10) NOT NULL,

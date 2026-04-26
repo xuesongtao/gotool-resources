@@ -98,59 +98,302 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>🌟 documentation</h3>
-<h4>📌 basic character</h4>
-<p>| symbol | description                                                   | example     | matching content |
-| ------ | ------------------------------------------------------------- | ----------- | ---------------- |
-| <code>.</code>    | match any single character (except newline characters)        | <code>a.b</code>       | <code>aab</code>, <code>acb</code>     |
-| <code>\ d</code>  | match any numeric character<code>[0-9]</code>                          | <code>\ d\ d</code>    | <code>12</code>, <code>34</code>       |
-| <code>\ D</code>  | match any non-numeric character<code>[^ 0-9]</code>                    | <code>\ D\ D</code>    | <code>ab</code>, <code>xy</code>       |
-| <code>\ w</code>  | match letters, numbers or underscores<code>[a-zA-Z0-9 _]</code>        | <code>\ w\ w\ w</code> | <code>abc</code>, <code>123</code>     |
-| <code>\ W</code>  | match any non-alphanumeric or underscore characters           | <code>\ W\ W</code>    | <code>!</code>, <code>@ @</code>       |
-| <code>\ s</code>  | match white space characters (spaces, tabs, line feeds, etc.) | <code>\ s</code>       | spaces, tabs     |
-| <code>\ S</code>  | match any non-blank character                                 | <code>\ S\ S\ S</code> | <code>abc</code>, <code>123</code>     |</p>
-<h4>📏 quantity qualifier</h4>
-<p>| symbol        | description                                                        | example      | matching content        |
-| ------------- | ------------------------------------------------------------------ | ------------ | ----------------------- |
-| <code>*</code>           | match the preceding character for zero or more times <code>{0,}</code>        | <code>a* </code>        | empty string, <code>a</code>, <code>aa</code> |
-| <code>+</code>           | match the preceding characters one or more times                   | <code>a+ </code>        | <code>a</code>, <code>aa</code>, <code>aaa</code>        |
-| <code>?</code>           | match the preceding characters zero times or once, <code>{0recover1}</code>   | <code>a? </code>        | empty string, <code>a</code>       |
-| <code>{n}</code>         | match the preceding character exactly <code>n</code> times                    | <code>a {3} </code>     | <code>aaa</code>                   |
-| <code>{n,}</code>        | match the preceding characters at least <code>n</code> times                  | <code>a {2,} </code>    | <code>aa</code>, <code>aaa</code>             |
-| <code>{nrecast m}</code> | match the preceding characters at least <code>n</code> times, up to <code>m</code> times | <code>a {2pm 4} </code> | <code>aa</code>, <code>aaa</code>, <code>aaa</code>      |</p>
-<h4>🚩 boundary match</h4>
-<p>| symbol | description                          | example        | matching content           |
-| ------ | ------------------------------------ | -------------- | -------------------------- |
-| <code>^ </code>   | the beginning of the matching string | <code>^ Hello</code>      | <code>Hello</code> in <code>Hello</code>!<code>      | |</code>$ <code>  | match the end of the string          |</code>Worldmatch $<code>|</code>World! <code>in </code>Hello World!<code>| |</code>\ b<code> | match word boundary                  |</code>\ bword\ b<code>  |</code>word<code>in</code>word<code>          | |</code>\ B<code> | match non-word boundaries            |</code>\ Bword\ B<code>  |</code>word<code>in</code>passwords`      |</p>
-<h4>🎯 grouping and referencing</h4>
-<p>| symbol    | description                                                | example          | matching content |
-| --------- | ---------------------------------------------------------- | ---------------- | ---------------- |
-| <code>()</code>      | capture group and save the matching substrings as a group  | <code>(abc) +</code>        | <code>abc</code>, <code>abcabc</code>  |
-| <code>(?:...)</code> | non-capture group, only grouping but not saving substrings | <code>(?: abc) +</code>     | <code>abc</code>, <code>abcabc</code>  |
-| <code>\ n</code>     | reference capture group. <code>n</code> is the group number           | <code> (a) (b)\ 1\ 2</code> | <code>abab</code>           |</p>
-<h4>🔍 character set and character class</h4>
-<p>| symbol    | description                                | example   | matching content |
-| --------- | ------------------------------------------ | --------- | ---------------- |
-| <code>[abc]</code>   | matches any character in <code>a</code>, <code>b</code> or <code>c</code>   | <code>[abc]</code>   | <code>a</code>, <code>b</code>, <code>c</code>    |
-| <code>[^ abc]</code> | match any character except <code>a</code>, <code>b</code> or <code>c</code> | <code>[^ abc]</code> | <code>d</code>, <code>e</code>         |
-| <code>[aMusz]</code> | match any lowercase letter from <code>a</code> to <code>z</code> | <code>[aripz]</code> | <code>a</code>, <code>b</code>, <code>c</code>    |
-| <code>[Amurz]</code> | match any uppercase letter from <code>A</code> to <code>Z</code> | <code>[Amurz]</code> | <code>A</code>, <code>B</code>, <code>C</code>    |
-| <code>[0-9]</code>   | match any numeric character                | <code>[0-9]</code>   | <code>1</code>, <code>2</code>, <code>3</code>    |</p>
-<h4>example of 📚 common mode</h4>
-<p>| description                   | regular expression                                                   | sample data               | matching result                      |
-| ----------------------------- | -------------------------------------------------------------------- | ------------------------- | ------------------------------------ |
-| 📞 matches phone number        | <code>\ (\ d {3}\)\ d {3} -\ d {4}</code>                                       | <code>(123) 456-7890</code>          | match                                |
-| 📧 verifies email address      | <code>^ [A-Za-z0-9.9% address -] + @ [A-Za-z0-9.9 -] +\. [A-Za-z] {2,} $</code> | <code>example@ example.com</code>    | match                                |
-| 📅 match date format           | <code>^\ d {4} -\ d {2} -\ d {2} $</code>                                       | <code>2024-08-17</code>              | match                                |
-| 🌐 matches IP address          | <code>^ ((25 [0-5]                                                        | 2 [0-4] [0-9]             | [01]? [0-9] [0-9]?)\.) {3} (25 [0-5] | 2 [0-4] [0-9] | [01]? [0-9] [0-9]?) $</code> | <code>192.168.1.1</code> | match |
-| 🔗 match URL                   | <code>^ https?:\ /\ / [^\ sUniverse. Match #] .[ ^\ s] * $</code>               | <code>https://www.example.com</code> | match                                |
-| 🏷️ matches HTML tags           | <code>&lt; (\ /? [^ &gt;] +) &gt;</code>                                                 | <code>&lt; div &gt;</code>, <code>&lt; / div &gt;</code>    | match                                |
-| 📮 matches Postal Code         | <code>^\ d {5} (-\ d {4})? $</code>                                             | <code>12345</code>, <code>12345-6789</code>     | match                                |
-| CSS color code extracted by 🎨 | <code># ([a-fA-F0-9] {6}                                                  | [a-fA-F0-9] {3})</code>         | <code># ffffff</code>,<code> # fff</code>                  | match         |</p>
-<h4>⚠️ escape character</h4>
-<p>| symbol | description                                                              | example | matching content |
-| ------ | ------------------------------------------------------------------------ | ------- | ---------------- |
-| <code>\</code>    | escape character, which is used to match characters with special meaning | <code>\ .</code>   | match period <code>.</code> |</p>
+                <h3 id="-documentation">🌟 documentation</h3>
+<h4 id="-basic-character">📌 basic character</h4>
+<table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>description</th>
+<th>example</th>
+<th>matching content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.</code></td>
+<td>match any single character (except newline characters)</td>
+<td><code>a.b</code></td>
+<td><code>aab</code>, <code>acb</code></td>
+</tr>
+<tr>
+<td><code>\ d</code></td>
+<td>match any numeric character<code>[0-9]</code></td>
+<td><code>\ d\ d</code></td>
+<td><code>12</code>, <code>34</code></td>
+</tr>
+<tr>
+<td><code>\ D</code></td>
+<td>match any non-numeric character<code>[^ 0-9]</code></td>
+<td><code>\ D\ D</code></td>
+<td><code>ab</code>, <code>xy</code></td>
+</tr>
+<tr>
+<td><code>\ w</code></td>
+<td>match letters, numbers or underscores<code>[a-zA-Z0-9 _]</code></td>
+<td><code>\ w\ w\ w</code></td>
+<td><code>abc</code>, <code>123</code></td>
+</tr>
+<tr>
+<td><code>\ W</code></td>
+<td>match any non-alphanumeric or underscore characters</td>
+<td><code>\ W\ W</code></td>
+<td><code>!</code>, <code>@ @</code></td>
+</tr>
+<tr>
+<td><code>\ s</code></td>
+<td>match white space characters (spaces, tabs, line feeds, etc.)</td>
+<td><code>\ s</code></td>
+<td>spaces, tabs</td>
+</tr>
+<tr>
+<td><code>\ S</code></td>
+<td>match any non-blank character</td>
+<td><code>\ S\ S\ S</code></td>
+<td><code>abc</code>, <code>123</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="-quantity-qualifier">📏 quantity qualifier</h4>
+<table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>description</th>
+<th>example</th>
+<th>matching content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*</code></td>
+<td>match the preceding character for zero or more times <code>{0,}</code></td>
+<td><code>a* </code></td>
+<td>empty string, <code>a</code>, <code>aa</code></td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>match the preceding characters one or more times</td>
+<td><code>a+ </code></td>
+<td><code>a</code>, <code>aa</code>, <code>aaa</code></td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>match the preceding characters zero times or once, <code>{0recover1}</code></td>
+<td><code>a? </code></td>
+<td>empty string, <code>a</code></td>
+</tr>
+<tr>
+<td><code>{n}</code></td>
+<td>match the preceding character exactly <code>n</code> times</td>
+<td><code>a {3} </code></td>
+<td><code>aaa</code></td>
+</tr>
+<tr>
+<td><code>{n,}</code></td>
+<td>match the preceding characters at least <code>n</code> times</td>
+<td><code>a {2,} </code></td>
+<td><code>aa</code>, <code>aaa</code></td>
+</tr>
+<tr>
+<td><code>{nrecast m}</code></td>
+<td>match the preceding characters at least <code>n</code> times, up to <code>m</code> times</td>
+<td><code>a {2pm 4} </code></td>
+<td><code>aa</code>, <code>aaa</code>, <code>aaa</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="-boundary-match">🚩 boundary match</h4>
+<table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>description</th>
+<th>example</th>
+<th>matching content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^ </code></td>
+<td>the beginning of the matching string</td>
+<td><code>^ Hello</code></td>
+<td><code>Hello</code> in <code>Hello</code>!`</td>
+</tr>
+<tr>
+<td><code>$ </code></td>
+<td>match the end of the string</td>
+<td><code>Worldmatch $</code></td>
+<td><code>World! </code>in <code>Hello World!</code></td>
+</tr>
+<tr>
+<td><code>\ b</code></td>
+<td>match word boundary</td>
+<td><code>\ bword\ b</code></td>
+<td><code>word</code> in <code>word</code></td>
+</tr>
+<tr>
+<td><code>\ B</code></td>
+<td>match non-word boundaries</td>
+<td><code>\ Bword\ B</code></td>
+<td><code>word</code> in <code>passwords</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="-grouping-and-referencing">🎯 grouping and referencing</h4>
+<table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>description</th>
+<th>example</th>
+<th>matching content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>()</code></td>
+<td>capture group and save the matching substrings as a group</td>
+<td><code>(abc) +</code></td>
+<td><code>abc</code>, <code>abcabc</code></td>
+</tr>
+<tr>
+<td><code>(?:...)</code></td>
+<td>non-capture group, only grouping but not saving substrings</td>
+<td><code>(?: abc) +</code></td>
+<td><code>abc</code>, <code>abcabc</code></td>
+</tr>
+<tr>
+<td><code>\ n</code></td>
+<td>reference capture group. <code>n</code> is the group number</td>
+<td><code> (a) (b)\ 1\ 2</code></td>
+<td><code>abab</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="-character-set-and-character-class">🔍 character set and character class</h4>
+<table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>description</th>
+<th>example</th>
+<th>matching content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[abc]</code></td>
+<td>matches any character in <code>a</code>, <code>b</code> or <code>c</code></td>
+<td><code>[abc]</code></td>
+<td><code>a</code>, <code>b</code>, <code>c</code></td>
+</tr>
+<tr>
+<td><code>[^ abc]</code></td>
+<td>match any character except <code>a</code>, <code>b</code> or <code>c</code></td>
+<td><code>[^ abc]</code></td>
+<td><code>d</code>, <code>e</code></td>
+</tr>
+<tr>
+<td><code>[aMusz]</code></td>
+<td>match any lowercase letter from <code>a</code> to <code>z</code></td>
+<td><code>[aripz]</code></td>
+<td><code>a</code>, <code>b</code>, <code>c</code></td>
+</tr>
+<tr>
+<td><code>[Amurz]</code></td>
+<td>match any uppercase letter from <code>A</code> to <code>Z</code></td>
+<td><code>[Amurz]</code></td>
+<td><code>A</code>, <code>B</code>, <code>C</code></td>
+</tr>
+<tr>
+<td><code>[0-9]</code></td>
+<td>match any numeric character</td>
+<td><code>[0-9]</code></td>
+<td><code>1</code>, <code>2</code>, <code>3</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-of--common-mode">example of 📚 common mode</h4>
+<table>
+<thead>
+<tr>
+<th>description</th>
+<th>regular expression</th>
+<th>sample data</th>
+<th>matching result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📞 matches phone number</td>
+<td><code>\ (\ d {3}\)\ d {3} -\ d {4}</code></td>
+<td><code>(123) 456-7890</code></td>
+<td>match</td>
+</tr>
+<tr>
+<td>📧 verifies email address</td>
+<td><code>^ [A-Za-z0-9.9% address -] + @ [A-Za-z0-9.9 -] +\. [A-Za-z] {2,} $</code></td>
+<td><code>example@ example.com</code></td>
+<td>match</td>
+</tr>
+<tr>
+<td>📅 match date format</td>
+<td><code>^\ d {4} -\ d {2} -\ d {2} $</code></td>
+<td><code>2024-08-17</code></td>
+<td>match</td>
+</tr>
+<tr>
+<td>🌐 matches IP address</td>
+<td>`^ ((25 [0-5]</td>
+<td>2 [0-4] [0-9]</td>
+<td>[01]? [0-9] [0-9]?).) {3} (25 [0-5]</td>
+</tr>
+<tr>
+<td>🔗 match URL</td>
+<td><code>^ https?:\ /\ / [^\ sUniverse. Match #] .[ ^\ s] * $</code></td>
+<td><code>https://www.example.com</code></td>
+<td>match</td>
+</tr>
+<tr>
+<td>🏷️ matches HTML tags</td>
+<td><code>&lt; (\ /? [^ &gt;] +) &gt;</code></td>
+<td><code>&lt; div &gt;</code>, <code>&lt; / div &gt;</code></td>
+<td>match</td>
+</tr>
+<tr>
+<td>📮 matches Postal Code</td>
+<td><code>^\ d {5} (-\ d {4})? $</code></td>
+<td><code>12345</code>, <code>12345-6789</code></td>
+<td>match</td>
+</tr>
+<tr>
+<td>CSS color code extracted by 🎨</td>
+<td>`# ([a-fA-F0-9] {6}</td>
+<td>[a-fA-F0-9] {3})`</td>
+<td><code># ffffff</code>,<code> # fff</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="-escape-character">⚠️ escape character</h4>
+<table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>description</th>
+<th>example</th>
+<th>matching content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\</code></td>
+<td>escape character, which is used to match characters with special meaning</td>
+<td><code>\ .</code></td>
+<td>match period <code>.</code></td>
+</tr>
+</tbody>
+</table>
 
             </div>
         

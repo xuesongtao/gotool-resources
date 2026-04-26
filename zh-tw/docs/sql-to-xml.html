@@ -98,14 +98,14 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>功能介紹</h3>
+                <h3 id="heading">功能介紹</h3>
 <blockquote>
 <p>1.支持多種資料庫的建表 sql轉xml, 其中包含(pg、oracle、mysql)等資料庫; <strong>建表語句</strong>, <strong>建表語句</strong>, <strong>建表語句</strong>(重要的說3遍)<br>
 2.在轉換 sql 的時候, 需要確認下是否需要切換處理類型, 暫時支持3種處理方式(<strong>normal</strong>, <strong>postgresql</strong>, <strong>oracle</strong>), 默認: <strong>normal</strong>.<br>
 3.支持自定義過濾不需要的欄位, 多個欄位通過 <strong>,</strong> 隔開</p>
 </blockquote>
 <!-- raw HTML omitted -->
-<h3>示例</h3>
+<h3 id="heading-1">示例</h3>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(10) NOT NULL COMMENT '姓名',
@@ -128,7 +128,7 @@
 &lt;/user&gt;
 </code></pre>
 <!-- raw HTML omitted -->
-<h4>pgsql 建表語句</h4>
+<h4 id="pgsql-">pgsql 建表語句</h4>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id character varying(32) NOT NULL DEFAULT sys_guid(),
     name character varying(10) NOT NULL,
@@ -158,7 +158,7 @@ COMMENT ON COLUMN user.updated_date IS '更新時間';
 &lt;/user&gt;
 </code></pre>
 <!-- raw HTML omitted -->
-<h4>oracle 建表語句</h4>
+<h4 id="oracle-">oracle 建表語句</h4>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
     id character varying(32) NOT NULL DEFAULT sys_guid(),
     name character varying(10) NOT NULL,

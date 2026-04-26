@@ -98,7 +98,7 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h4>Push local projects to remote warehouses</h4>
+                <h4 id="push-local-projects-to-remote-warehouses">Push local projects to remote warehouses</h4>
 <pre><code class="language-shell">git init 
 
 git add .
@@ -111,7 +111,7 @@ git pull --rebase origin xxx
 
 git push -u origin xxx
 </code></pre>
-<h4>Effective immediately after writing.gitignore</h4>
+<h4 id="effective-immediately-after-writinggitignore">Effective immediately after writing.gitignore</h4>
 <pre><code class="language-shell">#Clear cache  
 git rm -r --cached .  
 
@@ -121,7 +121,7 @@ git add .
 #Submission and comments 
 git commit -m &quot;update .gitignore&quot; 
 </code></pre>
-<h4>Type tag</h4>
+<h4 id="type-tag">Type tag</h4>
 <pre><code class="language-shell">#hit tag
 git tag -a v1.0.0 -m &quot;feat:xxx&quot;
 
@@ -134,7 +134,7 @@ git push origin v1.0.0
 #If you want to push all local new tags up at once
 git push origin --tags 
 </code></pre>
-<h4>Delete tag</h4>
+<h4 id="delete-tag">Delete tag</h4>
 <pre><code class="language-shell">#Delete local tags
 git tag -d tagName 
 

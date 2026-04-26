@@ -98,8 +98,8 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>linux 3剑客</h3>
-<h4>grep</h4>
+                <h3 id="linux-3">linux 3剑客</h3>
+<h4 id="grep">grep</h4>
 <ul>
 <li><code>grep</code> 是一个强大的命令行工具，用于在文件或文本中搜索指定的字符串或正则表达式。</li>
 <li>基本语法</li>
@@ -108,19 +108,54 @@
 #文件：指定要搜索的文件，可以是一个或多个文件，也可以通过管道输入。
 grep [选项] &quot;搜索模式&quot; 文件
 </code></pre>
-<h5>常用选项</h5>
-<p>| 选项 | 描述                         |
-| ---- | ---------------------------- |
-| -i   | 忽略大小写匹配。             |
-| -v   | 反向匹配，显示未匹配的行。   |
-| -c   | 仅输出匹配的行数。           |
-| -n   | 显示匹配行的行号。           |
-| -l   | 仅列出包含匹配内容的文件名。 |
-| -o   | 仅显示匹配的部分，而非整行。 |
-| -r   | 递归搜索                     |
-| -w   | 完全匹配                     |
-| -e   | 指定正则表达式               |</p>
-<h5>示例</h5>
+<h5 id="heading">常用选项</h5>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-i</td>
+<td>忽略大小写匹配。</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>反向匹配，显示未匹配的行。</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>仅输出匹配的行数。</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>显示匹配行的行号。</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>仅列出包含匹配内容的文件名。</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>仅显示匹配的部分，而非整行。</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归搜索</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>完全匹配</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>指定正则表达式</td>
+</tr>
+</tbody>
+</table>
+<h5 id="heading-1">示例</h5>
 <ul>
 <li>显示 <code>file.txt</code> 中包含 &quot;hello&quot; 的所有行:</li>
 </ul>
@@ -152,7 +187,7 @@ grep [选项] &quot;搜索模式&quot; 文件
 <pre><code class="language-shell">grep -C 2 &quot;important&quot; document.txt
 </code></pre>
 <hr>
-<h4>awk</h4>
+<h4 id="awk">awk</h4>
 <ul>
 <li><code>awk</code> 是一个功能强大的文本处理工具，用于在文件或文本流中对数据进行格式化、过滤和分析操作。它支持基于模式的匹配和操作，适用于日志分析、数据提取和简单的脚本编写。</li>
 <li>基本语法</li>
@@ -163,24 +198,73 @@ grep [选项] &quot;搜索模式&quot; 文件
 #如果省略 动作，默认打印匹配的行。
 awk '模式 { 动作 }' 文件
 </code></pre>
-<h5>常用选项</h5>
-<p>| 选项       | 描述                                       |
-| ---------- | ------------------------------------------ |
-| -F         | 指定输入字段分隔符（默认是空格或制表符）。 |
-| -v         | var=value	定义变量并传递给 awk。           |
-| BEGIN      | 在处理数据前执行的动作（如初始化）。       |
-| END        | 在所有数据处理完成后执行的动作。           |
-| 条件表达式 | 如 $1 &gt; 100，匹配第一个字段大于 100 的行。 |</p>
-<h5>常用内置变量</h5>
-<p>| 变量   | 描述                                       |
-| ------ | ------------------------------------------ |
-| $0     | 当前行的内容。                             |
-| $1 ... | 当前行的第 1 个、第 2 个字段，以此类推。   |
-| NR     | 当前行号（Number of Record）。             |
-| NF     | 当前行的字段数（Number of Fields）。       |
-| FS     | 输入字段分隔符（Field Separator）。        |
-| OFS    | 输出字段分隔符（Output Field Separator）。 |</p>
-<h5>示例</h5>
+<h5 id="heading-2">常用选项</h5>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-F</td>
+<td>指定输入字段分隔符（默认是空格或制表符）。</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>var=value	定义变量并传递给 awk。</td>
+</tr>
+<tr>
+<td>BEGIN</td>
+<td>在处理数据前执行的动作（如初始化）。</td>
+</tr>
+<tr>
+<td>END</td>
+<td>在所有数据处理完成后执行的动作。</td>
+</tr>
+<tr>
+<td>条件表达式</td>
+<td>如 $1 &gt; 100，匹配第一个字段大于 100 的行。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="heading-3">常用内置变量</h5>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0</td>
+<td>当前行的内容。</td>
+</tr>
+<tr>
+<td>$1 ...</td>
+<td>当前行的第 1 个、第 2 个字段，以此类推。</td>
+</tr>
+<tr>
+<td>NR</td>
+<td>当前行号（Number of Record）。</td>
+</tr>
+<tr>
+<td>NF</td>
+<td>当前行的字段数（Number of Fields）。</td>
+</tr>
+<tr>
+<td>FS</td>
+<td>输入字段分隔符（Field Separator）。</td>
+</tr>
+<tr>
+<td>OFS</td>
+<td>输出字段分隔符（Output Field Separator）。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="heading-4">示例</h5>
 <ul>
 <li>逐行打印文件内容:</li>
 </ul>
@@ -237,7 +321,7 @@ awk '模式 { 动作 }' 文件
 <pre><code class="language-shell">awk '{ sum += $1 } END { print &quot;总和:&quot;, sum }' file.txt
 </code></pre>
 <hr>
-<h4>sed</h4>
+<h4 id="sed">sed</h4>
 <ul>
 <li><code>sed</code>（Stream Editor）是一个强大的流编辑器，用于对文本进行批量处理。它支持查找替换、删除、插入等多种文本操作，适用于处理文件或标准输入中的文本流。</li>
 <li>基本语法</li>
@@ -246,24 +330,73 @@ awk '模式 { 动作 }' 文件
 #文件：要处理的文件，也可以通过管道传入数据。
 sed [选项] '脚本命令' 文件
 </code></pre>
-<h5>基本选项</h5>
-<p>| 选项 | 描述                                 |
-| ---- | ------------------------------------ |
-| -n   | 禁止自动输出，只有指定的行会被显示。 |
-| -e   | 允许在命令行中添加多个脚本命令。     |
-| -i   | 直接修改原文件（就地编辑）。         |
-| -f   | 从文件加载脚本命令。                 |</p>
-<h5>常用命令</h5>
-<p>| 命令       | 描述                             |
-| ---------- | -------------------------------- |
-| s/old/new/ | 替换操作，将 old 替换为 new。    |
-| d          | 删除匹配的行。                   |
-| p          | 打印匹配的行（与 -n 一起使用）。 |
-| a\text     | 在当前行后追加文本 text。        |
-| i\text     | 在当前行前插入文本 text。        |
-| c\text     | 替换匹配行的内容为 text。        |
-| q          | 提前退出，停止处理后续行。       |</p>
-<h5>示例</h5>
+<h5 id="heading-5">基本选项</h5>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-n</td>
+<td>禁止自动输出，只有指定的行会被显示。</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>允许在命令行中添加多个脚本命令。</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>直接修改原文件（就地编辑）。</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>从文件加载脚本命令。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="heading-6">常用命令</h5>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s/old/new/</td>
+<td>替换操作，将 old 替换为 new。</td>
+</tr>
+<tr>
+<td>d</td>
+<td>删除匹配的行。</td>
+</tr>
+<tr>
+<td>p</td>
+<td>打印匹配的行（与 -n 一起使用）。</td>
+</tr>
+<tr>
+<td>a\text</td>
+<td>在当前行后追加文本 text。</td>
+</tr>
+<tr>
+<td>i\text</td>
+<td>在当前行前插入文本 text。</td>
+</tr>
+<tr>
+<td>c\text</td>
+<td>替换匹配行的内容为 text。</td>
+</tr>
+<tr>
+<td>q</td>
+<td>提前退出，停止处理后续行。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="heading-7">示例</h5>
 <ul>
 <li>将 file.txt 中的第一处 old 替换为 new:</li>
 </ul>

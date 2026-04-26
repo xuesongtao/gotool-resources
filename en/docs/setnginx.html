@@ -98,12 +98,12 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h4><strong>Log Rotation Configuration</strong></h4>
+                <h4 id="log-rotation-configuration"><strong>Log Rotation Configuration</strong></h4>
 <ul>
 <li>During the operation of <strong>Nginx/OpenResty</strong>, access and error logs continuously grow. Over time, large log files can impact performance and management. Therefore, logs should be <strong>rotated daily</strong> or <strong>by file size</strong> for better organization, storage, and analysis.</li>
 <li>The <code>logrotate</code> tool is used for log management. It is a Linux utility that automates log rotation, compression, and deletion of old logs.</li>
 </ul>
-<h5><strong>Step 1: Create a <code>logrotate</code> Configuration File</strong></h5>
+<h5 id="step-1-create-a-logrotate-configuration-file"><strong>Step 1: Create a <code>logrotate</code> Configuration File</strong></h5>
 <p>Add the following configuration to <code>/etc/logrotate.d/openresty</code>:</p>
 <pre><code class="language-sh"># Log rotation for OpenResty
 #/usr/local/openresty/nginx/logs/*.log {
@@ -130,27 +130,53 @@
     endscript
 }
 </code></pre>
-<h5><strong>Step 2: Manually Test <code>logrotate</code></strong></h5>
+<h5 id="step-2-manually-test-logrotate"><strong>Step 2: Manually Test <code>logrotate</code></strong></h5>
 <pre><code class="language-sh">logrotate -f /etc/logrotate.d/openresty
 </code></pre>
 <hr>
-<h4><strong>Location Syntax</strong></h4>
+<h4 id="location-syntax"><strong>Location Syntax</strong></h4>
 <p>The <code>location</code> block is used to match client request URIs.</p>
-<h5><strong>Basic Syntax:</strong></h5>
+<h5 id="basic-syntax"><strong>Basic Syntax:</strong></h5>
 <p>There are four optional parameters for URI matching, and a named location (<code>@</code>) for internal routing.</p>
 <pre><code class="language-sh">location [ = | ~ | ~* | ^~ ] /URI { … }
 location @/name/ { … }
 </code></pre>
-<p>| Parameter | Explanation                                                                                                            |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| (none)    | Standard prefix match (matches from the beginning of the URI).                                                         |
-| <code>=</code>       | Exact match (if matched, processing stops immediately).                                                                |
-| <code>^~</code>      | Prefix match with priority (if matched, regex locations are ignored). Used for directories.                            |
-| <code>~</code>       | Regex match (case-sensitive).                                                                                          |
-| <code>~*</code>      | Regex match (case-insensitive).                                                                                        |
-| <code>@</code>       | Named location for internal redirects (e.g., <code>error_page</code>, <code>try_files</code>). Functions similarly to <code>goto</code> in programming. |</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(none)</td>
+<td>Standard prefix match (matches from the beginning of the URI).</td>
+</tr>
+<tr>
+<td><code>=</code></td>
+<td>Exact match (if matched, processing stops immediately).</td>
+</tr>
+<tr>
+<td><code>^~</code></td>
+<td>Prefix match with priority (if matched, regex locations are ignored). Used for directories.</td>
+</tr>
+<tr>
+<td><code>~</code></td>
+<td>Regex match (case-sensitive).</td>
+</tr>
+<tr>
+<td><code>~*</code></td>
+<td>Regex match (case-insensitive).</td>
+</tr>
+<tr>
+<td><code>@</code></td>
+<td>Named location for internal redirects (e.g., <code>error_page</code>, <code>try_files</code>). Functions similarly to <code>goto</code> in programming.</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h4><strong>Matching Order in Nginx</strong></h4>
+<h4 id="matching-order-in-nginx"><strong>Matching Order in Nginx</strong></h4>
 <ul>
 <li>Nginx first matches the <strong>server</strong> block based on domain, IP, and port.</li>
 <li>Within a <code>server</code>, Nginx matches <code>location</code> blocks <strong>in the following priority order:</strong></li>
@@ -168,7 +194,7 @@ location @/name/ { … }
 <li><strong>Rule 5 selects the longest prefix match if no higher-priority match exists.</strong></li>
 </ul>
 <hr>
-<h4><strong>CORS Configuration (Cross-Origin Resource Sharing)</strong></h4>
+<h4 id="cors-configuration-cross-origin-resource-sharing"><strong>CORS Configuration (Cross-Origin Resource Sharing)</strong></h4>
 <p>To enable cross-origin requests in Nginx, use the following configuration:</p>
 <pre><code class="language-sh">location / {  
     add_header Access-Control-Allow-Origin *;
@@ -182,8 +208,8 @@ location @/name/ { … }
 } 
 </code></pre>
 <hr>
-<h4><strong><code>if</code> Syntax in Nginx</strong></h4>
-<h5><strong>1. Regular Expression Matching:</strong></h5>
+<h4 id="if-syntax-in-nginx"><strong><code>if</code> Syntax in Nginx</strong></h4>
+<h5 id="1-regular-expression-matching"><strong>1. Regular Expression Matching:</strong></h5>
 <ul>
 <li><code>==</code> → Exact match</li>
 <li><code>~</code> → Regex match (case-sensitive)</li>
@@ -191,7 +217,7 @@ location @/name/ { … }
 <li><code>!~</code> → Negative regex match (case-sensitive)</li>
 <li><code>!~*</code> → Negative regex match (case-insensitive)</li>
 </ul>
-<h5><strong>2. File Handling Conditions:</strong></h5>
+<h5 id="2-file-handling-conditions"><strong>2. File Handling Conditions:</strong></h5>
 <ul>
 <li><code>-f</code>, <code>!-f</code> → Check if the path exists and is a file</li>
 <li><code>-d</code>, <code>!-d</code> → Check if the path exists and is a directory</li>
@@ -199,7 +225,7 @@ location @/name/ { … }
 <li><code>-x</code>, <code>!-x</code> → Check if the path exists and is executable</li>
 </ul>
 <hr>
-<h4><strong>Security: Preventing Bot Traffic &amp; Penalizing Suspicious Requests</strong></h4>
+<h4 id="security-preventing-bot-traffic--penalizing-suspicious-requests"><strong>Security: Preventing Bot Traffic &amp; Penalizing Suspicious Requests</strong></h4>
 <pre><code class="language-sh"># Block bots and malicious requests
 if ($request_uri ~* \.(php|txt|sh|sql|tar)) {
     rewrite (.*)  http://speedtest.tele2.net/50GB.zip permanent;

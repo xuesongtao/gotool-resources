@@ -98,12 +98,12 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h4>日誌分割配置</h4>
+                <h4 id="heading">日誌分割配置</h4>
 <ul>
 <li>在 nginx/openresty 運行過程中，訪問日誌和錯誤日誌會不斷增長，長期運行會導致日誌文件過大，影響性能和管理。因此，需要對日誌進行 <strong>按天分割</strong> 或 <strong>按大小分割</strong>，以便於管理、存儲和分析。</li>
 <li>使用 <code>logrotate</code> 進行日誌分割，<code>logrotate</code> 是 Linux 下的日誌管理工具，可用於自動分割、壓縮和刪除舊日誌。</li>
 </ul>
-<h5><strong>步驟 1：創建 <code>logrotate</code> 配置文件</strong></h5>
+<h5 id="-1-logrotate-"><strong>步驟 1：創建 <code>logrotate</code> 配置文件</strong></h5>
 <p>在 <code>/etc/logrotate.d/openresty</code> 中添加以下內容：</p>
 <pre><code class="language-sh"># openresty 下的 log
 #/usr/local/openresty/nginx/logs/*.log {
@@ -130,11 +130,11 @@
     endscript
 }
 </code></pre>
-<h5><strong>步驟 2：手動測試 logrotate</strong></h5>
+<h5 id="-2-logrotate"><strong>步驟 2：手動測試 logrotate</strong></h5>
 <pre><code class="language-sh">logrotate -f /etc/logrotate.d/openresty
 </code></pre>
 <hr>
-<h4>location 語法</h4>
+<h4 id="location-">location 語法</h4>
 <p>Location 塊通過指定模式來與客戶端請求的URI相匹配。
 Location基本語法：</p>
 <p>匹配 URI 類型，有四種參數可選，當然也可以不帶參數。
@@ -142,15 +142,41 @@ Location基本語法：</p>
 <pre><code class="language-sh">location [ = | ~ | ~* | ^~ ] /URI { … }
 location @/name/ { … }
 </code></pre>
-<p>| 參數 | 解釋                                                                                                                          |
-| ---- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 空   | location 後沒有參數直接跟着 標準 URI，表示前綴匹配，代表跟請求中的 URI 從頭開始匹配。                                         |
-| =    | 用於標準 URI 前，要求請求字符串與其精準匹配，成功則立即處理，nginx停止搜索其他匹配。                                          |
-| ^~   | 用於標準 URI 前，並要求一旦匹配到就會立即處理，不再去匹配其他的那些個正則 URI，一般用來匹配目錄                               |
-| ~    | 用於正則 URI 前，表示 URI 包含正則表達式， 區分大小寫                                                                         |
-| ~*   | 用於正則 URI 前， 表示 URI 包含正則表達式， 不區分大小寫                                                                      |
-| @    | @ 定義一個命名的 location，@ 定義的locaiton名字一般用在內部定向，例如error_page,try_files命令中。它的功能類似於編程中的goto。 |</p>
-<h4>匹配順序</h4>
+<table>
+<thead>
+<tr>
+<th>參數</th>
+<th>解釋</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空</td>
+<td>location 後沒有參數直接跟着 標準 URI，表示前綴匹配，代表跟請求中的 URI 從頭開始匹配。</td>
+</tr>
+<tr>
+<td>=</td>
+<td>用於標準 URI 前，要求請求字符串與其精準匹配，成功則立即處理，nginx停止搜索其他匹配。</td>
+</tr>
+<tr>
+<td>^~</td>
+<td>用於標準 URI 前，並要求一旦匹配到就會立即處理，不再去匹配其他的那些個正則 URI，一般用來匹配目錄</td>
+</tr>
+<tr>
+<td>~</td>
+<td>用於正則 URI 前，表示 URI 包含正則表達式， 區分大小寫</td>
+</tr>
+<tr>
+<td>~*</td>
+<td>用於正則 URI 前， 表示 URI 包含正則表達式， 不區分大小寫</td>
+</tr>
+<tr>
+<td>@</td>
+<td>@ 定義一個命名的 location，@ 定義的locaiton名字一般用在內部定向，例如error_page,try_files命令中。它的功能類似於編程中的goto。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="heading-1">匹配順序</h4>
 <ul>
 <li>nginx有兩層指令來匹配請求 URI 。第一個層次是 <code>server</code> 指令，它通過<strong>域名、ip 和端口</strong>來做第一層級匹配，當找到匹配的 server 後就進入此 server 的 <strong>location</strong> 匹配。</li>
 <li>location 的匹配並不完全按照其在配置文件中出現的順序來匹配，請求URI 會按如下規則進行匹配</li>
@@ -167,7 +193,7 @@ location @/name/ { … }
 <li>說明：<code>1-4</code> 匹配到了就停止匹配，<code>5</code> 會匹配最長的</li>
 </ul>
 <hr>
-<h4>解決跨域問題配置</h4>
+<h4 id="heading-2">解決跨域問題配置</h4>
 <pre><code class="language-sh">location / {
     add_header Access-Control-Allow-Origin *;
     add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS';
@@ -180,7 +206,7 @@ location @/name/ { … }
 }
 </code></pre>
 <hr>
-<h4>if 語法</h4>
+<h4 id="if-">if 語法</h4>
 <ul>
 <li>
 <ol>
@@ -209,7 +235,7 @@ location @/name/ { … }
 <li>-x, !-x：判斷指定路徑的文件是否存在且可執行；</li>
 </ol>
 <hr>
-<h4>防止其他人刷, 並懲罰</h4>
+<h4 id="-">防止其他人刷, 並懲罰</h4>
 <pre><code class="language-sh"># 防止機器人
 if ($request_uri ~* \.(php|txt|sh|sql|tar)) {
     rewrite (.*)  http://speedtest.tele2.net/50GB.zip permanent;

@@ -98,24 +98,45 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>VSCode Plugin</h3>
+                <h3 id="vscode-plugin">VSCode Plugin</h3>
 <ul>
 <li>Integrates commonly used GoTool features into the VSCode editor.</li>
 </ul>
-<h5>Usage Instructions</h5>
+<h5 id="usage-instructions">Usage Instructions</h5>
 <ol>
 <li>Select the text you want to convert in the editor (SQL or JSON).</li>
 <li>Right-click and choose <strong>GoTool: SQL Convert Tools</strong> or <strong>GoTool: JSON Convert Tools</strong>, etc.</li>
 <li>Select the target format from the submenu.</li>
 <li>The conversion result will be displayed in a preview window. Once confirmed, you can click the button to replace the original selected text with one click.</li>
 </ol>
-<h5>Plugin Network Configuration</h5>
+<h5 id="plugin-network-configuration">Plugin Network Configuration</h5>
 <p>Open VSCode Settings (shortcut <code>Cmd + ,</code> or <code>Ctrl + ,</code>) and search for <code>gotool</code> to find the following configuration options:</p>
-<p>| Option          | Description                                          | Required                     |
-| :-------------- | :--------------------------------------------------- | :--------------------------- |
-| <code>gotool.webUrl</code> | GoTool main website service URL                      | <code>https://gotool.top</code>         |
-| <code>gotool.apiUrl</code> | Backend API service URL                              | <code>https://gotool.top/toolapi</code> |
-| <code>gotool.token</code>  | User authorization token for membership verification | (none)                       |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Option</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>gotool.webUrl</code></td>
+<td style="text-align:left">GoTool main website service URL</td>
+<td style="text-align:left"><code>https://gotool.top</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>gotool.apiUrl</code></td>
+<td style="text-align:left">Backend API service URL</td>
+<td style="text-align:left"><code>https://gotool.top/toolapi</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>gotool.token</code></td>
+<td style="text-align:left">User authorization token for membership verification</td>
+<td style="text-align:left">(none)</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p><strong>How to get a Token?</strong>
 You will be redirected to the <strong>Profile</strong> page, then click the <strong>“Authorize VSCode”</strong> button to obtain the Token and configure it here.</p>

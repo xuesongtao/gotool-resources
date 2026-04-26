@@ -98,9 +98,9 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h4>find Common Commands Cheat Sheet</h4>
+                <h4 id="find-common-commands-cheat-sheet">find Common Commands Cheat Sheet</h4>
 <p>The <code>find</code> command is used to search for files and directories in a directory hierarchy.</p>
-<h3>Basic Search</h3>
+<h3 id="basic-search">Basic Search</h3>
 <pre><code class="language-shell"># Search for files by name in current directory and subdirectories (case-sensitive)
 find . -name &quot;test.txt&quot;
 
@@ -113,7 +113,7 @@ find . -name &quot;*.log&quot;
 # Search using regular expressions
 find . -regex &quot;.*\.js&quot;
 </code></pre>
-<h3>Search by Type</h3>
+<h3 id="search-by-type">Search by Type</h3>
 <pre><code class="language-shell"># Find directories (d: directory)
 find . -type d -name &quot;src&quot;
 
@@ -123,7 +123,7 @@ find . -type f -name &quot;*.config&quot;
 # Find symbolic links (l: link)
 find . -type l
 </code></pre>
-<h3>Search by Size</h3>
+<h3 id="search-by-size">Search by Size</h3>
 <pre><code class="language-shell"># Find files larger than 100MB
 find . -type f -size +100M
 
@@ -136,7 +136,7 @@ find . -type f -size 1G
 # Find empty files or directories
 find . -empty
 </code></pre>
-<h3>Search by Modification Time</h3>
+<h3 id="search-by-modification-time">Search by Modification Time</h3>
 <pre><code class="language-shell"># Find files modified in the last 24 hours (n*24 hours)
 find . -mtime -1
 
@@ -152,7 +152,7 @@ find . -atime -1
 # Find files whose status changed in the last 1 hour (ctime, e.g., permission changes)
 find . -ctime -1
 </code></pre>
-<h3>Search by Permissions and Owner</h3>
+<h3 id="search-by-permissions-and-owner">Search by Permissions and Owner</h3>
 <pre><code class="language-shell"># Find files with 777 permissions
 find . -perm 777
 
@@ -162,7 +162,7 @@ find . -user root
 # Find files belonging to group developers
 find . -group developers
 </code></pre>
-<h3>Combining Searches (Logical Operators)</h3>
+<h3 id="combining-searches-logical-operators">Combining Searches (Logical Operators)</h3>
 <pre><code class="language-shell"># AND (Default): Find directories named code
 find . -name &quot;code&quot; -type d
 
@@ -172,7 +172,7 @@ find . \( -name &quot;*.sh&quot; -o -name &quot;*.py&quot; \)
 # NOT: Find files that do not end with .txt
 find . ! -name &quot;*.txt&quot;
 </code></pre>
-<h3>Perform Actions After Finding (exec &amp; delete)</h3>
+<h3 id="perform-actions-after-finding-exec--delete">Perform Actions After Finding (exec &amp; delete)</h3>
 <pre><code class="language-shell"># Find and delete all .tmp files (Use with caution)
 find . -name &quot;*.tmp&quot; -delete
 
@@ -188,7 +188,7 @@ find . -type d -exec chmod 755 {} \;
 # Find files containing specific content (combine with grep)
 find . -type f -name &quot;*.txt&quot; -exec grep -l &quot;search_term&quot; {} +
 </code></pre>
-<h3>Depth Control</h3>
+<h3 id="depth-control">Depth Control</h3>
 <pre><code class="language-shell"># Search only in the current directory (don't enter subdirectories)
 find . -maxdepth 1 -name &quot;*.js&quot;
 

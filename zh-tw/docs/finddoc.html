@@ -98,9 +98,9 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h4>find 常用命令備忘</h4>
+                <h4 id="find-">find 常用命令備忘</h4>
 <p><code>find</code> 命令用於在目錄層次結構中搜索文件和目錄。</p>
-<h3>基本搜索</h3>
+<h3 id="heading">基本搜索</h3>
 <pre><code class="language-shell"># 在當前目錄及子目錄中按名稱查找文件 (區分大小寫)
 find . -name &quot;test.txt&quot;
 
@@ -113,7 +113,7 @@ find . -name &quot;*.log&quot;
 # 按正規表達式查找
 find . -regex &quot;.*\.js&quot;
 </code></pre>
-<h3>按類型查找</h3>
+<h3 id="heading-1">按類型查找</h3>
 <pre><code class="language-shell"># 查找目錄 (d: directory)
 find . -type d -name &quot;src&quot;
 
@@ -123,7 +123,7 @@ find . -type f -name &quot;*.config&quot;
 # 查找符號連結 (l: link)
 find . -type l
 </code></pre>
-<h3>按大小查找</h3>
+<h3 id="heading-2">按大小查找</h3>
 <pre><code class="language-shell"># 查找大於 100MB 的文件
 find . -type f -size +100M
 
@@ -136,7 +136,7 @@ find . -type f -size 1G
 # 查找空文件或空目錄
 find . -empty
 </code></pre>
-<h3>按修改時間查找</h3>
+<h3 id="heading-3">按修改時間查找</h3>
 <pre><code class="language-shell"># 查找在過去 24 小時內修改過的文件 (n*24小時)
 find . -mtime -1
 
@@ -152,7 +152,7 @@ find . -atime -1
 # 查找在過去 1 小時內狀態改變的文件 (ctime, 如權限修改)
 find . -ctime -1
 </code></pre>
-<h3>按權限與所有者查找</h3>
+<h3 id="heading-4">按權限與所有者查找</h3>
 <pre><code class="language-shell"># 查找權限為 777 的文件
 find . -perm 777
 
@@ -162,7 +162,7 @@ find . -user root
 # 查找所属組為 developers 的文件
 find . -group developers
 </code></pre>
-<h3>組合搜索 (邏輯運算)</h3>
+<h3 id="-">組合搜索 (邏輯運算)</h3>
 <pre><code class="language-shell"># AND (預設): 查找名為 code 且類型為目錄
 find . -name &quot;code&quot; -type d
 
@@ -172,7 +172,7 @@ find . \( -name &quot;*.sh&quot; -o -name &quot;*.py&quot; \)
 # NOT: 查找不是以 .txt 結尾的文件
 find . ! -name &quot;*.txt&quot;
 </code></pre>
-<h3>找到後執行操作 (exec &amp; delete)</h3>
+<h3 id="-exec--delete">找到後執行操作 (exec &amp; delete)</h3>
 <pre><code class="language-shell"># 查找並刪除所有 .tmp 文件 (慎用)
 find . -name &quot;*.tmp&quot; -delete
 
@@ -188,7 +188,7 @@ find . -type d -exec chmod 755 {} \;
 # 查找包含特定內容的文件 (結合 grep)
 find . -type f -name &quot;*.txt&quot; -exec grep -l &quot;search_term&quot; {} +
 </code></pre>
-<h3>深度控制</h3>
+<h3 id="heading-5">深度控制</h3>
 <pre><code class="language-shell"># 僅在當前目錄查找 (不進入子目錄)
 find . -maxdepth 1 -name &quot;*.js&quot;
 

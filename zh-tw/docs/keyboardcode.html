@@ -98,85 +98,385 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>鍵盤碼說明文檔</h3>
-<h4>1.字母鍵</h4>
-<p>| 鍵  | 鍵盤碼 | 描述  |
-| --- | ------ | ----- |
-| A   | <code>65</code>   | 字母A |
-| B   | <code>66</code>   | 字母B |
-| C   | <code>67</code>   | 字母C |
-| D   | <code>68</code>   | 字母D |
-| E   | <code>69</code>   | 字母E |
-| F   | <code>70</code>   | 字母F |
-| G   | <code>71</code>   | 字母G |
-| H   | <code>72</code>   | 字母H |
-| I   | <code>73</code>   | 字母I |
-| J   | <code>74</code>   | 字母J |
-| K   | <code>75</code>   | 字母K |
-| L   | <code>76</code>   | 字母L |
-| M   | <code>77</code>   | 字母M |
-| N   | <code>78</code>   | 字母N |
-| O   | <code>79</code>   | 字母O |
-| P   | <code>80</code>   | 字母P |
-| Q   | <code>81</code>   | 字母Q |
-| R   | <code>82</code>   | 字母R |
-| S   | <code>83</code>   | 字母S |
-| T   | <code>84</code>   | 字母T |
-| U   | <code>85</code>   | 字母U |
-| V   | <code>86</code>   | 字母V |
-| W   | <code>87</code>   | 字母W |
-| X   | <code>88</code>   | 字母X |
-| Y   | ``     | 字母Y |
-| Z   | <code>90</code>   | 字母Z |</p>
-<h4>2.數位鍵</h4>
-<p>| 鍵  | 鍵盤碼 | 描述  |
-| --- | ------ | ----- |
-| 0   | <code>48</code>   | 數位0 |
-| 1   | <code>49</code>   | 數位1 |
-| 2   | <code>50</code>   | 數位2 |
-| 3   | <code>51</code>   | 數位3 |
-| 4   | <code>52</code>   | 數位4 |
-| 5   | <code>53</code>   | 數位5 |
-| 6   | <code>54</code>   | 數位6 |
-| 7   | <code>55</code>   | 數位7 |
-| 8   | <code>56</code>   | 數位8 |
-| 9   | <code>57</code>   | 數位9 |</p>
-<h4>3.常用功能鍵</h4>
-<p>| 鍵          | 鍵盤碼 | 描述                      |
-| ----------- | ------ | ------------------------- |
-| Enter       | <code>13</code>   | 回車鍵                    |
-| Space       | <code>32</code>   | 空白鍵                    |
-| Backspace   | <code>8</code>    | 後退鍵                    |
-| Tab         | <code>9</code>    | 製錶符鍵                  |
-| Shift       | <code>16</code>   | 移動鍵                    |
-| Ctrl        | <code>17</code>   | 控制鍵                    |
-| Alt         | <code>18</code>   | 替代鍵                    |
-| Esc         | <code>27</code>   | Escape鍵                  |
-| Arrow Up    | <code>38</code>   | 上箭頭                    |
-| Arrow Down  | <code>40</code>   | 下箭頭                    |
-| Arrow Left  | <code>37</code>   | 左箭頭                    |
-| Arrow Right | <code>39</code>   | 右箭頭                    |
-| Home        | <code>36</code>   | 首頁鍵                    |
-| End         | <code>35</code>   | 結束鍵                    |
-| Page Up     | <code>33</code>   | 向上翻頁鍵                |
-| Page Down   | <code>34</code>   | 向下翻頁鍵                |
-| Insert      | <code>45</code>   | 插入鍵，切換插入/替換模式 |
-| Delete      | <code>46</code>   | 刪除鍵，刪除遊標後的字元  |</p>
-<h4>4.功能鍵</h4>
-<p>| 鍵  | 鍵盤碼 | 描述                  |
-| --- | ------ | --------------------- |
-| F1  | <code>112</code>  | 功能鍵1，通常用於幫助 |
-| F2  | <code>113</code>  | 功能鍵2               |
-| F3  | <code>114</code>  | 功能鍵3               |
-| F4  | <code>115</code>  | 功能鍵4               |
-| F5  | <code>116</code>  | 功能鍵5               |
-| F6  | <code>117</code>  | 功能鍵6               |
-| F7  | <code>118</code>  | 功能鍵7               |
-| F8  | <code>119</code>  | 功能鍵8               |
-| F9  | <code>120</code>  | 功能鍵9               |
-| F10 | <code>121</code>  | 功能鍵10              |
-| F11 | <code>122</code>  | 功能鍵11              |
-| F12 | <code>123</code>  | 功能鍵12              |</p>
+                <h3 id="heading">鍵盤碼說明文檔</h3>
+<h4 id="1">1.字母鍵</h4>
+<table>
+<thead>
+<tr>
+<th>鍵</th>
+<th>鍵盤碼</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><code>65</code></td>
+<td>字母A</td>
+</tr>
+<tr>
+<td>B</td>
+<td><code>66</code></td>
+<td>字母B</td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>67</code></td>
+<td>字母C</td>
+</tr>
+<tr>
+<td>D</td>
+<td><code>68</code></td>
+<td>字母D</td>
+</tr>
+<tr>
+<td>E</td>
+<td><code>69</code></td>
+<td>字母E</td>
+</tr>
+<tr>
+<td>F</td>
+<td><code>70</code></td>
+<td>字母F</td>
+</tr>
+<tr>
+<td>G</td>
+<td><code>71</code></td>
+<td>字母G</td>
+</tr>
+<tr>
+<td>H</td>
+<td><code>72</code></td>
+<td>字母H</td>
+</tr>
+<tr>
+<td>I</td>
+<td><code>73</code></td>
+<td>字母I</td>
+</tr>
+<tr>
+<td>J</td>
+<td><code>74</code></td>
+<td>字母J</td>
+</tr>
+<tr>
+<td>K</td>
+<td><code>75</code></td>
+<td>字母K</td>
+</tr>
+<tr>
+<td>L</td>
+<td><code>76</code></td>
+<td>字母L</td>
+</tr>
+<tr>
+<td>M</td>
+<td><code>77</code></td>
+<td>字母M</td>
+</tr>
+<tr>
+<td>N</td>
+<td><code>78</code></td>
+<td>字母N</td>
+</tr>
+<tr>
+<td>O</td>
+<td><code>79</code></td>
+<td>字母O</td>
+</tr>
+<tr>
+<td>P</td>
+<td><code>80</code></td>
+<td>字母P</td>
+</tr>
+<tr>
+<td>Q</td>
+<td><code>81</code></td>
+<td>字母Q</td>
+</tr>
+<tr>
+<td>R</td>
+<td><code>82</code></td>
+<td>字母R</td>
+</tr>
+<tr>
+<td>S</td>
+<td><code>83</code></td>
+<td>字母S</td>
+</tr>
+<tr>
+<td>T</td>
+<td><code>84</code></td>
+<td>字母T</td>
+</tr>
+<tr>
+<td>U</td>
+<td><code>85</code></td>
+<td>字母U</td>
+</tr>
+<tr>
+<td>V</td>
+<td><code>86</code></td>
+<td>字母V</td>
+</tr>
+<tr>
+<td>W</td>
+<td><code>87</code></td>
+<td>字母W</td>
+</tr>
+<tr>
+<td>X</td>
+<td><code>88</code></td>
+<td>字母X</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>``</td>
+<td>字母Y</td>
+</tr>
+<tr>
+<td>Z</td>
+<td><code>90</code></td>
+<td>字母Z</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2">2.數位鍵</h4>
+<table>
+<thead>
+<tr>
+<th>鍵</th>
+<th>鍵盤碼</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td><code>48</code></td>
+<td>數位0</td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>49</code></td>
+<td>數位1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>50</code></td>
+<td>數位2</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>51</code></td>
+<td>數位3</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>52</code></td>
+<td>數位4</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>53</code></td>
+<td>數位5</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>54</code></td>
+<td>數位6</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>55</code></td>
+<td>數位7</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>56</code></td>
+<td>數位8</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>57</code></td>
+<td>數位9</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3">3.常用功能鍵</h4>
+<table>
+<thead>
+<tr>
+<th>鍵</th>
+<th>鍵盤碼</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enter</td>
+<td><code>13</code></td>
+<td>回車鍵</td>
+</tr>
+<tr>
+<td>Space</td>
+<td><code>32</code></td>
+<td>空白鍵</td>
+</tr>
+<tr>
+<td>Backspace</td>
+<td><code>8</code></td>
+<td>後退鍵</td>
+</tr>
+<tr>
+<td>Tab</td>
+<td><code>9</code></td>
+<td>製錶符鍵</td>
+</tr>
+<tr>
+<td>Shift</td>
+<td><code>16</code></td>
+<td>移動鍵</td>
+</tr>
+<tr>
+<td>Ctrl</td>
+<td><code>17</code></td>
+<td>控制鍵</td>
+</tr>
+<tr>
+<td>Alt</td>
+<td><code>18</code></td>
+<td>替代鍵</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td><code>27</code></td>
+<td>Escape鍵</td>
+</tr>
+<tr>
+<td>Arrow Up</td>
+<td><code>38</code></td>
+<td>上箭頭</td>
+</tr>
+<tr>
+<td>Arrow Down</td>
+<td><code>40</code></td>
+<td>下箭頭</td>
+</tr>
+<tr>
+<td>Arrow Left</td>
+<td><code>37</code></td>
+<td>左箭頭</td>
+</tr>
+<tr>
+<td>Arrow Right</td>
+<td><code>39</code></td>
+<td>右箭頭</td>
+</tr>
+<tr>
+<td>Home</td>
+<td><code>36</code></td>
+<td>首頁鍵</td>
+</tr>
+<tr>
+<td>End</td>
+<td><code>35</code></td>
+<td>結束鍵</td>
+</tr>
+<tr>
+<td>Page Up</td>
+<td><code>33</code></td>
+<td>向上翻頁鍵</td>
+</tr>
+<tr>
+<td>Page Down</td>
+<td><code>34</code></td>
+<td>向下翻頁鍵</td>
+</tr>
+<tr>
+<td>Insert</td>
+<td><code>45</code></td>
+<td>插入鍵，切換插入/替換模式</td>
+</tr>
+<tr>
+<td>Delete</td>
+<td><code>46</code></td>
+<td>刪除鍵，刪除遊標後的字元</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4">4.功能鍵</h4>
+<table>
+<thead>
+<tr>
+<th>鍵</th>
+<th>鍵盤碼</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F1</td>
+<td><code>112</code></td>
+<td>功能鍵1，通常用於幫助</td>
+</tr>
+<tr>
+<td>F2</td>
+<td><code>113</code></td>
+<td>功能鍵2</td>
+</tr>
+<tr>
+<td>F3</td>
+<td><code>114</code></td>
+<td>功能鍵3</td>
+</tr>
+<tr>
+<td>F4</td>
+<td><code>115</code></td>
+<td>功能鍵4</td>
+</tr>
+<tr>
+<td>F5</td>
+<td><code>116</code></td>
+<td>功能鍵5</td>
+</tr>
+<tr>
+<td>F6</td>
+<td><code>117</code></td>
+<td>功能鍵6</td>
+</tr>
+<tr>
+<td>F7</td>
+<td><code>118</code></td>
+<td>功能鍵7</td>
+</tr>
+<tr>
+<td>F8</td>
+<td><code>119</code></td>
+<td>功能鍵8</td>
+</tr>
+<tr>
+<td>F9</td>
+<td><code>120</code></td>
+<td>功能鍵9</td>
+</tr>
+<tr>
+<td>F10</td>
+<td><code>121</code></td>
+<td>功能鍵10</td>
+</tr>
+<tr>
+<td>F11</td>
+<td><code>122</code></td>
+<td>功能鍵11</td>
+</tr>
+<tr>
+<td>F12</td>
+<td><code>123</code></td>
+<td>功能鍵12</td>
+</tr>
+</tbody>
+</table>
 
             </div>
         

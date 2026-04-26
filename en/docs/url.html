@@ -98,23 +98,23 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>Function introduction</h3>
+                <h3 id="function-introduction">Function introduction</h3>
 <ol>
 <li>Use JavaScript's <strong>encodeURI</strong> and <strong>encodeURIComponent</strong> for encoding.</li>
 <li>Use JavaScript's <strong>decodeURIComponent</strong> to decode.</li>
 </ol>
-<h3>Method Introduction</h3>
-<h4>encodeURI</h4>
+<h3 id="method-introduction">Method Introduction</h3>
+<h4 id="encodeuri">encodeURI</h4>
 <ul>
 <li><strong>Purpose</strong>: Used to encode the entire URI. For example: <code>&quot;http://example.com/This is a test? name= Zhang San &quot;</code>.</li>
 <li><strong>Encoding rules</strong>: Only characters with special meaning in the URI will be encoded, such as spaces (encoded as <code>%20</code>),<code>#</code>(encoded as <code>%23</code>), etc. The following characters will not be encoded: <code>A-Z</code>,<code>a-z</code>,<code>0-9</code>,<code>-</code>,<code>_</code>,<code>.</code>!<code>,</code>~<code>,</code>*<code>,</code> '<code>、</code>(<code>、</code>)<code>、</code>;<code>、</code>/<code>、</code>?<code>、</code>:<code>、</code>@<code>、</code>&amp;<code>、</code>=<code>、</code>+<code>、</code>$<code>、</code>,`，Because these characters have a specific meaning in the URI.</li>
 </ul>
-<h4>encodeURIComponent</h4>
+<h4 id="encodeuricomponent">encodeURIComponent</h4>
 <ul>
 <li><strong>Purpose</strong>: Used to encode part of the URI (such as the values of query parameters), rather than the entire URI. For example: <code>&quot;name= Zhang San &amp;age=25&quot;</code>.</li>
 <li><strong>Encoding rules</strong>: <code>encodeURIComponent</code> encodes all non-alphanumeric characters, including <code>;</code>,<code>/</code>,<code>?</code>:<code>,</code>@<code>,</code>&amp;<code>,</code>=<code>,</code>+<code>,</code>$<code>,</code>,<code>,</code> etc., because these characters have no special meaning in the URI component, they are all encoded.</li>
 </ul>
-<h4>decodeURIComponent</h4>
+<h4 id="decodeuricomponent">decodeURIComponent</h4>
 <ul>
 <li><strong>Purpose</strong>: Used to decode individual URI components (such as the values of query parameters) and restore the characters encoded by <code>encodeURIComponent</code> to the original characters.</li>
 <li><strong>Decoding rules</strong>: <code>decodeURIComponent</code> will decode all characters encoded by <code>encodeURIComponent</code> and convert the encoding starting with <code>%</code> back to the corresponding character. For example,<code>%20</code> will be decoded as spaces, and <code>%3D</code> will be decoded as <code>=</code>.</li>

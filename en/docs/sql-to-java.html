@@ -98,7 +98,7 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>Function Introduction</h3>
+                <h3 id="function-introduction">Function Introduction</h3>
 <ol>
 <li>Supports converting SQL table creation statements to Java for various databases, including PostgreSQL, Oracle, and MySQL; <strong>table creation statements</strong>, <strong>table creation statements</strong>, <strong>table creation statements</strong> (emphasized thrice for importance).</li>
 <li>When converting SQL, you need to confirm whether to switch processing types, currently supporting three modes (<strong>normal</strong>, <strong>postgresql</strong>, <strong>oracle</strong>), default: <strong>normal</strong>.</li>
@@ -106,8 +106,8 @@
 <strong>Note</strong>: <strong>Comments cannot be included in SQL</strong> (i.e., <code>-- xxx</code> or <code># xxx</code>); this tool processes statements separated by <strong>;</strong>. Therefore, in <strong>normal</strong> mode, multiple table creation statements can be handled simultaneously, while <strong>postgresql</strong> and <strong>oracle</strong> only support single statements due to the need to parse comments.</li>
 </ol>
 <!-- raw HTML omitted -->
-<h3>Examples</h3>
-<h5>MySQL Table Creation Statement</h5>
+<h3 id="examples">Examples</h3>
+<h5 id="mysql-table-creation-statement">MySQL Table Creation Statement</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(10) NOT NULL COMMENT 'Name',
@@ -189,7 +189,7 @@ public class User {
 }
 
 </code></pre>
-<h5>pgsql table construction clause</h5>
+<h5 id="pgsql-table-construction-clause">pgsql table construction clause</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
 	id character varying(32) NOT NULL DEFAULT sys_guid(),
 	name character varying(10) NOT NULL,
@@ -287,7 +287,7 @@ public class User {
 }
 
 </code></pre>
-<h5>oracle build statement</h5>
+<h5 id="oracle-build-statement">oracle build statement</h5>
 <pre><code class="language-sql">CREATE TABLE if not exists user (
 	id character varying(32) NOT NULL DEFAULT sys_guid(),
 	name character varying(10) NOT NULL,

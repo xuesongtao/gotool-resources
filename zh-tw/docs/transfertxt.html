@@ -98,28 +98,28 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>在線即時傳輸 (TransferTxt)</h3>
+                <h3 id="-transfertxt">在線即時傳輸 (TransferTxt)</h3>
 <p>在線即時傳輸是一個基於 Web 的文本同步工具，支持多端即時互傳文本內容。</p>
-<h5>核心特性</h5>
+<h5 id="heading">核心特性</h5>
 <ul>
 <li><strong>即時同步</strong>：基於 <code>SSE (Server-Sent Events)</code> 和 <code>WebSocket</code> 技術實現，優先使用 <code>SSE</code> 以獲得更好的連接穩定性。支持同時3個設備同步</li>
 <li><strong>零延遲</strong>：一旦一方修改，所有連接同一通道的終端將立即收到更新。</li>
 <li><strong>多端支持</strong>：支持 PC、手機等多種設備瀏覽器同時訪問。</li>
 </ul>
-<h5>儲存規則</h5>
+<h5 id="heading-1">儲存規則</h5>
 <ul>
 <li><strong>有效期</strong>：文本內容將在伺服器中保留 <strong>10 分鐘</strong>。</li>
 <li><strong>計算方式</strong>：有效時間以<strong>最後一次修改開始計算</strong>。每次更新文本內容，倒計時將重新開始。</li>
 <li><strong>自動清理</strong>：超過有效期未更新，內容將被系統自動清除，確保隱私安全。</li>
 </ul>
-<h5>使用場景</h5>
+<h5 id="heading-2">使用場景</h5>
 <ul>
 <li><strong>跨設備粘貼</strong>：在電腦上複製一段長文本或鏈接，手機端直接打開即可獲取。</li>
 <li><strong>臨時備忘</strong>：快速記錄一些臨時信息，多點同步。</li>
 <li><strong>簡單協作</strong>：與夥伴即時共享並編輯同一段文本。</li>
 <li><strong>伺服器日誌</strong>：通過 curl 用於發送伺服器日誌信息。</li>
 </ul>
-<h5>安全與隱私</h5>
+<h5 id="heading-3">安全與隱私</h5>
 <ul>
 <li>傳輸過程加密，不進行持久化儲存。</li>
 <li>內容到期自動銷毀，不留痕跡。</li>

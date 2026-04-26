@@ -98,69 +98,129 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3><code>scp</code> 命令速查筆記</h3>
-<h4>基本語法</h4>
+                <h3 id="scp-"><code>scp</code> 命令速查筆記</h3>
+<h4 id="heading">基本語法</h4>
 <pre><code class="language-bash">scp [參數] [源路徑] [目標路徑]
 </code></pre>
 <hr>
-<h4>常用操作示例</h4>
-<h5>1. 上傳本地檔案到遠端伺服器</h5>
+<h4 id="heading-1">常用操作示例</h4>
+<h5 id="1-">1. 上傳本地檔案到遠端伺服器</h5>
 <pre><code class="language-bash">scp ./file.txt user@192.168.1.10:/home/user/
 </code></pre>
-<h5>2. 從遠端伺服器下載檔案到本地</h5>
+<h5 id="2-">2. 從遠端伺服器下載檔案到本地</h5>
 <pre><code class="language-bash">scp user@192.168.1.10:/home/user/file.txt ./file.txt
 </code></pre>
-<h5>3. 上傳目錄到遠端伺服器</h5>
+<h5 id="3-">3. 上傳目錄到遠端伺服器</h5>
 <pre><code class="language-bash">scp -r ./mydir user@192.168.1.10:/home/user/
 </code></pre>
-<h5>4. 從遠端伺服器下載目錄到本地</h5>
+<h5 id="4-">4. 從遠端伺服器下載目錄到本地</h5>
 <pre><code class="language-bash">scp -r user@192.168.1.10:/home/user/mydir ./mydir
 </code></pre>
-<h5>5. 使用指定連接埠（如 2222）</h5>
+<h5 id="5--2222">5. 使用指定連接埠（如 2222）</h5>
 <pre><code class="language-bash">scp -P 2222 ./file.txt user@192.168.1.10:/home/user/
 </code></pre>
-<h5>6. 使用指定私鑰檔案</h5>
+<h5 id="6-">6. 使用指定私鑰檔案</h5>
 <pre><code class="language-bash">scp -i ~/.ssh/id_rsa ./file.txt user@192.168.1.10:/home/user/
 </code></pre>
 <hr>
-<h4>常用參數說明</h4>
-<p>| 參數 | 說明                               |
-| ---- | ---------------------------------- |
-| <code>-r</code> | 遞迴複製整個目錄                   |
-| <code>-P</code> | 指定遠端主機連接埠（注意是大寫 P） |
-| <code>-i</code> | 指定 SSH 私鑰檔案                  |
-| <code>-C</code> | 啟用壓縮，提高傳輸速度             |
-| <code>-p</code> | 保留檔案的修改時間、權限等屬性     |
-| <code>-q</code> | 靜默模式，不輸出進度資訊           |</p>
+<h4 id="heading-2">常用參數說明</h4>
+<table>
+<thead>
+<tr>
+<th>參數</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-r</code></td>
+<td>遞迴複製整個目錄</td>
+</tr>
+<tr>
+<td><code>-P</code></td>
+<td>指定遠端主機連接埠（注意是大寫 P）</td>
+</tr>
+<tr>
+<td><code>-i</code></td>
+<td>指定 SSH 私鑰檔案</td>
+</tr>
+<tr>
+<td><code>-C</code></td>
+<td>啟用壓縮，提高傳輸速度</td>
+</tr>
+<tr>
+<td><code>-p</code></td>
+<td>保留檔案的修改時間、權限等屬性</td>
+</tr>
+<tr>
+<td><code>-q</code></td>
+<td>靜默模式，不輸出進度資訊</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h4>路徑說明</h4>
-<p>| 類型     | 示例                                  |
-| -------- | ------------------------------------- |
-| 本地路徑 | <code>./file.txt</code> 或 <code>/home/user/file.txt</code> |
-| 遠端路徑 | <code>user@host:/path/to/file.txt</code>         |</p>
+<h4 id="heading-3">路徑說明</h4>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>本地路徑</td>
+<td><code>./file.txt</code> 或 <code>/home/user/file.txt</code></td>
+</tr>
+<tr>
+<td>遠端路徑</td>
+<td><code>user@host:/path/to/file.txt</code></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h4>常見錯誤排查</h4>
-<p>| 錯誤                           | 可能原因                                                  |
-| ------------------------------ | --------------------------------------------------------- |
-| <code>Permission denied</code>            | SSH 金鑰無效，或遠端目錄無寫入權限                        |
-| <code>No such file or directory</code>    | 源或目標路徑寫錯                                          |
-| <code>Connection refused</code>           | 目標連接埠不通或 SSH 服務未開啟                           |
-| <code>Host key verification failed</code> | 第一次連接遠端主機，未接受主機指紋。可先用 <code>ssh</code> 登錄一次 |</p>
+<h4 id="heading-4">常見錯誤排查</h4>
+<table>
+<thead>
+<tr>
+<th>錯誤</th>
+<th>可能原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Permission denied</code></td>
+<td>SSH 金鑰無效，或遠端目錄無寫入權限</td>
+</tr>
+<tr>
+<td><code>No such file or directory</code></td>
+<td>源或目標路徑寫錯</td>
+</tr>
+<tr>
+<td><code>Connection refused</code></td>
+<td>目標連接埠不通或 SSH 服務未開啟</td>
+</tr>
+<tr>
+<td><code>Host key verification failed</code></td>
+<td>第一次連接遠端主機，未接受主機指紋。可先用 <code>ssh</code> 登錄一次</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h4>實用補充</h4>
-<h5>複製檔案到另一台遠端伺服器</h5>
+<h4 id="heading-5">實用補充</h4>
+<h5 id="heading-6">複製檔案到另一台遠端伺服器</h5>
 <pre><code class="language-bash">scp user1@host1:/path/file.txt user2@host2:/path/
 </code></pre>
 <blockquote>
 <p>當前機器必須能存取 host1 和 host2</p>
 </blockquote>
-<h5>批次上傳檔案（腳本示例）</h5>
+<h5 id="heading-7">批次上傳檔案（腳本示例）</h5>
 <pre><code class="language-bash">for f in *.log; do
   scp &quot;$f&quot; user@host:/var/logs/
 done
 </code></pre>
 <hr>
-<h4>常用命令模板</h4>
+<h4 id="heading-8">常用命令模板</h4>
 <pre><code class="language-bash">scp ./local.txt user@host:/remote/path/
 scp user@host:/remote/file.txt ./local/
 scp -r ./dir user@host:/remote/

@@ -98,20 +98,49 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3>🛠 Overview</h3>
+                <h3 id="-overview">🛠 Overview</h3>
 <p>This tool converts Go <code>struct</code> definitions into TypeScript interfaces or types. It supports basic types, arrays, maps, nested structs, and <code>json</code> tags.</p>
-<h3>✅ Supported Go Types</h3>
-<p>| Go Type               | TypeScript Type |
-| --------------------- | --------------- |
-| <code>string</code>              | <code>string</code>        |
-| <code>int</code> / <code>int64</code>       | <code>number</code>        |
-| <code>float32</code> / <code>float64</code> | <code>number</code>        |
-| <code>bool</code>                | <code>boolean</code>       |
-| <code>[]T</code>                 | <code>T[]</code>           |
-| <code>T</code>                   | <code>T</code>             |
-| <code>other</code>               | <code>string</code>        |</p>
-<h3>📝 Example</h3>
-<h4>Input Go Struct:</h4>
+<h3 id="-supported-go-types">✅ Supported Go Types</h3>
+<table>
+<thead>
+<tr>
+<th>Go Type</th>
+<th>TypeScript Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>string</code></td>
+<td><code>string</code></td>
+</tr>
+<tr>
+<td><code>int</code> / <code>int64</code></td>
+<td><code>number</code></td>
+</tr>
+<tr>
+<td><code>float32</code> / <code>float64</code></td>
+<td><code>number</code></td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td><code>boolean</code></td>
+</tr>
+<tr>
+<td><code>[]T</code></td>
+<td><code>T[]</code></td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>other</code></td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="-example">📝 Example</h3>
+<h4 id="input-go-struct">Input Go Struct:</h4>
 <pre><code class="language-go">type User struct {
   ID        int       `json:&quot;id&quot;`
   Name      string    `json:&quot;name&quot;`
@@ -120,7 +149,7 @@
   Tags      []string  `json:&quot;tags&quot;`
 }
 </code></pre>
-<h4>Output TypeScript Interface:</h4>
+<h4 id="output-typescript-interface">Output TypeScript Interface:</h4>
 <pre><code class="language-ts">interface User {
   id: number;
   name: string;
