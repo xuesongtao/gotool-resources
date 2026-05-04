@@ -101,41 +101,45 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3 id="heading">功能居間</h3>
+                <h3 id="heading">功能介紹</h3>
 <blockquote>
-<p>1.支持解析嵌套 json 串, 根據遞歸進行解析嵌套對象<br>
-2.支持解析數組 json 串, 會取數組中第一個 json 串進行解析<br>
-3.檢查 json 串格式是否正確, 輸出錯誤的位置</p>
+<ol>
+<li>支援解析嵌套 JSON 字串，根據遞迴進行解析嵌套對象</li>
+<li>支援解析陣列 JSON 字串，會取陣列中的第一個 JSON 字串進行解析</li>
+<li>檢查 JSON 字串格式是否正確，並輸出錯誤的位置</li>
+<li>支援逐行解析註解</li>
+</ol>
 </blockquote>
-<h3 id="heading-1">示例</h3>
-<h4 id="-json-">解析嵌套 json 串</h4>
+<h3 id="heading-1">範例</h3>
+<h4 id="-json-">解析嵌套 JSON 字串</h4>
 <pre><code class="language-json">{
-	&quot;name&quot;: &quot;test&quot;,
-	&quot;age&quot;: 10,
-	&quot;addr&quot;: &quot;四川成都&quot;,
-	&quot;cls_info&quot;: [
-		{
-			&quot;name&quot;: &quot;籃球班&quot;,
-			&quot;teacher&quot;: &quot;張老師&quot;
-		},
-		{
-			&quot;name&quot;: &quot;美術班&quot;,
-			&quot;teacher&quot;: &quot;李老師&quot;
-		}
-	]
+    &quot;name&quot;: &quot;test&quot;, // 姓名
+    &quot;age&quot;: 10, // 年齡
+    &quot;addr&quot;: &quot;四川成都&quot;, // 地址
+    &quot;cls_info&quot;: [ // 班級
+        {
+            &quot;name&quot;: &quot;籃球班&quot;, // 班名
+            &quot;teacher&quot;: &quot;張老師&quot; // 老師
+        },
+        {
+            &quot;name&quot;: &quot;美術班&quot;, // 班名
+            &quot;teacher&quot;: &quot;李老師&quot; // 老師
+        }
+    ]
 }
 </code></pre>
 <p>處理後</p>
-<pre><code class="language-ts">export interface generateobj {
-    name: string;
-    age: number;
-    addr: string;
-    cls_info: clsinfo[];
+<pre><code class="language-ts">export interface IClsInfo {
+    name: string; // 班名
+    teacher: string; // 老師
 }
 
-export interface clsinfo {
-    name: string;
-    teacher: string;
+
+export interface IGenerateObj {
+    name: string; // 姓名
+    age: number; // 年齡
+    addr: string; // 地址
+    cls_info: IClsInfo[]; // 班級
 }
 </code></pre>
 

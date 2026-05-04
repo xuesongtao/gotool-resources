@@ -106,38 +106,40 @@
 <p>1.支持解析嵌套 json 串, 根据递归进行解析嵌套对象<br>
 2.支持解析数组 json 串, 会取数组中第一个 json 串进行解析
 3.支持注入自定义 tag<br>
-4.检查 json 串格式是否正确, 输出错误的位置</p>
+4.检查 json 串格式是否正确, 输出错误的位置<br>
+5.支持按行解析注释</p>
 </blockquote>
 <h3 id="heading-1">示例</h3>
 <h4 id="-json-">解析嵌套 json 串</h4>
 <pre><code class="language-json">{
-	&quot;name&quot;: &quot;test&quot;,
-	&quot;age&quot;: 10,
-	&quot;addr&quot;: &quot;四川成都&quot;,
-	&quot;cls_info&quot;: [
-		{
-			&quot;name&quot;: &quot;篮球班&quot;,
-			&quot;teacher&quot;: &quot;张老师&quot;
-		},
-		{
-			&quot;name&quot;: &quot;美术班&quot;,
-			&quot;teacher&quot;: &quot;李老师&quot;
-		}
-	]
+    &quot;name&quot;: &quot;test&quot;, // 姓名
+    &quot;age&quot;: 10, // 年龄
+    &quot;addr&quot;: &quot;四川成都&quot;, // 地址
+    &quot;cls_info&quot;: [ // 班级
+        {
+            &quot;name&quot;: &quot;篮球班&quot;, // 班名
+            &quot;teacher&quot;: &quot;张老师&quot; // 老师
+        },
+        {
+            &quot;name&quot;: &quot;美术班&quot;, // 班名
+            &quot;teacher&quot;: &quot;李老师&quot; // 老师
+        }
+    ]
 }
 </code></pre>
 <p>处理后</p>
-<pre><code class="language-go">type GenerateStruct struct {
-    Name string `json:&quot;name,omitempty&quot;`
-    Age int `json:&quot;age,omitempty&quot;`
-    Addr string `json:&quot;addr,omitempty&quot;`
-    ClsInfo []ClsInfo `json:&quot;cls_info,omitempty&quot;`
+<pre><code class="language-go">type ClsInfo struct {
+    Name string `json:&quot;name&quot;` // 班名
+    Teacher string `json:&quot;teacher&quot;` // 老师
 }
 
-type ClsInfo struct {
-    Name string `json:&quot;name,omitempty&quot;`
-    Teacher string `json:&quot;teacher,omitempty&quot;`
-}  
+
+type GenerateObj struct {
+    Name string `json:&quot;name&quot;` // 姓名
+    Age int `json:&quot;age&quot;` // 年龄
+    Addr string `json:&quot;addr&quot;` // 地址
+    ClsInfo []ClsInfo `json:&quot;cls_info&quot;` // 班级
+}
 </code></pre>
 <!-- raw HTML omitted -->
 <h4 id="-json--1">直接解析数组 json 串</h4>

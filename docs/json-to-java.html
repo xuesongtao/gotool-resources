@@ -105,24 +105,25 @@
 <blockquote>
 <p>1.支持解析嵌套 json 串, 根据递归进行解析嵌套对象<br>
 2.支持解析数组 json 串, 会取数组中第一个 json 串进行解析<br>
-3.检查 json 串格式是否正确, 输出错误的位置</p>
+3.检查 json 串格式是否正确, 输出错误的位置<br>
+4.生成注释</p>
 </blockquote>
 <h3 id="heading-1">示例</h3>
 <h4 id="-json-">解析嵌套 json 串</h4>
 <pre><code class="language-json">{
-	&quot;name&quot;: &quot;test&quot;,
-	&quot;age&quot;: 10,
-	&quot;addr&quot;: &quot;四川成都&quot;,
-	&quot;cls_info&quot;: [
-		{
-			&quot;name&quot;: &quot;篮球班&quot;,
-			&quot;teacher&quot;: &quot;张老师&quot;
-		},
-		{
-			&quot;name&quot;: &quot;美术班&quot;,
-			&quot;teacher&quot;: &quot;李老师&quot;
-		}
-	]
+    &quot;name&quot;: &quot;test&quot;, // 姓名
+    &quot;age&quot;: 10, // 年齡
+    &quot;addr&quot;: &quot;四川成都&quot;, // 地址
+    &quot;cls_info&quot;: [ // 班級
+        {
+            &quot;name&quot;: &quot;籃球班&quot;, // 班名
+            &quot;teacher&quot;: &quot;張老師&quot; // 老師
+        },
+        {
+            &quot;name&quot;: &quot;美術班&quot;, // 班名
+            &quot;teacher&quot;: &quot;李老師&quot; // 老師
+        }
+    ]
 }
 </code></pre>
 <p>处理后</p>
@@ -131,11 +132,33 @@ package com.gotool.json2java;
 import java.util.List;
 
 
+public class ClsInfo {
+    private String name; // 班名
+    private String teacher; // 老師
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTeacher() {
+        return this.teacher;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
+    }
+
+}
+
+
 public class GenerateObj {
-    private String name;
-    private Integer age;
-    private String addr;
-    private List&lt;ClsInfo&gt; cls_info;
+    private String name; // 姓名
+    private Integer age; // 年齡
+    private String addr; // 地址
+    private List&lt;ClsInfo&gt; cls_info; // 班級
     public String getName() {
         return this.name;
     }
@@ -166,28 +189,6 @@ public class GenerateObj {
 
     public void setCls_info(List&lt;ClsInfo&gt; cls_info) {
         this.cls_info = cls_info;
-    }
-
-}
-
-
-public class ClsInfo {
-    private String name;
-    private String teacher;
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTeacher() {
-        return this.teacher;
-    }
-
-    public void setTeacher(String teacher) {
-        this.teacher = teacher;
     }
 
 }

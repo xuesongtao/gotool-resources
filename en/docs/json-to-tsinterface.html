@@ -101,43 +101,45 @@
                     <h3 class="fw-bold mb-4">使用说明</h3>
         
             <div class="markdown-content">
-                <h3 id="function-introduction">Function introduction</h3>
+                <h3 id="feature-introduction">Feature Introduction</h3>
 <blockquote>
 <ol>
-<li>Support parsing nested json strings and parsing nested objects based on recursion</li>
-<li>Supports parsing array json strings, and the first json string in the array will be taken for parsing</li>
-<li>Check whether the json string format is correct and output the wrong position</li>
+<li>Supports parsing nested JSON strings, recursively parsing nested objects.</li>
+<li>Supports parsing array JSON strings, parsing the first JSON string in the array.</li>
+<li>Checks if the JSON string format is correct and outputs the error location.</li>
+<li>Supports line-by-line parsing of comments.</li>
 </ol>
 </blockquote>
 <h3 id="example">Example</h3>
-<h4 id="parsing-nested-json-strings">Parsing nested json strings</h4>
+<h4 id="parsing-nested-json-string">Parsing Nested JSON String</h4>
 <pre><code class="language-json">{
-	&quot;name&quot;: &quot;test&quot;,
-	&quot;age&quot;: 10,
-	&quot;addr&quot;: &quot;Chengdu, Sichuan&quot;,
-	&quot;cls_info&quot;: [
-		{
-			&quot;name&quot;: &quot;Basketball class&quot;,
-			&quot;teacher&quot;: &quot;Teacher Zhang&quot;
-		},
-		{
-			&quot;name&quot;: &quot;art class&quot;,
-			&quot;teacher&quot;: &quot;Teacher Li&quot;
-		}
-	]
+    &quot;name&quot;: &quot;test&quot;, // Name
+    &quot;age&quot;: 10, // Age
+    &quot;addr&quot;: &quot;Chengdu, Sichuan&quot;, // Address
+    &quot;cls_info&quot;: [ // Classes
+        {
+            &quot;name&quot;: &quot;Basketball Class&quot;, // Class Name
+            &quot;teacher&quot;: &quot;Mr. Zhang&quot; // Teacher
+        },
+        {
+            &quot;name&quot;: &quot;Art Class&quot;, // Class Name
+            &quot;teacher&quot;: &quot;Mr. Li&quot; // Teacher
+        }
+    ]
 }
 </code></pre>
-<p>after treatment</p>
-<pre><code class="language-ts">export interface GenerateObj {
-    name: string;
-    age: number;
-    addr: string;
-    cls_info: ClsInfo[];
+<p>After processing:</p>
+<pre><code class="language-ts">export interface IClsInfo {
+    name: string; // Class Name
+    teacher: string; // Teacher
 }
 
-export interface ClsInfo {
-    name: string;
-    teacher: string;
+
+export interface IGenerateObj {
+    name: string; // Name
+    age: number; // Age
+    addr: string; // Address
+    cls_info: IClsInfo[]; // Classes
 }
 </code></pre>
 

@@ -105,37 +105,39 @@
 <blockquote>
 <p>1.支持解析嵌套 json 串, 根据递归进行解析嵌套对象<br>
 2.支持解析数组 json 串, 会取数组中第一个 json 串进行解析<br>
-3.检查 json 串格式是否正确, 输出错误的位置</p>
+3.检查 json 串格式是否正确, 输出错误的位置<br>
+4.支持生成注释</p>
 </blockquote>
 <h3 id="heading-1">示例</h3>
 <h4 id="-json-">解析嵌套 json 串</h4>
 <pre><code class="language-json">{
-	&quot;name&quot;: &quot;test&quot;,
-	&quot;age&quot;: 10,
-	&quot;addr&quot;: &quot;四川成都&quot;,
-	&quot;cls_info&quot;: [
-		{
-			&quot;name&quot;: &quot;篮球班&quot;,
-			&quot;teacher&quot;: &quot;张老师&quot;
-		},
-		{
-			&quot;name&quot;: &quot;美术班&quot;,
-			&quot;teacher&quot;: &quot;李老师&quot;
-		}
-	]
+    &quot;name&quot;: &quot;test&quot;, // 姓名
+    &quot;age&quot;: 10, // 年齡
+    &quot;addr&quot;: &quot;四川成都&quot;, // 地址
+    &quot;cls_info&quot;: [ // 班級
+        {
+            &quot;name&quot;: &quot;籃球班&quot;, // 班名
+            &quot;teacher&quot;: &quot;張老師&quot; // 老師
+        },
+        {
+            &quot;name&quot;: &quot;美術班&quot;, // 班名
+            &quot;teacher&quot;: &quot;李老師&quot; // 老師
+        }
+    ]
 }
 </code></pre>
 <p>处理后</p>
-<pre><code class="language-proto">message GenerateObj {
-  string name = 1;
-  int32 age = 2;
-  string addr = 3;
-  repeated ClsInfo cls_info = 4;
+<pre><code class="language-proto">message ClsInfo {
+  string name = 1; // 班名
+  string teacher = 2; // 老師
 }
 
-message ClsInfo {
-  string name = 1;
-  string teacher = 2;
+
+message GenerateObj {
+  string name = 1; // 姓名
+  int32 age = 2; // 年齡
+  string addr = 3; // 地址
+  repeated ClsInfo cls_info = 4; // 班級
 }
 </code></pre>
 <h4 id="-json--1">直接解析数组 json 串</h4>
