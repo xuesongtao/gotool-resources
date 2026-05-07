@@ -10,4 +10,4 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
-Sitemap: https://gotool.top/sitemap.xml
+Sitemap: https://doc.gotool.top/sitemap.xml
